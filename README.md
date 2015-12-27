@@ -4,18 +4,36 @@ Vim Practice
 学习资料
 ------------------------
 
+## 文章/讨论
+
+- [Why Vim is awesome](http://federicoramirez.name/why-vim-is-awesome/)
+- [Awesome Vim Plugins](https://reinteractive.net/posts/166-awesome-vim-plugins)
+- [VIM is awesome— But don’t overdo it](https://medium.com/@PhilPlckthun/vim-is-awesome-but-dont-overdo-it-c03594e6bb5b#.hyy2nhhe9)  
+	过犹不及，再好的东西，也要明白什么时候不合适，这是反而说明是深的理解。
+
+### 系统学习
+
 - `vimtutor`
 - `vim` user manual/reference   
 	中文版 <http://sourceforge.net/projects/vimcdoc/files/pdf-manual/>
-- 整理的[Vim书箱豆列](http://www.douban.com/doulist/41500790/)
+- 个人整理的[`Vim`书籍豆列](http://www.douban.com/doulist/41500790/)
 
-`vim`插件
+`vim`配置/插件的资源
 -------------------------
 
-- [spf13-vim - a distribution of vim plugins and resources](https://github.com/spf13/spf13-vim)  
-	打包配置集合，包含很多插件/主题，无论是小白还是高手，省时好用是王道，用起来。 这个项目有7K star！
+- [`spf13-vim` - a distribution of vim plugins and resources](https://github.com/spf13/spf13-vim) - `vim`的配置构架和打包配置集合。
+	- 包含很多插件/主题，无论是小白还是高手，省时好用是王道，用起来。 这个项目有 ~7K star！
+	- `spf13-vim`是个`vim`**配置框架**，水准尽显！
+	- 直接使用，配置的效果也是很不错了。
+- [The Ultimate vimrc](https://github.com/amix/vimrc) - Over the last 8 years I have used and tweaked Vim.
+	- 作者_8年_在`vim`配置上的积累。这个项目有 ~5K star！
+	- 绝对值得参考学习！
+	- 因为不是框架，所以我会选`spf13-vim`作为我的配置主方式。
+- [Maximum Awesome](https://github.com/square/maximum-awesome) - 三架马车`vim`、`iTerm 2`和`tmux`的配置。
+	- 值得参考，这个项目有 4K+ star！
+- [Vim Awesome - a comprehensive, accurate, and up-to-date directory of Vim plugins](http://vimawesome.com/)
 
-分享视频
+分享视频及其笔记
 --------------------------
 
 ### [Learning Vim in a Week](https://www.youtube.com/watch?v=_NUO4JEtkDw)
@@ -25,7 +43,7 @@ Vim Practice
 - 观念上的改变/注意事项
 	- 总有更多的做法
 	- 学习`vim`是个持续的过程，你可以不断提高能力。
-- 不要在平时的工作使用中开始学习`vim`！因为 工作紧急 与 `vim`刚开始学习时的摸索 有矛盾！
+- 不要在平时的工作使用中开始学习`vim`！因为 工作紧急需要的效率 与 `vim`刚开始学习时摸索的低效 有矛盾！
 - `vim`命令记忆法
 
 还给出实用的Tips：
@@ -43,10 +61,22 @@ Vim Practice
 	- [vimcasts.org](http://vimcasts.org/)
 	- [upcase.com/vim](https://upcase.com/vim)
 
-一些个人关心的问题
+个人关心的问题
 --------------------------
 
-### 中文分词的支持
+欢迎高手指点！请提交[Issue](https://github.com/oldratlee/vim-pratice/issues)。
+
+### 中文输入法在`vim`便利切换的问题
+
+本来`vim`是有模式的（`Normal/Insert/Visual`），再加上中文需要输入法切换（你处在中文输入还是英文输入状态），中文编辑需要在脑子记住当前是哪个状态的，个人觉得这个比较蛋疼。
+
+目前还**_没有_**找到好的解法。
+
+### `vim`中文分词的支持
+
+不像英文，中文的词的分离没有像空格这样明显分隔，词相关的移动变得很麻烦。
+
+目前还**_没有_**找到好的解法。
 
 - [Vim与中文分词 - google group](https://groups.google.com/forum/#!msg/pongba/RXVqM4sKseU/TrCrySBH1HwJ)
 - [Vim模式下能增加中文分词的支持么？](https://github.com/ghosert/cmd-editor/issues/103)
