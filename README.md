@@ -11,9 +11,43 @@ Vim Practice
 - [VIM is awesome— But don’t overdo it](https://medium.com/@PhilPlckthun/vim-is-awesome-but-dont-overdo-it-c03594e6bb5b#.hyy2nhhe9)  
 	过犹不及，再好的东西，也要明白什么时候不合适，这是反而说明是深的理解。
 
-### 系统学习
+### 学习资料
+
+### 上手
 
 - `vimtutor`
+
+#### 速查（Cheat Sheet）
+
+内容比较少，且有中文版的：
+
+- [Vim Cheat Sheet中文版 - http://vim.rtorr.com/](http://vim.rtorr.com/lang/zh_cn/)
+- [Graphical vi-vim Cheat Sheet and Tutorial](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html)  
+	中文版 <http://blog.ngedit.com/vi-vim-cheat-sheet-sch.gif> # 这张图你可能在别人桌子上见过 :smile:
+
+内容比较多的：
+
+- [Cheat Sheet - michael.peopleofhonoronly.com](http://michael.peopleofhonoronly.com/vim/)  
+	个人比较喜欢的版本，用颜色标注了级别
+- Beautiful Vim Cheat-Sheet http://i.imgur.com/YLInLlY.png  
+	[This is my favorite vim cheat sheet. Does anyone know who created it? - reddit.com](https://www.reddit.com/r/vim/comments/32r85c/this_is_my_favorite_vim_cheat_sheet_does_anyone/)  
+	[Beautiful Vim Cheat-Sheet Poster & Printable Downloads - vimcheatsheet.com](http://vimcheatsheet.com/)
+
+其它还有：（Cheat Sheet有几个就够用了，别多看了你～ :joy:）
+
+- [Vim Commands Cheat Sheet - fprintf.net](http://fprintf.net/vimCheatSheet.html)
+- [Vi Commands Cheat Sheet - linuxmoz.com](https://linuxmoz.com/vi-commands-cheat-sheet/)
+- [VIM QUICK REFERENCE CARD - tnerual.eriogerg.free.fr](http://tnerual.eriogerg.free.fr/vimqrc.html)
+- [Learning Vim The Pragmatic Way - jrmiii.com](http://jrmiii.com/2009/03/06/learning-vim-the-pragmatic-way.html)
+- [Vi Cheat Sheet - lagmonster.org](http://www.lagmonster.org/docs/vi.html)
+
+##### 参数资料
+
+- `coolshell`推荐[给程序员的VIM速查卡](http://coolshell.cn/articles/5479.html)
+- [5 Best VIM Cheat Sheet](https://rumorscity.com/2014/08/16/5-best-vim-cheat-sheet/)
+
+### 系统学习
+
 - `vim` user manual/reference   
 	中文版 <http://sourceforge.net/projects/vimcdoc/files/pdf-manual/>
 - 个人整理的[`Vim`书籍豆列](http://www.douban.com/doulist/41500790/)
