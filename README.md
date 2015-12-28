@@ -1,23 +1,40 @@
 Vim Practice
 =================================
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [学习资料](#%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99)
+  - [文章/讨论](#%E6%96%87%E7%AB%A0%E8%AE%A8%E8%AE%BA)
+  - [上手](#%E4%B8%8A%E6%89%8B)
+  - [速查（Cheat Sheet）](#%E9%80%9F%E6%9F%A5%EF%BC%88cheat-sheet%EF%BC%89)
+    - [Vim Cheat Sheet评论和来源参考](#vim-cheat-sheet%E8%AF%84%E8%AE%BA%E5%92%8C%E6%9D%A5%E6%BA%90%E5%8F%82%E8%80%83)
+  - [系统学习](#%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0)
+- [`vim`配置/插件的资源](#vim%E9%85%8D%E7%BD%AE%E6%8F%92%E4%BB%B6%E7%9A%84%E8%B5%84%E6%BA%90)
+- [分享视频及其笔记](#%E5%88%86%E4%BA%AB%E8%A7%86%E9%A2%91%E5%8F%8A%E5%85%B6%E7%AC%94%E8%AE%B0)
+  - [[Learning Vim in a Week](https://www.youtube.com/watch?v=_NUO4JEtkDw)](#learning-vim-in-a-weekhttpswwwyoutubecomwatchv_nuo4jetkdw)
+- [个人关心的问题](#%E4%B8%AA%E4%BA%BA%E5%85%B3%E5%BF%83%E7%9A%84%E9%97%AE%E9%A2%98)
+  - [中文输入法在`vim`便利切换的问题](#%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E6%B3%95%E5%9C%A8vim%E4%BE%BF%E5%88%A9%E5%88%87%E6%8D%A2%E7%9A%84%E9%97%AE%E9%A2%98)
+  - [`vim`中文分词的支持](#vim%E4%B8%AD%E6%96%87%E5%88%86%E8%AF%8D%E7%9A%84%E6%94%AF%E6%8C%81)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 学习资料
 ------------------------
 
-## 文章/讨论
+### 文章/讨论
 
 - [Why Vim is awesome](http://federicoramirez.name/why-vim-is-awesome/)
 - [Awesome Vim Plugins](https://reinteractive.net/posts/166-awesome-vim-plugins)
 - [VIM is awesome— But don’t overdo it](https://medium.com/@PhilPlckthun/vim-is-awesome-but-dont-overdo-it-c03594e6bb5b#.hyy2nhhe9)  
 	过犹不及，再好的东西，也要明白什么时候不合适，这是反而说明是深的理解。
 
-### 学习资料
-
 ### 上手
 
 - `vimtutor`
 
-#### 速查（Cheat Sheet）
+### 速查（Cheat Sheet）
 
 内容比较少，且有中文版的：
 
@@ -41,7 +58,7 @@ Vim Practice
 - [Learning Vim The Pragmatic Way - jrmiii.com](http://jrmiii.com/2009/03/06/learning-vim-the-pragmatic-way.html)
 - [Vi Cheat Sheet - lagmonster.org](http://www.lagmonster.org/docs/vi.html)
 
-##### 参数资料
+#### Vim Cheat Sheet评论和来源参考
 
 - `coolshell`推荐[给程序员的VIM速查卡](http://coolshell.cn/articles/5479.html)
 - [5 Best VIM Cheat Sheet](https://rumorscity.com/2014/08/16/5-best-vim-cheat-sheet/)
@@ -115,4 +132,3 @@ Vim Practice
 - [Vim与中文分词 - google group](https://groups.google.com/forum/#!msg/pongba/RXVqM4sKseU/TrCrySBH1HwJ)
 - [Vim模式下能增加中文分词的支持么？](https://github.com/ghosert/cmd-editor/issues/103)
 - [关于Vim&Emacs的中文分词相关讨论](https://biergaizi.info/archives/2012/04/1322.html)
-
