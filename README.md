@@ -43,10 +43,9 @@ Vim Practice
 
 内容比较多的：
 
-- [Cheat Sheet - michael.peopleofhonoronly.com](http://michael.peopleofhonoronly.com/vim/)  
-	个人比较喜欢的版本，用颜色标注了级别
 - Beautiful Vim Cheat-Sheet http://i.imgur.com/YLInLlY.png  
 	\# 这个Sheet Cheat的[评论](https://www.reddit.com/r/vim/comments/32r85c/this_is_my_favorite_vim_cheat_sheet_does_anyone/)和[官网](http://vimcheatsheet.com/)。
+- [Cheat Sheet - michael.peopleofhonoronly.com](http://michael.peopleofhonoronly.com/vim/)
 
 Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Cheat Sheet](more-cheat-sheet.md) :joy: 
 
@@ -60,10 +59,10 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 `vim`配置/插件的资源
 -------------------------
 
-- [`spf13-vim` - a distribution of vim plugins and resources](https://github.com/spf13/spf13-vim) - `vim`的配置构架和打包配置集合。
+- [`spf13-vim` - a distribution of vim plugins and resources](https://github.com/spf13/spf13-vim) - `vim`的配置框架和配置集合。
 	- 包含很多插件/主题，无论是小白还是高手，省时好用是王道，用起来。 这个项目有 ~7K star！
-	- `spf13-vim`是个`vim`**配置框架**，水准尽显！
-	- 直接使用，配置的效果也是很不错了。
+	- 直接使用，配置的效果和包含的插件 已经很不错了。
+	- `spf13-vim`首先是个`vim`**配置框架**，水准尽显！
 - [The Ultimate vimrc](https://github.com/amix/vimrc) - Over the last 8 years I have used and tweaked Vim.
 	- 作者_8年_在`vim`配置上的积累。这个项目有 ~5K star！
 	- 绝对值得参考学习！
@@ -81,7 +80,7 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 
 - 观念上的改变/注意事项
 	- 总有更好的做法
-	- 学习`vim`是个持续的过程，你可以不断提高能力。
+	- 学习`vim`是个持续的过程，可以不断提高能力，进而逐步提升效率。
 - 不要在平时的工作使用中开始学习`vim`！因为 工作紧急需要的效率 与 `vim`刚开始学习时摸索的低效 有矛盾！
 - `vim`命令记忆法
 
@@ -94,7 +93,7 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 	中文版 <http://blog.ngedit.com/vi-vim-cheat-sheet-sch.gif>
 1. `.vimrc` - 你的新朋友！
 	- **一定要版本版本控制起来**！
-	- 可以偷借你朋友的配置文件（`.dotfiles`），或是借鉴 <https://github.com/thoughtbot/dotfiles>
+	- 可以偷借你朋友的配置文件（`dotfiles`），或是借鉴 <https://github.com/thoughtbot/dotfiles>
 1. 通过官方的`vimtutor`定期适量的学习 / 通过游戏<http://vim-adventures.com/>来学习～
 1. 通过看高手的操作视频方法来学习
 	- [vimcasts.org](http://vimcasts.org/)
