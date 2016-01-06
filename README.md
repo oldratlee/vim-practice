@@ -1,6 +1,8 @@
 Vim Practice
 =================================
 
+<img src="vim-logo.png" width="256" hspace="10px" align="right" >
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
@@ -28,6 +30,10 @@ Vim Practice
 - [Awesome Vim Plugins](https://reinteractive.net/posts/166-awesome-vim-plugins)
 - [VIM is awesome— But don’t overdo it](https://medium.com/@PhilPlckthun/vim-is-awesome-but-dont-overdo-it-c03594e6bb5b#.hyy2nhhe9)  
 	过犹不及，再好的东西，也要明白什么时候不合适，这是反而说明是深的理解。
+- 知乎上的一些话题（看一下讨论扩展一下了解）
+	- [有哪些编程必备的 Vim 配置？ - 知乎](https://www.zhihu.com/question/19989337)
+	- [到底 VIM 能配置到多强大的程度？ - 知乎](https://www.zhihu.com/question/20151659)
+	- [为什么不少程序员极度推崇 Vim 和 Emacs，却对 IDE 嗤之以鼻？ - 知乎](https://www.zhihu.com/question/21504638)
 
 ### 上手
 
