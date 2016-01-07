@@ -58,10 +58,12 @@ Vim Practice
 - [Graphical vi-vim Cheat Sheet and Tutorial](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html)  
 	中文版 <http://blog.ngedit.com/vi-vim-cheat-sheet-sch.gif> # 这张图你肯定在别人桌子上见过 :smile:
 
+[<img src="beautiful-vim-cheat-sheet-preview.png" width="256" align="right">](https://raw.githubusercontent.com/oldratlee/vim-practice/master/beautiful-vim-cheat-sheet.png)
+
 内容比较多的：
 
-- Beautiful Vim Cheat-Sheet http://i.imgur.com/YLInLlY.png  
-	\# 这个Sheet Cheat的[评论](https://www.reddit.com/r/vim/comments/32r85c/this_is_my_favorite_vim_cheat_sheet_does_anyone/)和[官网](http://vimcheatsheet.com/)。
+- Beautiful Vim Cheat-Sheet（右图，点击看大图）   
+	\# 该图的[来源链接](http://i.imgur.com/YLInLlY.png)，这个Sheet Cheat的[评论](https://www.reddit.com/r/vim/comments/32r85c/this_is_my_favorite_vim_cheat_sheet_does_anyone/)和[官网](http://vimcheatsheet.com/)。
 - [Cheat Sheet - michael.peopleofhonoronly.com](http://michael.peopleofhonoronly.com/vim/)
 
 Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Cheat Sheet](more-cheat-sheet.md) :joy: 
@@ -75,7 +77,7 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 		个人的书评：词句共灵感一射，编辑与思考齐飞！
 	- [Learning the vi and Vim Editors](http://book.douban.com/subject/3767413/)，一板一眼，行文稳健（很合我的风格）：
 		- 先介绍基本功能再说明如何组合技术，从熟悉到领会。
-		- 先介绍基本编辑器（`Vi`/`Ex`）再说明说明`Vim`，从历史看发展。
+		- 先介绍基本编辑器（`Vi`/`Ex`）再说明`Vim`，从历史发展的过程更能深入理解功能适用场景。
 		- 还介绍`Vi`/`Vim`的周边信息，如`Vi`/`Vim`的名家名言，各个变种，`Vi`/`Emacs`的文化等等
 
 `vim`配置/插件的资源
