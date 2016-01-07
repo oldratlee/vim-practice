@@ -50,17 +50,19 @@ Vim Practice
 
 - `vimtutor`
 
+[<img src="vi-vim-cheat-sheet-sch-preview.gif" width="256" align="right">](https://raw.githubusercontent.com/oldratlee/vim-practice/master/vi-vim-cheat-sheet-sch.gif)
+
 ### 速查
 
 内容比较少，且有中文版的：
 
 - [Vim Cheat Sheet中文版 - vim.rtorr.com](http://vim.rtorr.com/lang/zh_cn/)
-- [Graphical vi-vim Cheat Sheet and Tutorial](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html)  
-	中文版 <http://blog.ngedit.com/vi-vim-cheat-sheet-sch.gif> # 这张图你肯定在别人桌子上见过 :smile:
-
-[<img src="beautiful-vim-cheat-sheet-preview.png" width="256" align="right">](https://raw.githubusercontent.com/oldratlee/vim-practice/master/beautiful-vim-cheat-sheet.png)
+- Graphical vi-vim Cheat Sheet and Tutorial中文版（右图，点击看大图）  
+	该图的[来源链接](http://blog.ngedit.com/vi-vim-cheat-sheet-sch.gif)，[官网](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html)中文版。 # 这张图你肯定在别人桌子上见过 :smile:
 
 内容比较多的：
+
+[<img src="beautiful-vim-cheat-sheet-preview.png" width="256" align="right">](https://raw.githubusercontent.com/oldratlee/vim-practice/master/beautiful-vim-cheat-sheet.png)
 
 - Beautiful Vim Cheat-Sheet（右图，点击看大图）   
 	\# 该图的[来源链接](http://i.imgur.com/YLInLlY.png)，这个Sheet Cheat的[评论](https://www.reddit.com/r/vim/comments/32r85c/this_is_my_favorite_vim_cheat_sheet_does_anyone/)和[官网](http://vimcheatsheet.com/)。
