@@ -12,7 +12,7 @@ Vim Practice
 
 ---------------------
 
-<img src="vim-logo.png" width="256" align="right" >
+<img src="images/vim-logo.png" width="256" align="right" >
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -50,7 +50,7 @@ Vim Practice
 
 - `vimtutor`
 
-[<img src="vi-vim-cheat-sheet-sch-preview.gif" width="256" align="right">](https://raw.githubusercontent.com/oldratlee/vim-practice/master/vi-vim-cheat-sheet-sch.gif)
+[<img src="images/vi-vim-cheat-sheet-sch-preview.gif" width="256" align="right">](https://raw.githubusercontent.com/oldratlee/vim-practice/master/images/vi-vim-cheat-sheet-sch.gif)
 
 ### 速查
 
@@ -62,7 +62,7 @@ Vim Practice
 
 内容比较多的：
 
-[<img src="beautiful-vim-cheat-sheet-preview.png" width="256" align="right">](https://raw.githubusercontent.com/oldratlee/vim-practice/master/beautiful-vim-cheat-sheet.png)
+[<img src="images/beautiful-vim-cheat-sheet-preview.png" width="256" align="right">](https://raw.githubusercontent.com/oldratlee/vim-practice/master/images/beautiful-vim-cheat-sheet.png)
 
 - Beautiful Vim Cheat-Sheet（右图，点击看大图）   
 	\# 该图的[来源链接](http://i.imgur.com/YLInLlY.png)，这个Sheet Cheat的[评论](https://www.reddit.com/r/vim/comments/32r85c/this_is_my_favorite_vim_cheat_sheet_does_anyone/)和[官网](http://vimcheatsheet.com/)。
