@@ -1,7 +1,7 @@
 Vim Practice
 =================================
 
-<img src="vim-logo.png" width="256" hspace="10px" align="right" >
+<img src="vim-logo.png" width="256" align="right" >
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -57,10 +57,15 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 
 ### 系统学习
 
-- `vim` user manual/reference   
+- `vim` user manual/reference，即是`vim`的内置帮助的内容（学会在`vim`直接`:h`），内容丰富！   
 	中文版 <http://sourceforge.net/projects/vimcdoc/files/pdf-manual/>
 - 个人整理的[`Vim`书籍豆列](http://www.douban.com/doulist/41500790/)
-    - 个人先看的是[Vim实用技巧](http://book.douban.com/subject/25869486/)，推荐之。
+    - 个人先看的是[Vim实用技巧 - 编辑与思考同步](http://book.douban.com/subject/25869486/)，以编辑理念和实践模式为纲介绍，推荐之。  
+		个人的书评：词句共灵感一射，编辑与思考齐飞！
+	- [Learning the vi and Vim Editors](http://book.douban.com/subject/3767413/)，一板一眼，行文稳健（很合我的风格）：
+		- 先介绍基本功能再说明如何组合技术，从熟悉到领会。
+		- 先介绍基本编辑器（`Vi`/`Ex`）再说明说明`Vim`，从历史看发展。
+		- 还介绍`Vi`/`Vim`的周边信息，如`Vi`/`Vim`的名家名言，各个变种，`Vi`/`Emacs`的文化等等
 
 `vim`配置/插件的资源
 -------------------------
