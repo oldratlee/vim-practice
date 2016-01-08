@@ -12,7 +12,7 @@ Vim Practice
 
 ---------------------
 
-<img src="images/vim-logo.png" width="256" align="right" >
+<img src="images/vim-icon.png" width="256" align="right" >
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
