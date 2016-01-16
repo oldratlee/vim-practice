@@ -5,8 +5,24 @@ Vim Practice
 
 上面的这句调侃不重要，重要的是效率！
 
-目前，键盘编辑（广义包含了文字录入和编辑调整） 是人类智慧输出的主流方式，所以 打字指法 和 编辑器 的重要性就不言而喻了！  
-\# 对于中文，键盘编辑 还多一样，即输入法，如五笔、拼音。
+人类智慧输出包含了『录入』和『编辑』操作。
+
+目前，『键盘录入』/『键盘编辑』是主流方式。  
+键盘操作效率的关键是『打字指法』/『盲打』。
+
+对于录入，当然还有语音录入等等（期待脑电波的录入方式成为现实 :smile:）。  
+对于中文，还多一样，即『输入法』，如五笔、拼音。
+
+『编辑器』 对于 编辑 的重要性 不言而喻。
+
+综上，智慧输出包含了：
+
+1. 键盘操作：
+	- 打字指法
+1. 录入 => 键盘录入：
+	- 输入法
+1. 编辑 => 键盘编辑：
+	- 编辑器
 
 上面『打字指法』和『编辑器』的顺序重要的，如果你还不能盲打，那么不要想着要找一个的编辑器就能高效了！ :dancers:
 
@@ -64,20 +80,21 @@ Vim Practice
 
 [<img src="images/beautiful-vim-cheat-sheet-preview.png" width="256" align="right">](https://raw.githubusercontent.com/oldratlee/vim-practice/master/images/beautiful-vim-cheat-sheet.png)
 
-- Beautiful Vim Cheat-Sheet（右图，点击看大图）   
+- Beautiful Vim Cheat-Sheet（右图，点击看大图）  
 	\# 该图的[来源链接](http://i.imgur.com/YLInLlY.png)，这个Sheet Cheat的[评论](https://www.reddit.com/r/vim/comments/32r85c/this_is_my_favorite_vim_cheat_sheet_does_anyone/)和[官网](http://vimcheatsheet.com/)。
 - [Cheat Sheet - michael.peopleofhonoronly.com](http://michael.peopleofhonoronly.com/vim/)
 
-Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Cheat Sheet](more-cheat-sheet.md) :joy: 
+Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Cheat Sheet](more-cheat-sheet.md) :joy:
 
 ### 系统学习
 
-- `vim` user manual/reference，即是`vim`的内置帮助的内容（学会在`vim`直接`:h`），内容丰富！   
+- `vim` user manual/reference，即是`vim`的内置帮助的内容（学会在`vim`直接`:h`），内容丰富！  
 	中文版 <http://sourceforge.net/projects/vimcdoc/files/pdf-manual/>
 - 个人整理的[`Vim`书籍豆列](http://www.douban.com/doulist/41500790/)
-    - 个人先看的是[Vim实用技巧 - 编辑与思考同步](http://book.douban.com/subject/25869486/)，以编辑理念和实践模式为纲介绍，推荐之。  
-		个人的书评：词句共灵感一射，编辑与思考齐飞！
-	- [Learning the vi and Vim Editors](http://book.douban.com/subject/3767413/)，一板一眼，行文稳健（很合我的风格）：
+    - 个人先看的是[Vim实用技巧 - 以思维的速度编辑文本](http://book.douban.com/subject/25869486/)  
+		以编辑理念和实践模式为纲介绍，推荐之。
+		词句共灵感一射，编辑与思考齐飞！
+	- [Learning the vi and Vim Editors](http://book.douban.com/subject/3767413/)，行文稳健（很合我的风格）：
 		- 先介绍基本功能再说明如何组合技术，从熟悉到领会。
 		- 先介绍基本编辑器（`Vi`/`Ex`）再说明`Vim`，从历史发展的过程更能深入理解功能适用场景。
 		- 还介绍`Vi`/`Vim`的周边信息，如`Vi`/`Vim`的名家名言，各个变种，`Vi`/`Emacs`的文化等等
@@ -93,7 +110,7 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 	- 作者_8年_在`vim`配置上的积累。这个项目有 ~5K star！
 	- 绝对值得参考学习！
 	- 因为不是框架，所以我会选`spf13-vim`作为我的配置主方式。
-- [Maximum Awesome](https://github.com/square/maximum-awesome) - 三架马车`vim`、`iTerm 2`和`tmux`的配置。
+- [Maximum Awesome](https://github.com/square/maximum-awesome) - 三架马车`vim`、`tmux`和`iTerm 2`的配置。
 	- 值得参考，这个项目有 4K+ star！
 - [Vim Awesome - a comprehensive, accurate, and up-to-date directory of Vim plugins](http://vimawesome.com/)
 
@@ -138,13 +155,13 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 
 - 当切换到如`Normal/Command`模式时，自动切换到英文输入法。
 
-目前还**_没有_**找到好的解法。
+目前还**_没有_**找到解法。
 
 ### `vim`中文分词的支持
 
 不像英文，中文的词的分离没有像空格这样明显分隔，词相关的移动变得很麻烦。
 
-目前还**_没有_**找到好的解法。
+目前还**_没有_**找到解法。
 
 - [Vim与中文分词 - google group](https://groups.google.com/forum/#!msg/pongba/RXVqM4sKseU/TrCrySBH1HwJ)
 - [Vim模式下能增加中文分词的支持么？](https://github.com/ghosert/cmd-editor/issues/103)
