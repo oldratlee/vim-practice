@@ -155,13 +155,18 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 
 - 当切换到如`Normal/Command`模式时，自动切换到英文输入法。
 
-目前还**_没有_**找到解法。
+解法参见[`@CodeFalling`](https://github.com/CodeFalling)的[完美解决 Mac 下 Vim/Emacs 的输入法切换问题](https://codefalling.com/2015/11/02/fcitx-vim-for-OS-X/)：
+
+1. 安装配合工具[fcitx-remote-for-osx](https://github.com/CodeFalling/fcitx-remote-for-osx)
+2. 安装`Vim`插件[fcitx-vim-osx](https://github.com/CodeFalling/fcitx-vim-osx)
+
+PS: Thank you for your perfect works! @CodeFalling
 
 ### `vim`中文分词的支持
 
 不像英文，中文的词的分离没有像空格这样明显分隔，词相关的移动变得很麻烦。
 
-目前还**_没有_**找到解法。
+目前还**_没有_**找到解法。总得来说，这个问题不大，用词以外的方式也可以比较快地完成导航。
 
 - [Vim与中文分词 - google group](https://groups.google.com/forum/#!msg/pongba/RXVqM4sKseU/TrCrySBH1HwJ)
 - [Vim模式下能增加中文分词的支持么？](https://github.com/ghosert/cmd-editor/issues/103)
