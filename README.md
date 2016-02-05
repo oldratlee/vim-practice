@@ -103,16 +103,19 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 -------------------------
 
 - [`spf13-vim` - a distribution of vim plugins and resources](https://github.com/spf13/spf13-vim) - `vim`的配置框架和配置集合。
-	- 包含很多插件/主题，无论是小白还是高手，省时好用是王道，用起来。 这个项目有 ~7K star！
+	- 包含很多插件/主题，无论是小白还是高手，省时好用是王道，用起来。 这个项目有 7K+ star！
 	- 直接使用，配置的效果和包含的插件 已经很不错了。
 	- `spf13-vim`首先是个`vim`**配置框架**，水准尽显！
+- [Janus: Vim Distribution](https://github.com/carlhuda/janus)
+	- 又一个`Vim`配置版本。这个项目有 将近7K star！
 - [The Ultimate vimrc](https://github.com/amix/vimrc) - Over the last 8 years I have used and tweaked Vim.
-	- 作者_8年_在`vim`配置上的积累。这个项目有 ~5K star！
+	- 作者_8年_在`vim`配置上的积累。这个项目有 5K+ star！
 	- 绝对值得参考学习！
 	- 因为不是框架，所以我会选`spf13-vim`作为我的配置主方式。
 - [Maximum Awesome](https://github.com/square/maximum-awesome) - 三架马车`vim`、`tmux`和`iTerm 2`的配置。
 	- 值得参考，这个项目有 4K+ star！
 - [Vim Awesome - a comprehensive, accurate, and up-to-date directory of Vim plugins](http://vimawesome.com/)
+	- `Vim`插件浏览站点
 
 分享视频及其笔记
 --------------------------
