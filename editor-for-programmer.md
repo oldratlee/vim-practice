@@ -7,6 +7,52 @@
 
 如果您从未接触过`Vim`，推荐先看看`Vim`的中文帮助文档和_xbeta_的[《普通人的编辑利器——`Vim`》](http://blog.sina.com.cn/s/blog_46dac66f010005kw.html)。
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [一、`Vim`的历史](#%E4%B8%80%E3%80%81vim%E7%9A%84%E5%8E%86%E5%8F%B2)
+  - [1. `ed`](#1-ed)
+  - [2. `ex`](#2-ex)
+  - [3. `vi`](#3-vi)
+  - [4. `Vim`](#4-vim)
+- [二、`vi`/`Vim`基础知识](#%E4%BA%8C%E3%80%81vivim%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
+  - [(a) 将“`(1), ...., (2), ....,(100)`”替换成“`(2), ...., (3), ...., (101)`”](#a-%E5%B0%86%E2%80%9C1--2-100%E2%80%9D%E6%9B%BF%E6%8D%A2%E6%88%90%E2%80%9C2--3--101%E2%80%9D)
+  - [(b) 重新连接`log`系统的断行](#b-%E9%87%8D%E6%96%B0%E8%BF%9E%E6%8E%A5log%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%96%AD%E8%A1%8C)
+  - [(c) `Fortran`代码对齐](#c-fortran%E4%BB%A3%E7%A0%81%E5%AF%B9%E9%BD%90)
+  - [(d) 连续插入72个等号](#d-%E8%BF%9E%E7%BB%AD%E6%8F%92%E5%85%A572%E4%B8%AA%E7%AD%89%E5%8F%B7)
+  - [(e) 在多行开始插入`//`](#e-%E5%9C%A8%E5%A4%9A%E8%A1%8C%E5%BC%80%E5%A7%8B%E6%8F%92%E5%85%A5)
+- [三、编程辅助](#%E4%B8%89%E3%80%81%E7%BC%96%E7%A8%8B%E8%BE%85%E5%8A%A9)
+  - [（1） `ctags`，`cscope`](#%EF%BC%881%EF%BC%89-ctags%EF%BC%8Ccscope)
+  - [（2）`multi window`，`multi buffer`，`multi tab page`](#%EF%BC%882%EF%BC%89multi-window%EF%BC%8Cmulti-buffer%EF%BC%8Cmulti-tab-page)
+  - [（3） 语法高亮](#%EF%BC%883%EF%BC%89-%E8%AF%AD%E6%B3%95%E9%AB%98%E4%BA%AE)
+  - [（4） 自动缩进](#%EF%BC%884%EF%BC%89-%E8%87%AA%E5%8A%A8%E7%BC%A9%E8%BF%9B)
+  - [（5） 类和函数列表](#%EF%BC%885%EF%BC%89-%E7%B1%BB%E5%92%8C%E5%87%BD%E6%95%B0%E5%88%97%E8%A1%A8)
+  - [（6） 自动完成](#%EF%BC%886%EF%BC%89-%E8%87%AA%E5%8A%A8%E5%AE%8C%E6%88%90)
+  - [（7） `folding`](#%EF%BC%887%EF%BC%89-folding)
+  - [（8） `quickfix`](#%EF%BC%888%EF%BC%89-quickfix)
+  - [（9）`auto command`](#%EF%BC%889%EF%BC%89auto-command)
+  - [（10）mode line](#%EF%BC%8810%EF%BC%89mode-line)
+- [四、强大方便的帮助系统](#%E5%9B%9B%E3%80%81%E5%BC%BA%E5%A4%A7%E6%96%B9%E4%BE%BF%E7%9A%84%E5%B8%AE%E5%8A%A9%E7%B3%BB%E7%BB%9F)
+- [五、其它高级功能](#%E4%BA%94%E3%80%81%E5%85%B6%E5%AE%83%E9%AB%98%E7%BA%A7%E5%8A%9F%E8%83%BD)
+  - [（1）寄存器](#%EF%BC%881%EF%BC%89%E5%AF%84%E5%AD%98%E5%99%A8)
+  - [（2） 宏](#%EF%BC%882%EF%BC%89-%E5%AE%8F)
+  - [（3） 书签](#%EF%BC%883%EF%BC%89-%E4%B9%A6%E7%AD%BE)
+  - [（4） 映射](#%EF%BC%884%EF%BC%89-%E6%98%A0%E5%B0%84)
+  - [（5） 缩写](#%EF%BC%885%EF%BC%89-%E7%BC%A9%E5%86%99)
+  - [（6） :s//和:g//，:!g//](#%EF%BC%886%EF%BC%89-s%E5%92%8Cg%EF%BC%8Cg)
+  - [（7） 插件](#%EF%BC%887%EF%BC%89-%E6%8F%92%E4%BB%B6)
+  - [（8） color scheme](#%EF%BC%888%EF%BC%89-color-scheme)
+  - [（9） 二进制编辑](#%EF%BC%889%EF%BC%89-%E4%BA%8C%E8%BF%9B%E5%88%B6%E7%BC%96%E8%BE%91)
+  - [（10） sign](#%EF%BC%8810%EF%BC%89-sign)
+- [六、Vim Scripts](#%E5%85%AD%E3%80%81vim-scripts)
+- [七、Vim资源](#%E4%B8%83%E3%80%81vim%E8%B5%84%E6%BA%90)
+- [八、编译安装最新`CVS`版的`Vim`](#%E5%85%AB%E3%80%81%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85%E6%9C%80%E6%96%B0cvs%E7%89%88%E7%9A%84vim)
+- [九、一份`vimrc`配置文件](#%E4%B9%9D%E3%80%81%E4%B8%80%E4%BB%BDvimrc%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
+- [十、`Vim`的不足](#%E5%8D%81%E3%80%81vim%E7%9A%84%E4%B8%8D%E8%B6%B3)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 一、`Vim`的历史
 ---------------------------
 
@@ -100,14 +146,14 @@ reference:
 
 闲话少说，这篇文档也不是一份`vi`/`Vim`教程，所以这一节只会简单的提及`vi`/`Vim`的基础知识。`Vim`引入了更多的模式，在`Vim`里头`:help mode`可以看到`Vim`的所有模式，主要有如下几种：
 
-- `Normal mode`  即通常所谓的命令模式，在此模式使用`a`、`i`、`A`、`I`、`o`、`O`等进入`Insert mode`
-- `Insert mode`  即通常所谓的编辑模式，在此模式使用`ESC`进入`Normal mode`或者`Ctrl-o`临时进入`Normal mode`。
-- `Command-line mode` 命令行模式，在`Normal mode`下按冒号进入，按`ESC`取消执行命令或者回车执行命令，然后回到`Normal mode`。（`Visual Studio.Net`也添加了命令行脚本功能，幸甚）
-- `Visual mode`  即选择模式（注意跟用鼠标选择不同），用`v`，`V`，`C-v`或`C-q`进入
-- `Select mode`  鼠标选择
-- `Replace mode`  在`Normal mode`下按`R`进入，按`ESC`返回`Normal mode`，相当于`Windows`下命令行中按`Insert`键进入的覆盖模式
+- `Normal Mode`  即通常所谓的命令模式，在此模式使用`a`、`i`、`A`、`I`、`o`、`O`等进入`Insert Mode`
+- `Insert Mode`  即通常所谓的编辑模式，在此模式使用`ESC`进入`Normal Mode`或者`Ctrl-o`临时进入`Normal Mode`。
+- `Command-line Mode` 命令行模式，在`Normal Mode`下按冒号进入，按`ESC`取消执行命令或者回车执行命令，然后回到`Normal Mode`。（`Visual Studio.Net`也添加了命令行脚本功能，幸甚）
+- `Visual Mode`  即选择模式（注意跟用鼠标选择不同），用`v`，`V`，`C-v`或`C-q`进入
+- `Select Mode`  鼠标选择
+- `Replace Mode`  在`Normal Mode`下按`R`进入，按`ESC`返回`Normal Mode`，相当于`Windows`下命令行中按`Insert`键进入的覆盖模式
 
-从`vi`/`Vim`中退出： 按`ESC`确认返回到`Normal mode`，然后
+从`vi`/`Vim`中退出： 按`ESC`确认返回到`Normal Mode`，然后
 
 - `:wq` 保存并退出
 - `:q!` 不保存并退出
@@ -224,11 +270,11 @@ other
 
 ### (d) 连续插入72个等号
 
-按`ESC`进入`Normal mode`，输入`72i=`再按`ESC`即可。
+按`ESC`进入`Normal Mode`，输入`72i=`再按`ESC`即可。
 
 ### (e) 在多行开始插入`//`
 
-移动光标到需要注释掉的第一行开头，然后按`Ctrl-v`（如果使用了`Vim`的`mswin.vim`，则`Ctrl-v`表示粘贴，这时需要用`Ctrl-q`代替）进入`Visual blockwise`模式，这个模式是`Visual mode`的一种，相当于`UltraEdit`中的块选择。 然后按j选择上所有需要注释行的行首（看起来效果是选择了第一列），输入`I//`再按`ESC`就可以在每一行开头插入`//`了。
+移动光标到需要注释掉的第一行开头，然后按`Ctrl-v`（如果使用了`Vim`的`mswin.vim`，则`Ctrl-v`表示粘贴，这时需要用`Ctrl-q`代替）进入`Visual blockwise`模式，这个模式是`Visual Mode`的一种，相当于`UltraEdit`中的块选择。 然后按j选择上所有需要注释行的行首（看起来效果是选择了第一列），输入`I//`再按`ESC`就可以在每一行开头插入`//`了。
 
 Reference:
 
@@ -287,7 +333,7 @@ Reference:
 
 ### （6） 自动完成
 
-`Vim`在`Insert mode`下输入一个单词的前几个字符，然后用`Ctrl-p`或者`Ctrl-n`就可以列出以这些字符开头的单词，特别在配置了`ctags`后也能列出头文件中的符号，特别方便，除此外`Vim`还有行自动完成、文件名自动完成等，这点即使是现在强大的`IDE`也未免不足。
+`Vim`在`Insert Mode`下输入一个单词的前几个字符，然后用`Ctrl-p`或者`Ctrl-n`就可以列出以这些字符开头的单词，特别在配置了`ctags`后也能列出头文件中的符号，特别方便，除此外`Vim`还有行自动完成、文件名自动完成等，这点即使是现在强大的`IDE`也未免不足。
 
 如果设置了如下选项:
 
@@ -309,7 +355,7 @@ Reference:
 
 `Vim`支持折叠代码，还可以根据文件中特殊的标记对文件中的行折叠，可以实现`Outline`视图，这可以极大的方便编辑很大的文件。
 
-Reference: 
+Reference:
 
 - `:help fold`
 
@@ -319,7 +365,7 @@ Reference:
 
 不过比较遗憾的是`Vim`对于集成调试支持还不好，有些项目尝试集成`GDB`到`Vim`，比如 http://skawina.eu.org/mikolaj/vimgdb/ 和 http://www.volny.cz/zellerin/gdbvim/ ，在 http://www.vim.org/search.php 中的`scripts`处搜索`gdb`也可以找到一些插件.这方面`Emacs`的`GUD`（`Grand Unified Debugger`）调试界面要更强大，毕竟`GCC`/`GDB`/`Emacs`是一家。
 
-Reference: 
+Reference:
 
 - `:help quickfix`
 
@@ -327,99 +373,108 @@ Reference:
 
 `Vim`可以在某些事件发生时比如打开文件、保存文件、切换窗口时自动执行一些`Vim`命令，`Vim`的许多插件都利用了这个功能。常用的一种情况是把某种文件后缀指定到一种文件格式上，比如`*.jv`指定到`Java`文件格式，这样在每次打开`.jv`类型的文件时自动使用`Java`的语法高亮：
 
+```vim
 :autocmd BufNewFile, BufRead *.jv :set ft=Java
+```
 
-Reference: :help autocmd.txt
+Reference: `:help autocmd.txt`
 
-（10）mode line
+### （10）mode line
 
-在编辑文件时常常指定一些选项，比如缩进量、是否将制表符转换成空格等，每次手动指定这些选项很麻烦，写到vimrc中却又成了全局选项，而且换了一份Vim，原有的设置就丢失了。Vim可以识别文件中的特殊行，自动设置一些选项，下面是写在C源文件开头的一个mode line示例:
+在编辑文件时常常指定一些选项，比如缩进量、是否将制表符转换成空格等，每次手动指定这些选项很麻烦，写到`vimrc`中却又成了全局选项，而且换了一份`Vim`，原有的设置就丢失了。`Vim`可以识别文件中的特殊行，自动设置一些选项，下面是写在`C`源文件开头的一个`mode line`示例:
 
+```c
 /* vi:set tw=0 ts=8 sw=8 noet nowrap ft=c fdm=syntax: */
 /*
 * File: xxxx.c
 * Author: xxx
 */
-
+```
 
 四、强大方便的帮助系统
+---------------------------
 
-使用了那么多软件，只有Vim和Emacs的帮助系统给笔者方便快捷的感觉，大部分软件的帮助往往是摆设而已，而Vim的帮助的确是考虑到了自己“help”的身份，利用它能很方便容易的找到想要的东西。
+使用了那么多软件，只有`Vim`和`Emacs`的帮助系统给笔者方便快捷的感觉，大部分软件的帮助往往是摆设而已，而`Vim`的帮助的确是考虑到了自己“help”的身份，利用它能很方便容易的找到想要的东西。
 
-Vim的帮助是超链接形式的，它使用的就是tags，所以可以跟ctags功能一样按Ctrl-]跳转到链接所指处，按Ctrl-t返回。
+`Vim`的帮助是超链接形式的，它使用的就是`tags`，所以可以跟`ctags`功能一样按`Ctrl-]`跳转到链接所指处，按`Ctrl-t`返回。
 
-:help  打开帮助首页，这个首页分类非常清楚
-:help cmd 查找normal mode命令，比如:help dd
-:help i_cmd 查找insert mode命令，比如:help i_Ctrl-y
-:help :cmd 查找command-line命令，比如:help :s 
-:help 'option 查找选项，比如:help 'tabstop
-（这些信息都在:help打开的帮助首页上）
+- `:help`  打开帮助首页，这个首页分类非常清楚
+- `:help cmd` 查找`Normal Mode`命令，比如`:help dd`
+- `:help i_cmd` 查找`Insert Mode`命令，比如`:help i_Ctrl-y`
+- `:help :cmd` 查找`Command-Line`命令，比如`:help :s`
+- `:help 'option'` 查找选项，比如`:help 'tabstop'`
 
-如果你记不清命令或者选项的全称，那么可以利用Tab或者Ctrl-d的自动补全功能。
+（这些信息都在`:help`打开的帮助首页上）
 
-:help options 可以找到所有的选项说明
+如果你记不清命令或者选项的全称，那么可以利用`Tab`或者`Ctrl-d`的自动补全功能。
 
-查看某一个选项的值（实际上选项是Vim中的一种变量，类似SHELL的变量以$符号引用，Vim的选项以&引用，另外Vim的寄存器以@引用）：
+`:help options` 可以找到所有的选项说明
 
+查看某一个选项的值（实际上选项是`Vim`中的一种变量，类似`SHELL`的变量以`$`符号引用，`Vim`的选项以`&`引用，另外`Vim`的寄存器以`@`引用）：
+
+```vim
 :echo &tabstop
-
+```
 
 五、其它高级功能
+---------------------------
 
-（1）寄存器
+### （1）寄存器
 
-Vim里面的寄存器可以用来保存拷贝的文本、记录的宏、设置的书签等等，一般的编辑器都只有一个剪切板（MS Office加入了多个剪切板），而Vim和Emacs编辑器中的多寄存器可以实现多个剪切板的功能。Vim中有九类寄存器：
+`Vim`里面的寄存器可以用来保存拷贝的文本、记录的宏、设置的书签等等，一般的编辑器都只有一个剪切板（`MS Office`加入了多个剪切板），而`Vim`和`Emacs`编辑器中的多寄存器可以实现多个剪切板的功能。`Vim`中有九类寄存器：
 
-无名寄存器 " 最近一次删除/修改/替换操作的文本都会放入这个寄存器
-10个数字寄存器 0-9 拷贝或者删除的文本存入这些寄存器，这些寄存器是循环使用的，在每次存入内容到寄存器1时，原有的内容会依次存入到后一个寄存器中。
-小删除寄存器 - 删除内容少于一行时放入这个寄存器。
-26个命名寄存器 a-zA-Z  大小写无关。这些寄存器可以在拷贝或者删除等操作中指定使用。
-四个只读寄存器  :.%# 特殊用途。
-表达式寄存器 = 特殊用途。
-选择和拖放寄存器 *+~ 用于与系统剪切板交互，以及接收拖放操作的内容。
-黑洞寄存器 _ 放到这里面的内容都被丢弃，这样可以删除或拷贝时不影响其它寄存器。
-最后一次搜索模式寄存器 / 保存最后一次搜索的正则表达式。
-使用:reg命令可以看到所有寄存器中的内容，使用"+y或者"*y可以将visual mode下选择
-的内容拷贝到系统剪切板，使用"+p或者"*p可以将剪切板中的内容粘贴到Vim中，如果打开了
-mswin特性的话则在insert mode下使用Ctrl-x，Ctrl-v，Ctrl-c了。
+- 无名寄存器`"`最近一次删除/修改/替换操作的文本都会放入这个寄存器
+- 10个数字寄存器`0-9`拷贝或者删除的文本存入这些寄存器，这些寄存器是循环使用的，在每次存入内容到寄存器1时，原有的内容会依次存入到后一个寄存器中。
+- 小删除寄存器`-`删除内容少于一行时放入这个寄存器。
+- 26个命名寄存器`a-zA-Z`大小写无关。这些寄存器可以在拷贝或者删除等操作中指定使用。
+- 四个只读寄存器`:.%#`特殊用途。
+- 表达式寄存器`=`特殊用途。
+- 选择和拖放寄存器`*+~`用于与系统剪切板交互，以及接收拖放操作的内容。
+- 黑洞寄存器`_`放到这里面的内容都被丢弃，这样可以删除或拷贝时不影响其它寄存器。
+- 最后一次搜索模式寄存器`/`保存最后一次搜索的正则表达式。
 
-Reference: :help registers
+使用`:reg`命令可以看到所有寄存器中的内容，使用`"+y`或者`"*y`可以将`Visual Mode`下选择
+的内容拷贝到系统剪切板，使用`"+p`或者`"*p`可以将剪切板中的内容粘贴到`Vim`中，如果打开了
+`mswin`特性的话则在`Insert Mode`下使用`Ctrl-x`，`Ctrl-v`，`Ctrl-c`了。
 
-（2） 宏
-Normal mode下按q<reg>，<reg>指{a-zA-Z0-9"}37个寄存器中的一个，然后可以进行任何操作，包括在模式间切换，最后在Normal模式下按q可以结束宏录制，用@<reg>命令可以应用这个宏，命令前可以带数字前缀表示执行多少次这个宏。
+Reference: `:help registers`
 
-Reference: :help q
+### （2） 宏
 
-（3） 书签
+`Normal Mode`下按`q<reg>`，`<reg>`指`{a-zA-Z0-9"}`37个寄存器中的一个，然后可以进行任何操作，包括在模式间切换，最后在`Normal`模式下按`q`可以结束宏录制，用`@<reg>`命令可以应用这个宏，命令前可以带数字前缀表示执行多少次这个宏。
 
-Normal mode下按m<reg>作书签，<reg>指26个命名寄存器中的一个，然后可以用'<reg>或者`<reg>跳到书签处。
+Reference: `:help q`
 
-Reference: :help m
+### （3） 书签
 
-（4） 映射
+`Normal Mode`下按`m<reg>`作书签，`<reg>`指26个命名寄存器中的一个，然后可以用`'<reg>`或者``<reg>`跳到书签处。
+
+Reference: `:help m`
+
+### （4） 映射
 
 Vi/Vim可以将某个按键序列映射到一个命令序列上，比如在配置文件.vimrc（Windows下是_vimrc）中写入
 
 map <F6> <ESC>i<C-R>=strftime（"%Y-%m-%d"）<ESC><ESC>
 
-即可以在Normal mode下插入当前日期。
+即可以在`Normal Mode`下插入当前日期。
 
 Reference: :help :map
 
-（5） 缩写
+### （5） 缩写
 
 Vi/Vim支持用一个缩写字符串代替一个长的字符串，比如
 
 :ab hw hello world
 
-然后在Insert mode下输入“hw ”（不包括引号）后Vim就自动替换成了“hello world”。这里展示一个Emacs下abbrev功能的动画（没错，是Emacs的）：
+然后在`Insert Mode`下输入“hw ”（不包括引号）后Vim就自动替换成了“hello world”。这里展示一个`Emacs`下`abbrev`功能的动画（没错，是`Emacs`的）：
 
 http://www.bloomington.in.us/~brutt/msf-abbrev.html
 http://www.bloomington.in.us/~brutt/msf-abbrev-demo.gif
 
 Reference: :help :ab
 
-（6） :s//和:g//，:!g//
+### （6） :s//和:g//，:!g//
 
 这两个命名加上正则表达式，常常能完成非常复杂的编辑任务，可以毫不夸张地说是Vim的两柄瑞士军刀。:s是替换操作，:g是查找匹配模式的行，:!g是查找不匹配模式的行。
 
@@ -427,19 +482,19 @@ http://www.vim.org/tips/tip.php?tip_id=1063这个tip可以把:g找到的行拷�
 
 Reference: :help :s
 :help :g
-（7） 插件
+### （7） 插件
 
 Vim自己有脚本语言，另外也支持用Perl/Python/Tcl/Ruby/Scheme编写插件，这些插件极大的丰富了Vim的功能。
 
-（8） color scheme
+### （8） color scheme
 
 Vim有许多配色方案，下面这个链接有许多配色方案效果的图样：http://www.cs.cmu.edu/~maverick/VimColorSchemeTest/
 
-（9） 二进制编辑
+### （9） 二进制编辑
 
 Vim可以利用xxd实现二进制编辑，不过这项功能还是不够好用。
 
-（10） sign
+### （10） sign
 
 sign指在编辑窗口的最左列显示一个标记，利用这个功能能实现很多IDE中的书签标记或者断点标记。
 
@@ -448,6 +503,7 @@ Reference: :help sign
 
 
 六、Vim Scripts
+---------------------------
 
 Vim script包含几大类:
 
@@ -461,7 +517,7 @@ Vim的script安装非常简单，下载的script文件或者压缩包里头都�
 
 BufExplorer.vim  *****
 http://www.vim.org/scripts/script.php?script_id=42
-这个插件可以使编辑多文件更加方便，装完插件后Normal mode下输入\be即可打开缓冲区列表，光标放置在某一个文件上按回车即可打开这个文件，而缓冲区列表自动关闭。
+这个插件可以使编辑多文件更加方便，装完插件后`Normal Mode`下输入\be即可打开缓冲区列表，光标放置在某一个文件上按回车即可打开这个文件，而缓冲区列表自动关闭。
 
 Taglist.vim  *****
 http://www.vim.org/scripts/script.php?script_id=273
@@ -554,17 +610,18 @@ IComplete
 http://icomplete.sf.net
 搭配Vim 7.0的Omni Complete，可以做到C/C++的智能完成功能.
 
-
 七、Vim资源
+---------------------------
 
-http://www.vim.org Vim主页，有许多scripts和tips，查找插件的第一去处
-http://newsmth.net  新水木BBS的Vim版，有很多Vim爱好者可以讨论
-http://vimdoc.sf.net Vim文档工程
-http://vcd.gro.clinux.org/ Vim中文文档
-http://tnerual.eriogerg.free.fr/vim.html Vim Quick Reference Card
-http://edyfox.codecarver.org/ newsmth Vim版版主的wiki
-http://learn.tsinghua.edu.cn:8080/2001315450/ 王垠的个人主页
-《学习vi编辑器（第六版）》机械工业出版社译，O'Reilly
+- http://www.vim.org Vim主页，有许多scripts和tips，查找插件的第一去处
+- http://newsmth.net  新水木BBS的Vim版，有很多Vim爱好者可以讨论
+- http://vimdoc.sf.net Vim文档工程
+- http://vcd.gro.clinux.org/ Vim中文文档
+- http://tnerual.eriogerg.free.fr/vim.html Vim Quick Reference Card
+- http://edyfox.codecarver.org/ newsmth Vim版版主的wiki
+- http://learn.tsinghua.edu.cn:8080/2001315450/ 王垠的个人主页
+- 《学习vi编辑器（第六版）》机械工业出版社译，O'Reilly
+
 几个学习正则表达式的工具（from happyvim at newsmth）
 
 http://weitz.de/regex-coach/  Regex Coach
@@ -576,6 +633,7 @@ http://ex-vi.sourceforge.net/ 传统`vi`的源代码
 
 
 八、编译安装最新`CVS`版的`Vim`
+---------------------------
 
 1. 获取源代码
 
@@ -598,7 +656,7 @@ cd vim7\src
 rem .sh文件跟其它程序有关联,避免运行VC的link时执行了link.sh
 ren link.sh link.sh.old
 @echo clean...
-rem clean时加入这些选项是因为$(OUTDIR)和$(OBJDIR)根据这些标志合成的, 
+rem clean时加入这些选项是因为$(OUTDIR)和$(OBJDIR)根据这些标志合成的,
 rem 如果不加这些标志, 在rmdir /s /q时会找不到目录, 从而没有删除掉。
 nmake -f Make_mvc.mak clean FEATURES=HUGE GUI=yes OLE=yes MBYTE=yes IME=yes GDYNAMIC_IME=yes GIME=yes PERL=d:\work\program\Perl DYNAMIC_PERL=yes PERL_VER=58 PYTHON=d:\work\program\Python24 DYNAMIC_PYTHON=yes PYTHON_VER=24  SNIFF=yes CSCOPE=yes CPUNU=i586 DEBUG=yes MAP=lines
 @echo build big debug version...
@@ -610,7 +668,7 @@ pause
 rem <-----------------------------------------------
 ```
 
-对于MinGW，
+对于`MinGW`，
 
 ```bash
 @echo off
@@ -627,10 +685,11 @@ pause
 
 3. 安装
 
-如果你的系统先前有一份不同版本的`Vim`，那么需要先卸载掉（运行vim\vimXX\uninstal.exe，或者在拷贝完文件后运行新版Vim的install.exe，它也会提示卸载旧版本），最近的Vim 7 CVS代码安装目录也从vim70aa转变到vim70b，也需要卸载原先的vim70aa，这一步主要是删除一些注册表项。
+如果你的系统先前有一份不同版本的`Vim`，那么需要先卸载掉（运行vim\vimXX\uninstal.exe，或者在拷贝完文件后运行新版Vim的install.exe，它也会提示卸载旧版本），最近的`Vim` 7 `CVS`代码安装目录也从`vim70aa`转变到`vim70b`，也需要卸载原先的`vim70aa`，这一步主要是删除一些注册表项。
 
-如果你从CVS上更新代码后，install要求的安装目录名字没有改变（也就是说Vim版本没变），那么不需要卸载原先的版本，直接拷贝文件覆盖即可，如果你想更改目录安装的话也需要卸载。
+如果你从`CVS`上更新代码后，install要求的安装目录名字没有改变（也就是说`Vim`版本没变），那么不需要卸载原先的版本，直接拷贝文件覆盖即可，如果你想更改目录安装的话也需要卸载。
 
+```bat
 cd vim7
 dir /s/b *.exe
 dir /s/b *.dll
@@ -640,21 +699,27 @@ copy vim7\src\xxd\xxd.exe d:\work\program\Vim\vim70b
 copy vim7\src\vimtbar.dll d:\work\program\Vim\vim70b
 copy vim7\src\GvimExt\gvimext.dll d:\work\program\Vim\vim70b
 copy vim7\src\VisVim\Visvim.dll d:\work\program\Vim\vim70b
-然后进入vim70b目录运行install.exe，如果发现一个DOS窗口一闪而逝，那么很可能是建立的vim70b目录名不对，比如笔者前几天升级后使用的仍然是vim70aa目录名，在DOS窗口中运行install.exe它就提示需要在vim70b目录下运行，将vim70aa改名即可。install.exe的源代码是vim7\src\dosinst.c，这里面修改了注册表，并拷贝一些文件到WINDOWS目录下等等。
+```
+然后进入`vim70b`目录运行`install.exe`，如果发现一个`DOS`窗口一闪而逝，那么很可能是建立的`vim70b`目录名不对，比如笔者前几天升级后使用的仍然是`vim70aa`目录名，在`DOS`窗口中运行`install.exe`它就提示需要在`vim70b`目录下运行，将`vim70aa`改名即可。`install.exe`的源代码是`vim7\src\dosinst.c`，这里面修改了注册表，并拷贝一些文件到`WINDOWS`目录下等等。
 
 4．善后
 
-视情况你需要更新PATH环境变量、文件关联、_vimrc中的路径名等，并将diff.exe，ctags.exe，cscope.exe拷贝到vim70b下面。
+视情况你需要更新`PATH`环境变量、文件关联、`_vimrc`中的路径名等，并将`diff.exe`，`ctags.exe`，`cscope.exe`拷贝到`vim70b`下面。
 
-最后运行gvimd.exe，键入:ver开始享受Vim吧。
+最后运行`gvimd.exe`，键入`:ver`开始享受`Vim`吧。
 
-九、一份vimrc配置文件（注：原文如此，不太清楚作者所要表达的信息）
+九、一份`vimrc`配置文件
+---------------------------
 
-十、Vim的不足
+【注：原文如此，不太清楚作者所要表达的信息】
 
-前面已经提到，Vim在自动完成和集成调试方面还比不上现代的许多IDE，另外Vim对二进制编辑还没有UltraEdit强大，对于现在流行的重构，Vim也支持不力，但是作为一个文本编辑器而言，堪比的只有Emacs，另外Visual SlickEdit也很强大，不过它是商业软件。Vim也可以嵌入到Visual Studio中作为编辑器，另外Code Forge，Eclipse，NetBeans，Sun Visual Workshop等也提供了一定的Vim支持或者键绑定。
+十、`Vim`的不足
+---------------------------
+
+前面已经提到，`Vim`在自动完成和集成调试方面还比不上现代的许多`IDE`，另外`Vim`对二进制编辑还没有`UltraEdit`强大，对于现在流行的重构，`Vim`也支持不力，但是作为一个文本编辑器而言，堪比的只有`Emacs`，另外`Visual SlickEdit`也很强大，不过它是商业软件。`Vim`也可以嵌入到`Visual Studio`中作为编辑器，另外`Code Forge`，`Eclipse`，`NetBeans`，`Sun Visual Workshop`等也提供了一定的`Vim`支持或者键绑定。
 
 Reference:
-:help workshop
-:help netbeans
-:help debugger 
+
+- `:help workshop`
+- `:help netbeans`
+- `:help debugger`
