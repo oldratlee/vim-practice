@@ -42,6 +42,10 @@ Vim Practice
 - [`Vim`配置/插件的资源](#vim%E9%85%8D%E7%BD%AE%E6%8F%92%E4%BB%B6%E7%9A%84%E8%B5%84%E6%BA%90)
 - [分享视频及其笔记](#%E5%88%86%E4%BA%AB%E8%A7%86%E9%A2%91%E5%8F%8A%E5%85%B6%E7%AC%94%E8%AE%B0)
   - [Learning Vim in a Week](#learning-vim-in-a-week)
+  - [7 Habits For Effective Text Editing 2.0](#7-habits-for-effective-text-editing-20)
+	- [1. 编辑器的选择](#1-%E7%BC%96%E8%BE%91%E5%99%A8%E7%9A%84%E9%80%89%E6%8B%A9)
+	- [2. 达到高效的3个基本步骤（总结页）](#2-%E8%BE%BE%E5%88%B0%E9%AB%98%E6%95%88%E7%9A%843%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%AD%A5%E9%AA%A4%EF%BC%88%E6%80%BB%E7%BB%93%E9%A1%B5%EF%BC%89)
+	- [3. 如何才能低效地编辑](#3-%E5%A6%82%E4%BD%95%E6%89%8D%E8%83%BD%E4%BD%8E%E6%95%88%E5%9C%B0%E7%BC%96%E8%BE%91)
 - [个人关心的问题](#%E4%B8%AA%E4%BA%BA%E5%85%B3%E5%BF%83%E7%9A%84%E9%97%AE%E9%A2%98)
   - [中文输入法在`Vim`便利切换的问题](#%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E6%B3%95%E5%9C%A8vim%E4%BE%BF%E5%88%A9%E5%88%87%E6%8D%A2%E7%9A%84%E9%97%AE%E9%A2%98)
   - [`Vim`中文分词的支持](#vim%E4%B8%AD%E6%96%87%E5%88%86%E8%AF%8D%E7%9A%84%E6%94%AF%E6%8C%81)
@@ -57,6 +61,9 @@ Vim Practice
 - [Awesome Vim Plugins](https://reinteractive.net/posts/166-awesome-vim-plugins)
 - [VIM is awesome— But don’t overdo it](https://medium.com/@PhilPlckthun/vim-is-awesome-but-dont-overdo-it-c03594e6bb5b#.hyy2nhhe9)  
 	过犹不及，再好的东西，也要明白什么时候不合适，这是反而说明是深的理解。
+- [Coming Home to Vim](http://stevelosh.com/blog/2010/09/coming-home-to-vim/)
+- [从`Vim`到`Emacs`到`Evil`](http://ceyes.github.io/2015-01/from-Vim-to-Emacs/)  
+	`Emacs`只是个强大的平台，提供各种定制来满足每个人的不同需求。所以Thanks `Evil`，我已把`Emacs` 打造成了理想的『`Vim`化的`Emacs Editor`』，我可以纵情使用更方便的方式来工作。
 - 知乎上的一些话题（看一下讨论扩展一下了解）
 	- [有哪些编程必备的 Vim 配置？ - 知乎](https://www.zhihu.com/question/19989337)
 	- [到底 VIM 能配置到多强大的程度？ - 知乎](https://www.zhihu.com/question/20151659)
@@ -91,7 +98,7 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 - `Vim` user manual/reference，即是`Vim`的内置帮助的内容（学会在`Vim`直接`:h`），内容丰富！  
 	中文版 <http://sourceforge.net/projects/vimcdoc/files/pdf-manual/>
 - 个人整理的[`Vim`书籍豆列](http://www.douban.com/doulist/41500790/)
-    - 个人先看的是[Vim实用技巧 - 以思维的速度编辑文本](http://book.douban.com/subject/25869486/)  
+	- 个人先看的是[Vim实用技巧 - 以思维的速度编辑文本](http://book.douban.com/subject/25869486/)  
 		以编辑理念和实践模式为纲介绍，推荐之。
 		词句共灵感一射，编辑与思考齐飞！
 	- [Learning the vi and Vim Editors](http://book.douban.com/subject/3767413/)，行文稳健（很合我的风格）：
@@ -146,6 +153,63 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 1. 通过看高手的操作视频方法来学习
 	- [vimcasts.org](http://vimcasts.org/)
 	- [upcase.com/vim](https://upcase.com/vim)
+
+### 7 Habits For Effective Text Editing 2.0
+
+[Youtube视频地址](https://www.youtube.com/watch?v=p6K4iIMlouI)，2007-02-13，`Vim`作者**_Brian Moolenaar_** 在`Google`做的演讲，讲解了编辑器的选择、达到高效编辑的方法和理念。
+
+#### 1. 编辑器的选择
+
+- 如果你已经熟悉精通了一个编辑器，挺好的。这里不会讨论『`Vim`比`Emacs`更好』这个问题，但你可能会觉得`Emacs`并不爽～ :joy:
+- 但不要使用像`Notepad`这样简陋的编辑器，你浪费了大量的生命！ :astonished:
+- 要么用一个觉得的爽的编辑器，要么转用`Vim`吧～ :stuck_out_tongue_winking_eye: 除此再没有其它有出路！（There is NO other RULE!）
+
+#### 2. 达到高效的3个基本步骤（总结页）
+
+1. 发觉低效
+	- 发现你浪费时间的地方
+2. 找到更快的方法
+	- 阅读在线帮助
+	- 阅读速查手册、书籍等等
+	- 问问朋友或是同事
+	- 搜索网络
+	- 自己搞定
+3. 使之成为习惯
+	- 动手做起来
+	- 持续改进
+
+> 附原文：
+>
+1. Step 1: Detect inefficiency
+	- Find out what you waste time on
+1. Step 2: Find a quicker way
+	- read the on-line help
+	- read the quick reference, books, etc.
+	- ask friends and colleagues
+	- search the internet
+	- do It yourself
+1. Step 3: Make it a habit
+	- do it
+	- keep on improving
+
+#### 3. 如何才能低效地编辑
+
+> @oldratlee 这是我最喜欢的一节 :joy:
+
+- 必须立即开始编辑文本。没有时间去读文档或是学新的命令。  
+	**_结果一直只会用原始的命令。_**
+- 想学习编辑器提供的每一个功能，总是想用最快捷的命令。  
+	**_结果是浪费大量的时间去学习从不会用到的内容。_**
+
+> 附原文：
+>
+How **not** to edit effectively
+- You have to get the text ready right now. No time
+to read documentation or leam a new command.  
+**_You will keep on using primitive commands._**
+- You want to learn every feature the editor offers
+and use the most efficient command all the time.  
+**_You will waste a lot of time learning things you will never use._**
 
 个人关心的问题
 --------------------------
