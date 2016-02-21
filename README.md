@@ -43,9 +43,9 @@ Vim Practice
 - [分享视频及其笔记](#%E5%88%86%E4%BA%AB%E8%A7%86%E9%A2%91%E5%8F%8A%E5%85%B6%E7%AC%94%E8%AE%B0)
   - [Learning Vim in a Week](#learning-vim-in-a-week)
   - [7 Habits For Effective Text Editing 2.0](#7-habits-for-effective-text-editing-20)
-	- [1. 编辑器的选择](#1-%E7%BC%96%E8%BE%91%E5%99%A8%E7%9A%84%E9%80%89%E6%8B%A9)
-	- [2. 达到高效的3个基本步骤（总结页）](#2-%E8%BE%BE%E5%88%B0%E9%AB%98%E6%95%88%E7%9A%843%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%AD%A5%E9%AA%A4%EF%BC%88%E6%80%BB%E7%BB%93%E9%A1%B5%EF%BC%89)
-	- [3. 如何才能低效地编辑](#3-%E5%A6%82%E4%BD%95%E6%89%8D%E8%83%BD%E4%BD%8E%E6%95%88%E5%9C%B0%E7%BC%96%E8%BE%91)
+    - [1. 编辑器的选择](#1-%E7%BC%96%E8%BE%91%E5%99%A8%E7%9A%84%E9%80%89%E6%8B%A9)
+    - [2. 达到高效的3个基本步骤](#2-%E8%BE%BE%E5%88%B0%E9%AB%98%E6%95%88%E7%9A%843%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%AD%A5%E9%AA%A4)
+    - [3. 如何做到低效地编辑](#3-%E5%A6%82%E4%BD%95%E5%81%9A%E5%88%B0%E4%BD%8E%E6%95%88%E5%9C%B0%E7%BC%96%E8%BE%91)
 - [个人关心的问题](#%E4%B8%AA%E4%BA%BA%E5%85%B3%E5%BF%83%E7%9A%84%E9%97%AE%E9%A2%98)
   - [中文输入法在`Vim`便利切换的问题](#%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E6%B3%95%E5%9C%A8vim%E4%BE%BF%E5%88%A9%E5%88%87%E6%8D%A2%E7%9A%84%E9%97%AE%E9%A2%98)
   - [`Vim`中文分词的支持](#vim%E4%B8%AD%E6%96%87%E5%88%86%E8%AF%8D%E7%9A%84%E6%94%AF%E6%8C%81)
@@ -95,8 +95,10 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 
 ### 系统学习
 
-- `Vim` user manual/reference，即是`Vim`的内置帮助的内容（学会在`Vim`直接`:h`），内容丰富！  
+- `Vim` user manual/reference，即是`Vim`的内置帮助系统的内容，内容丰富！  
 	中文版 <http://sourceforge.net/projects/vimcdoc/files/pdf-manual/>
+	- 学会用`Vim`的内置帮助 `:h` `:h 'option'` `:h command` `:h :ex_command` `:h ctrl-w`
+	- `Vim`帮助系统的帮助，即如何使用`Vim`的帮助系统： `:h helphelp`
 - 个人整理的[`Vim`书籍豆列](http://www.douban.com/doulist/41500790/)
 	- 个人先看的是[Vim实用技巧 - 以思维的速度编辑文本](http://book.douban.com/subject/25869486/)  
 		以编辑理念和实践模式为纲介绍，推荐之。
@@ -162,9 +164,11 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 
 - 如果你已经熟悉精通了一个编辑器，挺好的。这里不会讨论『`Vim`比`Emacs`更好』这个问题，但你可能会觉得`Emacs`并不爽～ :joy:
 - 但不要使用像`Notepad`这样简陋的编辑器，你浪费了大量的生命！ :astonished:
-- 要么用一个觉得的爽的编辑器，要么转用`Vim`吧～ :stuck_out_tongue_winking_eye: 除此再没有其它有出路！（There is NO other RULE!）
+- 要么用一个觉得的爽的编辑器，要么转用`Vim`吧～ :stuck_out_tongue_winking_eye: 除此再没有其它的出路！（There is NO other RULE!）
 
-#### 2. 达到高效的3个基本步骤（总结页）
+#### 2. 达到高效的3个基本步骤
+
+这部分的总结页：
 
 1. 发觉低效
 	- 发现你浪费时间的地方
@@ -192,11 +196,11 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 	- do it
 	- keep on improving
 
-#### 3. 如何才能低效地编辑
+#### 3. 如何做到低效地编辑
 
 > @oldratlee 这是我最喜欢的一节 :joy:
 
-- 必须立即开始编辑文本。没有时间去读文档或是学新的命令。  
+- 必须立即开始编辑文本。没空去读文档或是学新的命令。  
 	**_结果一直只会用原始的命令。_**
 - 想学习编辑器提供的每一个功能，总是想用最快捷的命令。  
 	**_结果是浪费大量的时间去学习从不会用到的内容。_**
