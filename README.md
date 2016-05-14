@@ -144,12 +144,12 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 还给出实用的Tips：
 
 1. `Hack`（定制）你的键盘
-	- 通过[Seil](https://pqrs.org/osx/karabiner/seil.html.en)修改`Caplock`键成`ECS`键
-	- 通过[karabiner](https://pqrs.org/osx/karabiner/)修改键盘重复前延迟和加速重复频率，以快速地在`Vim`中导航
+	- 通过[`Seil`](https://pqrs.org/osx/karabiner/seil.html.en)修改`Caplock`键成`ECS`键
+	- 通过[`karabiner`](https://pqrs.org/osx/karabiner/)修改键盘重复前延迟和加速重复频率，以快速地在`Vim`中导航
 1. [Graphical vi/Vim Cheat Sheet and Tutorial](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html)  
 	中文版 <http://blog.ngedit.com/vi-vim-cheat-sheet-sch.gif>
 1. `.vimrc` - 你的新朋友！
-	- **一定要版本版本控制起来**！
+	- 一定要**_版本控制_**起来！
 	- 可以偷借你朋友的配置文件（`dotfiles`），或是借鉴 <https://github.com/thoughtbot/dotfiles>
 1. 通过官方的`vimtutor`定期适量的学习 / 通过游戏<http://vim-adventures.com/>来学习～
 1. 通过看高手的操作视频方法来学习
@@ -164,7 +164,7 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 
 - 如果你已经熟悉精通了一个编辑器，挺好的。这里不会讨论『`Vim`比`Emacs`更好』这个问题，但你可能会觉得`Emacs`并不爽～ :joy:
 - 但不要使用像`Notepad`这样简陋的编辑器，你浪费了大量的生命！ :astonished:
-- 要么用一个觉得的爽的编辑器，要么转用`Vim`吧～ :stuck_out_tongue_winking_eye: 除此再没有其它的出路！（There is NO other RULE!）
+- 要么用一个觉得的爽的编辑器，要么转用`Vim`吧～ :stuck_out_tongue_winking_eye: 除此再没有其它的出路！（_There is NO other RULE!_）
 
 #### 2. 达到高效的3个基本步骤
 
