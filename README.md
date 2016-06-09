@@ -35,20 +35,20 @@ Vim Practice
 
 
 - [学习资料](#%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99)
-  - [文章/讨论](#%E6%96%87%E7%AB%A0%E8%AE%A8%E8%AE%BA)
-  - [上手](#%E4%B8%8A%E6%89%8B)
-  - [速查](#%E9%80%9F%E6%9F%A5)
-  - [系统学习](#%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0)
+    - [文章/讨论](#%E6%96%87%E7%AB%A0%E8%AE%A8%E8%AE%BA)
+    - [上手](#%E4%B8%8A%E6%89%8B)
+    - [速查](#%E9%80%9F%E6%9F%A5)
+    - [系统学习](#%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0)
 - [`Vim`配置/插件的资源](#vim%E9%85%8D%E7%BD%AE%E6%8F%92%E4%BB%B6%E7%9A%84%E8%B5%84%E6%BA%90)
 - [分享视频及其笔记](#%E5%88%86%E4%BA%AB%E8%A7%86%E9%A2%91%E5%8F%8A%E5%85%B6%E7%AC%94%E8%AE%B0)
-  - [Learning Vim in a Week](#learning-vim-in-a-week)
-  - [7 Habits For Effective Text Editing 2.0](#7-habits-for-effective-text-editing-20)
-    - [1. 编辑器的选择](#1-%E7%BC%96%E8%BE%91%E5%99%A8%E7%9A%84%E9%80%89%E6%8B%A9)
-    - [2. 达到高效的3个基本步骤](#2-%E8%BE%BE%E5%88%B0%E9%AB%98%E6%95%88%E7%9A%843%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%AD%A5%E9%AA%A4)
-    - [3. 如何做到低效地编辑](#3-%E5%A6%82%E4%BD%95%E5%81%9A%E5%88%B0%E4%BD%8E%E6%95%88%E5%9C%B0%E7%BC%96%E8%BE%91)
+    - [Learning Vim in a Week](#learning-vim-in-a-week)
+    - [7 Habits For Effective Text Editing 2.0](#7-habits-for-effective-text-editing-20)
+        - [1. 编辑器的选择](#1-%E7%BC%96%E8%BE%91%E5%99%A8%E7%9A%84%E9%80%89%E6%8B%A9)
+        - [2. 达到高效的3个基本步骤](#2-%E8%BE%BE%E5%88%B0%E9%AB%98%E6%95%88%E7%9A%843%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%AD%A5%E9%AA%A4)
+        - [3. 如何做到低效地编辑](#3-%E5%A6%82%E4%BD%95%E5%81%9A%E5%88%B0%E4%BD%8E%E6%95%88%E5%9C%B0%E7%BC%96%E8%BE%91)
 - [个人关心的问题](#%E4%B8%AA%E4%BA%BA%E5%85%B3%E5%BF%83%E7%9A%84%E9%97%AE%E9%A2%98)
-  - [中文输入法在`Vim`便利切换的问题](#%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E6%B3%95%E5%9C%A8vim%E4%BE%BF%E5%88%A9%E5%88%87%E6%8D%A2%E7%9A%84%E9%97%AE%E9%A2%98)
-  - [`Vim`中文分词的支持](#vim%E4%B8%AD%E6%96%87%E5%88%86%E8%AF%8D%E7%9A%84%E6%94%AF%E6%8C%81)
+    - [中文输入法在`Vim`便利切换的问题](#%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E6%B3%95%E5%9C%A8vim%E4%BE%BF%E5%88%A9%E5%88%87%E6%8D%A2%E7%9A%84%E9%97%AE%E9%A2%98)
+    - [`Vim`中文分词的支持](#vim%E4%B8%AD%E6%96%87%E5%88%86%E8%AF%8D%E7%9A%84%E6%94%AF%E6%8C%81)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -57,13 +57,21 @@ Vim Practice
 
 ### 文章/讨论
 
+『学习』的规律：
+
+- 学习一样新事物的先进，不在于点，而在于一套方法；所以你上手新事物必然先经历一个能力下降阶段。
+- 有下面想法同学必然禁锢于原地踏步：
+	- 不愿去理解整体理念，用当前熟悉自己的技能点去比新事件的点。
+	- 不能接受上手新事物的学习成本和先要经历一个能力下降阶段。
+
 - [Why Vim is awesome](http://federicoramirez.name/why-vim-is-awesome/)
-- [Awesome Vim Plugins](https://reinteractive.net/posts/166-awesome-vim-plugins)
-- [VIM is awesome— But don’t overdo it](https://medium.com/@PhilPlckthun/vim-is-awesome-but-dont-overdo-it-c03594e6bb5b#.hyy2nhhe9)  
+- [VIM is awesome — But don’t overdo it](https://medium.com/@PhilPlckthun/vim-is-awesome-but-dont-overdo-it-c03594e6bb5b#.hyy2nhhe9)  
 	过犹不及，再好的东西，也要明白什么时候不合适，这是反而说明是深的理解。
 - [Coming Home to Vim](http://stevelosh.com/blog/2010/09/coming-home-to-vim/)
+- [程序员的编辑器 —— `Vim`](editor-for-programmer.md)
 - [从`Vim`到`Emacs`到`Evil`](http://ceyes.github.io/2015-01/from-Vim-to-Emacs/)  
 	`Emacs`只是个强大的平台，提供各种定制来满足每个人的不同需求。所以Thanks `Evil`，我已把`Emacs` 打造成了理想的『`Vim`化的`Emacs Editor`』，我可以纵情使用更方便的方式来工作。
+- [Awesome Vim Plugins](https://reinteractive.net/posts/166-awesome-vim-plugins)
 - 知乎上的一些话题（看一下讨论扩展一下了解）
 	- [有哪些编程必备的 Vim 配置？ - 知乎](https://www.zhihu.com/question/19989337)
 	- [到底 VIM 能配置到多强大的程度？ - 知乎](https://www.zhihu.com/question/20151659)
@@ -101,12 +109,12 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 	- `Vim`帮助系统的帮助，即如何使用`Vim`的帮助系统： `:h helphelp`
 - 个人整理的[`Vim`书籍豆列](http://www.douban.com/doulist/41500790/)
 	- 个人先看的是[Vim实用技巧 - 以思维的速度编辑文本](http://book.douban.com/subject/25869486/)  
-		以编辑理念和实践模式为纲介绍，推荐之。
-		词句共灵感一射，编辑与思考齐飞！
+		以编辑理念和实践模式为纲介绍，推荐之。  
+		**_词句共灵感一射，编辑与思考齐飞！_**
 	- [Learning the vi and Vim Editors](http://book.douban.com/subject/3767413/)，行文稳健（很合我的风格）：
-		- 先介绍基本功能再说明如何组合技术，从熟悉到领会。
-		- 先介绍基本编辑器（`Vi`/`Ex`）再说明`Vim`，从历史发展的过程更能深入理解功能适用场景。
-		- 还介绍`Vi`/`Vim`的周边信息，如`Vi`/`Vim`的名家名言，各个变种，`Vi`/`Emacs`的文化等等
+		1. 先介绍基本功能再说明如何组合技术，从熟悉到领会。
+		1. 再介绍基本编辑器（`Vi`/`Ex`）再说明`Vim`，从历史发展的过程更能深入理解功能适用场景。
+		1. 还介绍`Vi`/`Vim`的周边信息，如`Vi`/`Vim`的名家名言，各个变种，`Vi`/`Emacs`的文化等等
 - [vim-galore - Everything you need to know about Vim](https://github.com/mhinz/vim-galore)  
 	`Vim`方方面面资料汇总。这个仓库有4K+的star！
 
@@ -114,13 +122,13 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 -------------------------
 
 - [`spf13-vim` - a distribution of Vim plugins and resources](https://github.com/spf13/spf13-vim) - `Vim`的配置框架和配置集合。
-	- 包含很多插件/主题，无论是小白还是高手，省时好用是王道，用起来。 这个项目有 7K+ star！
+	- 包含很多插件/主题，无论是小白还是高手，省时好用是王道，用起来。 这个项目有 8K+ star！
 	- 直接使用，配置的效果和包含的插件 已经很不错了。
 	- `spf13-vim`首先是个`Vim`**配置框架**，水准尽显！
 - [Janus: Vim Distribution](https://github.com/carlhuda/janus)
 	- 又一个`Vim`配置版本。这个项目有 将近7K star！
 - [The Ultimate vimrc](https://github.com/amix/vimrc) - Over the last 8 years I have used and tweaked Vim.
-	- 作者_8年_在`Vim`配置上的积累。这个项目有 5K+ star！
+	- 作者**_8年_**在`Vim`配置上的积累。这个项目有 6K star！
 	- 绝对值得参考学习！
 	- 因为不是框架，所以我会选`spf13-vim`作为我的配置主方式。
 - [Maximum Awesome](https://github.com/square/maximum-awesome) - 三架马车`Vim`、`tmux`和`iTerm 2`的配置。
@@ -233,7 +241,7 @@ and use the most efficient command all the time.
 1. 安装配合工具[fcitx-remote-for-osx](https://github.com/CodeFalling/fcitx-remote-for-osx)
 2. 安装`Vim`插件[fcitx-vim-osx](https://github.com/CodeFalling/fcitx-vim-osx)
 
-PS: Thank you for your perfect works! @CodeFalling
+PS: Thanks for your perfect works! [@CodeFalling](https://github.com/CodeFalling)
 
 ### `Vim`中文分词的支持
 
