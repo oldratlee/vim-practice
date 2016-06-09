@@ -12,41 +12,40 @@
 
 
 - [一、`Vim`的历史](#%E4%B8%80%E3%80%81vim%E7%9A%84%E5%8E%86%E5%8F%B2)
-  - [1. `ed`](#1-ed)
-  - [2. `ex`](#2-ex)
-  - [3. `vi`](#3-vi)
-  - [4. `Vim`](#4-vim)
+    - [1. `ed`](#1-ed)
+    - [2. `ex`](#2-ex)
+    - [3. `vi`](#3-vi)
+    - [4. `Vim`](#4-vim)
 - [二、`vi`/`Vim`基础知识](#%E4%BA%8C%E3%80%81vivim%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
-  - [(a) 将“`(1), ...., (2), ....,(100)`”替换成“`(2), ...., (3), ...., (101)`”](#a-%E5%B0%86%E2%80%9C1--2-100%E2%80%9D%E6%9B%BF%E6%8D%A2%E6%88%90%E2%80%9C2--3--101%E2%80%9D)
-  - [(b) 重新连接`log`系统的断行](#b-%E9%87%8D%E6%96%B0%E8%BF%9E%E6%8E%A5log%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%96%AD%E8%A1%8C)
-  - [(c) `Fortran`代码对齐](#c-fortran%E4%BB%A3%E7%A0%81%E5%AF%B9%E9%BD%90)
-  - [(d) 连续插入72个等号](#d-%E8%BF%9E%E7%BB%AD%E6%8F%92%E5%85%A572%E4%B8%AA%E7%AD%89%E5%8F%B7)
-  - [(e) 在多行开始插入`//`](#e-%E5%9C%A8%E5%A4%9A%E8%A1%8C%E5%BC%80%E5%A7%8B%E6%8F%92%E5%85%A5)
+    - [(a) 将“`(1), ...., (2), ....,(100)`”替换成“`(2), ...., (3), ...., (101)`”](#a-%E5%B0%86%E2%80%9C1--2-100%E2%80%9D%E6%9B%BF%E6%8D%A2%E6%88%90%E2%80%9C2--3--101%E2%80%9D)
+    - [(b) 重新连接`log`系统的断行](#b-%E9%87%8D%E6%96%B0%E8%BF%9E%E6%8E%A5log%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%96%AD%E8%A1%8C)
+    - [(c) `Fortran`代码对齐](#c-fortran%E4%BB%A3%E7%A0%81%E5%AF%B9%E9%BD%90)
+    - [(d) 连续插入72个等号](#d-%E8%BF%9E%E7%BB%AD%E6%8F%92%E5%85%A572%E4%B8%AA%E7%AD%89%E5%8F%B7)
+    - [(e) 在多行开始插入`//`](#e-%E5%9C%A8%E5%A4%9A%E8%A1%8C%E5%BC%80%E5%A7%8B%E6%8F%92%E5%85%A5)
 - [三、编程辅助](#%E4%B8%89%E3%80%81%E7%BC%96%E7%A8%8B%E8%BE%85%E5%8A%A9)
-  - [（1） `ctags`，`cscope`](#%EF%BC%881%EF%BC%89-ctags%EF%BC%8Ccscope)
-  - [（2）`multi window`，`multi buffer`，`multi tab page`](#%EF%BC%882%EF%BC%89multi-window%EF%BC%8Cmulti-buffer%EF%BC%8Cmulti-tab-page)
-  - [（3） 语法高亮](#%EF%BC%883%EF%BC%89-%E8%AF%AD%E6%B3%95%E9%AB%98%E4%BA%AE)
-  - [（4） 自动缩进](#%EF%BC%884%EF%BC%89-%E8%87%AA%E5%8A%A8%E7%BC%A9%E8%BF%9B)
-  - [（5） 类和函数列表](#%EF%BC%885%EF%BC%89-%E7%B1%BB%E5%92%8C%E5%87%BD%E6%95%B0%E5%88%97%E8%A1%A8)
-  - [（6） 自动完成](#%EF%BC%886%EF%BC%89-%E8%87%AA%E5%8A%A8%E5%AE%8C%E6%88%90)
-  - [（7） `folding`](#%EF%BC%887%EF%BC%89-folding)
-  - [（8） `quickfix`](#%EF%BC%888%EF%BC%89-quickfix)
-  - [（9）`auto command`](#%EF%BC%889%EF%BC%89auto-command)
-  - [（10）mode line](#%EF%BC%8810%EF%BC%89mode-line)
+    - [（1） `ctags`，`cscope`](#%EF%BC%881%EF%BC%89-ctags%EF%BC%8Ccscope)
+    - [（2）`multi window`，`multi buffer`，`multi tab page`](#%EF%BC%882%EF%BC%89multi-window%EF%BC%8Cmulti-buffer%EF%BC%8Cmulti-tab-page)
+    - [（3） 语法高亮](#%EF%BC%883%EF%BC%89-%E8%AF%AD%E6%B3%95%E9%AB%98%E4%BA%AE)
+    - [（4） 自动缩进](#%EF%BC%884%EF%BC%89-%E8%87%AA%E5%8A%A8%E7%BC%A9%E8%BF%9B)
+    - [（5） 类和函数列表](#%EF%BC%885%EF%BC%89-%E7%B1%BB%E5%92%8C%E5%87%BD%E6%95%B0%E5%88%97%E8%A1%A8)
+    - [（6） 自动完成](#%EF%BC%886%EF%BC%89-%E8%87%AA%E5%8A%A8%E5%AE%8C%E6%88%90)
+    - [（7） `folding`](#%EF%BC%887%EF%BC%89-folding)
+    - [（8） `quickfix`](#%EF%BC%888%EF%BC%89-quickfix)
+    - [（9）`auto command`](#%EF%BC%889%EF%BC%89auto-command)
+    - [（10）mode line](#%EF%BC%8810%EF%BC%89mode-line)
 - [四、强大方便的帮助系统](#%E5%9B%9B%E3%80%81%E5%BC%BA%E5%A4%A7%E6%96%B9%E4%BE%BF%E7%9A%84%E5%B8%AE%E5%8A%A9%E7%B3%BB%E7%BB%9F)
 - [五、其它高级功能](#%E4%BA%94%E3%80%81%E5%85%B6%E5%AE%83%E9%AB%98%E7%BA%A7%E5%8A%9F%E8%83%BD)
-  - [（1）寄存器](#%EF%BC%881%EF%BC%89%E5%AF%84%E5%AD%98%E5%99%A8)
-  - [（2） 宏](#%EF%BC%882%EF%BC%89-%E5%AE%8F)
-  - [（3） 书签](#%EF%BC%883%EF%BC%89-%E4%B9%A6%E7%AD%BE)
-  - [（4） 映射](#%EF%BC%884%EF%BC%89-%E6%98%A0%E5%B0%84)
-  - [（5） 缩写](#%EF%BC%885%EF%BC%89-%E7%BC%A9%E5%86%99)
-  - [（6） :s//和:g//，:!g//](#%EF%BC%886%EF%BC%89-s%E5%92%8Cg%EF%BC%8Cg)
-  - [（7） 插件](#%EF%BC%887%EF%BC%89-%E6%8F%92%E4%BB%B6)
-  - [（8） color scheme](#%EF%BC%888%EF%BC%89-color-scheme)
-  - [（9） 二进制编辑](#%EF%BC%889%EF%BC%89-%E4%BA%8C%E8%BF%9B%E5%88%B6%E7%BC%96%E8%BE%91)
-  - [（10） sign](#%EF%BC%8810%EF%BC%89-sign)
-- [六、Vim Scripts](#%E5%85%AD%E3%80%81vim-scripts)
-- [七、Vim资源](#%E4%B8%83%E3%80%81vim%E8%B5%84%E6%BA%90)
+    - [（1）寄存器](#%EF%BC%881%EF%BC%89%E5%AF%84%E5%AD%98%E5%99%A8)
+    - [（2） 宏](#%EF%BC%882%EF%BC%89-%E5%AE%8F)
+    - [（3） 书签](#%EF%BC%883%EF%BC%89-%E4%B9%A6%E7%AD%BE)
+    - [（4） 映射](#%EF%BC%884%EF%BC%89-%E6%98%A0%E5%B0%84)
+    - [（5） 缩写](#%EF%BC%885%EF%BC%89-%E7%BC%A9%E5%86%99)
+    - [（6） `:s//`和`:g//，:!g//`](#%EF%BC%886%EF%BC%89-s%E5%92%8Cg%EF%BC%8Cg)
+    - [（8） color scheme](#%EF%BC%888%EF%BC%89-color-scheme)
+    - [（9） 二进制编辑](#%EF%BC%889%EF%BC%89-%E4%BA%8C%E8%BF%9B%E5%88%B6%E7%BC%96%E8%BE%91)
+    - [（10） sign](#%EF%BC%8810%EF%BC%89-sign)
+- [六、`Vim Scripts`](#%E5%85%AD%E3%80%81vim-scripts)
+- [七、`Vim`资源](#%E4%B8%83%E3%80%81vim%E8%B5%84%E6%BA%90)
 - [八、编译安装最新`CVS`版的`Vim`](#%E5%85%AB%E3%80%81%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85%E6%9C%80%E6%96%B0cvs%E7%89%88%E7%9A%84vim)
 - [九、一份`vimrc`配置文件](#%E4%B9%9D%E3%80%81%E4%B8%80%E4%BB%BDvimrc%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
 - [十、`Vim`的不足](#%E5%8D%81%E3%80%81vim%E7%9A%84%E4%B8%8D%E8%B6%B3)
@@ -58,7 +57,7 @@
 
 ### 1. `ed`
 
-`ed`是`UNIX`上最古老最基本的编辑器，它最初是`UNIX`之父_Ken Thompson_编写的，他第一次在`ed`中应用了正则表达式（`regular expression`），这个创举将`RE`理论带入了实践，对`UNIX`界造成了深远的影响。 实际上`ed`是受来自加州伯克利大学的`QED`编辑器的影响，_Ken_便是从这所院校这里毕业的。
+`ed`是`UNIX`上最古老最基本的编辑器，它最初是`UNIX`之父_Ken Thompson_编写的，他第一次在`ed`中应用了正则表达式（`regular expression`），这个创举将`RE`理论带入了实践，对`UNIX`界造成了深远的影响。 实际上`ed`是受来自加州伯克利大学的`QED`编辑器的影响，_Ken_ 便是从这所院校这里毕业的。
 
 `ed`是一种行模式编辑器，下面是一个`ed`会话的例子：
 
@@ -112,7 +111,7 @@ Reference（参考）：
 
 ### 4. `Vim`
 
-技术不断进步，需求也在不断提高，`vi`的各种变种也不断涌现，知名的有`nvi`，`elvis`，`Vim`，`vile`，`yzis`，其中移植性最好、特性最多、使用最广的当属`Vim`，`Vim`主要是_Bram Moolenaar_开发的。最初_Bram_在`Amiga`计算机上改进一个叫`Stevie`的`vi`版本，他称之为“Vi IMitation”。随着功能的逐渐丰富，`Vim`的含义也就改成了“Vi IMproved”。相比原始的`vi`，`Vim`增加的一项最重要的功能便是多级撤销，`vi`只支持一级撤销。
+技术不断进步，需求也在不断提高，`vi`的各种变种也不断涌现，知名的有`nvi`，`elvis`，`Vim`，`vile`，`yzis`，其中移植性最好、特性最多、使用最广的当属`Vim`，`Vim`主要是_Bram Moolenaar_开发的。最初_Bram_在`Amiga`计算机上改进一个叫`Stevie`的`vi`版本，他称之为`Vi IMitation`。随着功能的逐渐丰富，`Vim`的含义也就改成了`Vi IMproved`。相比原始的`vi`，`Vim`增加的一项最重要的功能便是多级撤销，`vi`只支持一级撤销。
 
 下面是`Vim`的重要版本历史：
 
@@ -447,93 +446,113 @@ Reference: `:help q`
 
 ### （3） 书签
 
-`Normal Mode`下按`m<reg>`作书签，`<reg>`指26个命名寄存器中的一个，然后可以用`'<reg>`或者``<reg>`跳到书签处。
+`Normal Mode`下按`m<reg>`作书签，`<reg>`指26个命名寄存器中的一个，然后可以用`'<reg>`或者\``<reg>` 跳到书签处。
 
 Reference: `:help m`
 
 ### （4） 映射
 
-Vi/Vim可以将某个按键序列映射到一个命令序列上，比如在配置文件.vimrc（Windows下是_vimrc）中写入
+`Vi/Vim`可以将某个按键序列映射到一个命令序列上，比如在配置文件`.vimrc`（`Windows`下是`_vimrc`）中写入
 
+```vim
 map <F6> <ESC>i<C-R>=strftime（"%Y-%m-%d"）<ESC><ESC>
+```
 
 即可以在`Normal Mode`下插入当前日期。
 
+```vim
 Reference: :help :map
+```
 
 ### （5） 缩写
 
-Vi/Vim支持用一个缩写字符串代替一个长的字符串，比如
+`Vi/Vim`支持用一个缩写字符串代替一个长的字符串，比如
 
+```vim
 :ab hw hello world
+```
 
-然后在`Insert Mode`下输入“hw ”（不包括引号）后Vim就自动替换成了“hello world”。这里展示一个`Emacs`下`abbrev`功能的动画（没错，是`Emacs`的）：
+然后在`Insert Mode`下输入`hw` 后`Vim`就自动替换成了`hello world`。这里展示一个`Emacs`下`abbrev`功能的动画（没错，是`Emacs`的）：
 
-http://www.bloomington.in.us/~brutt/msf-abbrev.html
-http://www.bloomington.in.us/~brutt/msf-abbrev-demo.gif
+- http://www.bloomington.in.us/~brutt/msf-abbrev.html
+- http://www.bloomington.in.us/~brutt/msf-abbrev-demo.gif
 
-Reference: :help :ab
+Reference: `:help :ab`
 
-### （6） :s//和:g//，:!g//
+### （6） `:s//`和`:g//，:!g//`
 
-这两个命名加上正则表达式，常常能完成非常复杂的编辑任务，可以毫不夸张地说是Vim的两柄瑞士军刀。:s是替换操作，:g是查找匹配模式的行，:!g是查找不匹配模式的行。
+这两个命名加上正则表达式，常常能完成非常复杂的编辑任务，可以毫不夸张地说是Vim的两柄瑞士军刀。`:s`是替换操作，`:g`是查找匹配模式的行，`:!g`是查找不匹配模式的行。
 
-http://www.vim.org/tips/tip.php?tip_id=1063这个tip可以把:g找到的行拷贝到一个新的缓冲区中，非常有用。
+http://www.vim.org/tips/tip.php?tip_id=1063 这个tip可以把:g找到的行拷贝到一个新的缓冲区中，非常有用。
 
-Reference: :help :s
-:help :g
+Reference: 
+
+- `:help :s`
+- `:help :g`
+- 
 ### （7） 插件
 
-Vim自己有脚本语言，另外也支持用Perl/Python/Tcl/Ruby/Scheme编写插件，这些插件极大的丰富了Vim的功能。
+`Vim`自己有脚本语言，另外也支持用`Perl/Python/Tcl/Ruby/Scheme`编写插件，这些插件极大的丰富了`Vim`的功能。
 
 ### （8） color scheme
 
-Vim有许多配色方案，下面这个链接有许多配色方案效果的图样：http://www.cs.cmu.edu/~maverick/VimColorSchemeTest/
+`Vim`有许多配色方案，下面这个链接有许多配色方案效果的图样： http://www.cs.cmu.edu/~maverick/VimColorSchemeTest/
 
 ### （9） 二进制编辑
 
-Vim可以利用xxd实现二进制编辑，不过这项功能还是不够好用。
+`Vim`可以利用`xxd`实现二进制编辑，不过这项功能还是不够好用。
 
 ### （10） sign
 
 sign指在编辑窗口的最左列显示一个标记，利用这个功能能实现很多IDE中的书签标记或者断点标记。
 
-Reference: :help sign
+Reference: `:help sign`
 
 
 
-六、Vim Scripts
+六、`Vim Scripts`
 ---------------------------
 
-Vim script包含几大类:
+`Vim script`包含几大类:
 
-color scheme 配色方案
-ftplugin File type插件，特定语言语法的设置，比如如何识别注释
-syntax  语法高亮的配色
-plugin  提供额外功能的插件，比如智能完成、缓冲区管理。
-Vim的script安装非常简单，下载的script文件或者压缩包里头都有安装说明，在Vim的安装目录（比如C:\VIM64）下面有一个vimfiles目录，把script放到vimfiles目录下即可。对于多用户系统，可以在HOME目录（一般是c:\Documents and Settings\ <USER_NAME>\）下面建立一个vimfiles目录，把script放置到这里。
+- `color scheme` 配色方案
+- `ftplugin File type`插件，特定语言语法的设置，比如如何识别注释
+- `syntax`  语法高亮的配色
+- `plugin`  提供额外功能的插件，比如智能完成、缓冲区管理。
 
-下面是一些好用的Vim插件，具体使用办法请参考各自。vim文件头部的注释。
+`Vim`的`script`安装非常简单，下载的`script`文件或者压缩包里头都有安装说明，在`Vim`的安装目录（比如`C:\VIM64`）下面有一个`vimfiles`目录，把`script`放到`vimfiles`目录下即可。对于多用户系统，可以在`HOME`目录（一般是`c:\Documents and Settings\ <USER_NAME>\`）下面建立一个`vimfiles`目录，把`script`放置到这里。
 
-BufExplorer.vim  *****
+下面是一些好用的`Vim`插件，具体使用办法请参考各自。`vim`文件头部的注释。
+
+`BufExplorer.vim`  *****
+
 http://www.vim.org/scripts/script.php?script_id=42
-这个插件可以使编辑多文件更加方便，装完插件后`Normal Mode`下输入\be即可打开缓冲区列表，光标放置在某一个文件上按回车即可打开这个文件，而缓冲区列表自动关闭。
 
-Taglist.vim  *****
+这个插件可以使编辑多文件更加方便，装完插件后`Normal Mode`下输入`\be`即可打开缓冲区列表，光标放置在某一个文件上按回车即可打开这个文件，而缓冲区列表自动关闭。
+
+`Taglist.vim`  *****
+
 http://www.vim.org/scripts/script.php?script_id=273
-这个插件可以实现类或者函数列表功能，支持C/C++，java，perl，python，tcl，sql，php等语言，它可以在Vim中创建一个窗口，列出编辑的源文件中的类、函数、变量定义列表，而且更方便的是这个列表也插入在了右键菜单中，分类存放，访问非常方便。
 
-TabBar.vim  ***
+这个插件可以实现类或者函数列表功能，支持`C/C++`，`java`，`perl`，`python`，`tcl`，`sql`，`php`等语言，它可以在`Vim`中创建一个窗口，列出编辑的源文件中的类、函数、变量定义列表，而且更方便的是这个列表也插入在了右键菜单中，分类存放，访问非常方便。
+
+`TabBar.vim`  ***
+
 http://www.vim.org/scripts/script.php?script_id=1338
-这个插件实现了类似UltraEdit中的标签页的功能，而且能通过Alt-<n>来切换，<n>代表1-9。
 
-minibufexpl.vim  ***
+这个插件实现了类似`UltraEdit`中的标签页的功能，而且能通过`Alt-<n>`来切换，`<n>`代表`1-9`。
+
+`minibufexpl.vim`  ***
+
 http://www.vim.org/scripts/script.php?script_id=159
-实现了类似UltraEdit中的标签也功能。
 
-c.vim   ***
+实现了类似`UltraEdit`中的标签也功能。
+
+`c.vim`   ***
+
 http://www.vim.org/scripts/script.php?script_id=213
-提供了很多便于C/C++编程的功能，比如文件头模版，代码片断等。
+
+提供了很多便于`C/C++`编程的功能，比如文件头模版，代码片断等。
 
 CRefVim   **
 http://www.vim.org/scripts/script.php?script_id=614
@@ -544,73 +563,108 @@ http://www.vim.org/scripts/script.php?script_id=475
 http://vim-latex.sf.net/
 提供了很多便于编辑TeX/LaTeX文件的功能，比如在Vim里面编译或者预览、自动插入TeX标记等。
 
-word_complete.vim ***
+`word_complete.vim` ***
 http://www.vim.org/scripts/script.php?script_id=73
-Insert模式下在输入的时候自动补全单词，如果补全正确可以按Tab键接受，否则可以不管它继续输入或者按Ctrl-n，Ctrl-p切换补全。 注意是输入三个字符后才开始补全。
 
-Vim JDE
+`Insert`模式下在输入的时候自动补全单词，如果补全正确可以按`Tab`键接受，否则可以不管它继续输入或者按`Ctrl-n`，`Ctrl-p`切换补全。 注意是输入三个字符后才开始补全。
+
+`Vim JDE`
+
 http://www.vim.org/scripts/script.php?script_id=1213
-支持C/C++等的自动完成（需要Vim 7.0，编译时打开+ruby特性）．
 
-cppcomplete.vim  **
+支持`C/C++`等的自动完成（需要`Vim 7.0`，编译时打开`+ruby`特性）．
+
+`cppcomplete.vim`  **
+
 http://www.vim.org/scripts/script.php?script_id=527
-能自动完成C/C++/Java的结构或类成员，注意它的快捷键是Alt-l（字母L）不是Alt-i。
 
-The NEAD Commenter **
+能自动完成`C/C++/Java`的结构或类成员，注意它的快捷键是`Alt-l`（字母`L`）不是`Alt-i`。
+
+`The NEAD Commenter` **
+
 http://www.vim.org/scripts/script.php?script_id=1218
+
 在许多类型的文件中方便的加上注释或者取消注释。
 
-winmanager
+`winmanager`
+
 http://www.vim.org/scripts/script.php?script_id=95
-把标准的File Explorer以及Buffer Explorer插件集成在一起，提供现代编辑器中常见的文件列表和缓冲区列表功能。
 
-sketch.vim ***
+把标准的`File Explorer`以及`Buffer Explorer`插件集成在一起，提供现代编辑器中常见的文件列表和缓冲区列表功能。
+
+`sketch.vim` ***
+
 http://www.vim.org/scripts/script.php?script_id=705
-Draw with mouse: boxes, arrows, lines, fills. Transparent/opaque drag and drop.照着它的教程做一遍，你就会震撼于它的创意了。
 
-DrawIt.vim **
+`Draw with mouse: boxes, arrows, lines, fills`. `Transparent/opaque drag and drop`.照着它的教程做一遍，你就会震撼于它的创意了。
+
+`DrawIt.vim` **
+
 http://www.vim.org/scripts/script.php?script_id=40
+
 可以方便的画连线图。
 
-MultipleSearch  ***
+`MultipleSearch`  ***
+
 http://www.vim.org/scripts/script.php?script_id=479
-MultipleSearch2.vim ***
+
+`MultipleSearch2.vim` ***
+
 http://www.vim.org/scripts/script.php?script_id=1183
-Mark.vim  ***
+
+`Mark.vim`  ***
+
 http://www.vim.org/scripts/script.php?script_id=1238
-otf.vim   **
+
+`otf.vim`   **
+
 http://www.vim.org/scripts/script.php?script_id=634
+
 这些插件可以同时高亮显示多次搜索结果，这个特性非常有利于显示代码中某些变量或函数的调用位置。
 
-SearchComplete.vim *
+`SearchComplete.vim` *
+
 http://www.vim.org/scripts/script.php?script_id=474
-可以用/搜索时按Tab补全要搜索的单词。
 
-Vim Intellisense
+可以用/搜索时按`Tab`补全要搜索的单词。
+
+`Vim Intellisense`
+
 http://insenvim.sourceforge.net
-顾名思义，此插件用于给Vim提供智能完成功能，支持C++，C#，Java，JSP，HTML，SQL，XML，笔者安装后一直懒得配置，也就没用上。
 
-project
+顾名思义，此插件用于给Vim提供智能完成功能，支持`C++`，`C#`，`Java`，`JSP`，`HTML`，`SQL`，`XML`，笔者安装后一直懒得配置，也就没用上。
+
+`project`
+
 http://www.vim.org/scripts/script.php?script_id=69
-提供一些IDE功能，看介绍似乎很不错。
 
-JavaBrower
+提供一些`IDE`功能，看介绍似乎很不错。
+
+`JavaBrower`
+
 http://www.vim.org/scripts/script.php?script_id=588
-提供文件中Java类的树状列表。
 
-vimspell
+提供文件中`Java`类的树状列表。
+
+`vimspell`
+
 http://www.vim.org/scripts/script.php?script_id=465
+
 ispell or aspell based spell checker with fly-spelling。
 
-cream
+`cream`
+
 http://cream.sourceforge.net/
-一套配置文件，可以把Vim的界面改成CUA（Common User Access）模型，降低Vim的学习难度，个人不推荐这种做法，不过其中有些高级配置值得学习（有意思的是Emacs也有类似的项目: Easymacs，EmacsW32）。
 
-IComplete
+一套配置文件，可以把`Vim`的界面改成`CUA`（`Common User Access`）模型，降低`Vim`的学习难度，个人不推荐这种做法，不过其中有些高级配置值得学习（有意思的是`Emacs`也有类似的项目: `Easymacs`，`EmacsW32`）。
+
+`IComplete`
+
 http://icomplete.sf.net
-搭配Vim 7.0的Omni Complete，可以做到C/C++的智能完成功能.
 
-七、Vim资源
+搭配`Vim 7.0`的`Omni Complete`，可以做到`C/C++`的智能完成功能.
+
+七、`Vim`资源
 ---------------------------
 
 - http://www.vim.org Vim主页，有许多scripts和tips，查找插件的第一去处
@@ -624,10 +678,10 @@ http://icomplete.sf.net
 
 几个学习正则表达式的工具（from happyvim at newsmth）
 
-http://weitz.de/regex-coach/  Regex Coach
-http://jregexptester.sourceforge.net/ JRegexp Tester
-http://www.regexbuddy.com/  Regex Buddy
-http://www.yzis.org/  yzis是一个新的`vi`变种，它支持变宽字体，目前功能还不够丰富。
+- http://weitz.de/regex-coach/  Regex Coach
+- http://jregexptester.sourceforge.net/ JRegexp Tester
+- http://www.regexbuddy.com/  Regex Buddy
+- http://www.yzis.org/  yzis是一个新的`vi`变种，它支持变宽字体，目前功能还不够丰富。
 
 http://ex-vi.sourceforge.net/ 传统`vi`的源代码
 
@@ -647,7 +701,7 @@ cvs -z3 -d:pserver:anonymous@cvs.sf.net:/cvsroot/vim co vim7
 
 注意重新编译前最好`clean`一下，确保“*obj*”目录被删除了，否则可能出现莫名其妙的问题，比如链接时找不到一些函数。下面是一个批处理脚本：
 
-```bash
+```bat
 rem --------------------------------------------->
 @echo off
 set path=c:\winnt;c:\winnt\system32
@@ -670,7 +724,7 @@ rem <-----------------------------------------------
 
 对于`MinGW`，
 
-```bash
+```bat
 @echo off
 @echo clean...
 make -f Make_ming.mak clean DEBUG=yes
