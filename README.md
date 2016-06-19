@@ -55,20 +55,23 @@ Vim Practice
 学习资料
 ------------------------
 
-### 文章/讨论
+关于『学习』本身的规律：
 
-『学习』的规律：
-
-- 学习一样新事物的先进，不在于点，而在于一套方法；所以你上手新事物必然先经历一个能力下降阶段。
+- 学习一样新事物的先进，不在于刚开始看到的点，而在于理解背后的一套方法（一套方法对应的即是理念）。
+- 上手新事物必然先经历一个能力下降阶段，因为你要放弃你所熟悉的，是重新接纳一套方法。
 - 有下面想法同学必然禁锢于原地踏步：
 	- 不愿去理解整体理念，用当前熟悉自己的技能点去比新事件的点。
 	- 不能接受上手新事物的学习成本和先要经历一个能力下降阶段。
 
+### 文章/讨论
+
 - [Why Vim is awesome](http://federicoramirez.name/why-vim-is-awesome/)
 - [VIM is awesome — But don’t overdo it](https://medium.com/@PhilPlckthun/vim-is-awesome-but-dont-overdo-it-c03594e6bb5b#.hyy2nhhe9)  
 	过犹不及，再好的东西，也要明白什么时候不合适，这是反而说明是深的理解。
-- [Coming Home to Vim](http://stevelosh.com/blog/2010/09/coming-home-to-vim/)
-- [程序员的编辑器 —— `Vim`](editor-for-programmer.md)
+- [Coming Home to Vim](http://stevelosh.com/blog/2010/09/coming-home-to-vim/)  
+	快速上手使用。为什么使用`Vim`/`Vim`使用感觉/上手的高效配置/好用的插件。
+- [程序员的编辑器 —— `Vim`](editor-for-programmer.md)  
+	以程序员的视角，短短一篇文章让你感受`Vim`的风格、能力和一致性设计。
 - [从`Vim`到`Emacs`到`Evil`](http://ceyes.github.io/2015-01/from-Vim-to-Emacs/)  
 	`Emacs`只是个强大的平台，提供各种定制来满足每个人的不同需求。所以Thanks `Evil`，我已把`Emacs` 打造成了理想的『`Vim`化的`Emacs Editor`』，我可以纵情使用更方便的方式来工作。
 - [Awesome Vim Plugins](https://reinteractive.net/posts/166-awesome-vim-plugins)
