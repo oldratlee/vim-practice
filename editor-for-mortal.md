@@ -7,6 +7,36 @@
 
 ---------------------------
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [1 对`Vim`的基本介绍](#1-%E5%AF%B9vim%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BB%8B%E7%BB%8D)
+- [2 下载和安装](#2-%E4%B8%8B%E8%BD%BD%E5%92%8C%E5%AE%89%E8%A3%85)
+- [3 体验之旅](#3-%E4%BD%93%E9%AA%8C%E4%B9%8B%E6%97%85)
+    - [3.1 初见界面](#31-%E5%88%9D%E8%A7%81%E7%95%8C%E9%9D%A2)
+    - [3.2 试读`html`](#32-%E8%AF%95%E8%AF%BBhtml)
+    - [3.3 改头换面](#33-%E6%94%B9%E5%A4%B4%E6%8D%A2%E9%9D%A2)
+    - [3.4 准备并打开范例文件](#34-%E5%87%86%E5%A4%87%E5%B9%B6%E6%89%93%E5%BC%80%E8%8C%83%E4%BE%8B%E6%96%87%E4%BB%B6)
+    - [3.5 统一格式，修改`vimrc`](#35-%E7%BB%9F%E4%B8%80%E6%A0%BC%E5%BC%8F%EF%BC%8C%E4%BF%AE%E6%94%B9vimrc)
+    - [3.6 打开`test.txt`](#36-%E6%89%93%E5%BC%80testtxt)
+    - [3.7 分段并保存](#37-%E5%88%86%E6%AE%B5%E5%B9%B6%E4%BF%9D%E5%AD%98)
+    - [3.8 继续编辑](#38-%E7%BB%A7%E7%BB%AD%E7%BC%96%E8%BE%91)
+    - [3.9 更多编辑](#39-%E6%9B%B4%E5%A4%9A%E7%BC%96%E8%BE%91)
+        - [任务a：把每一句分为一行，即达到如下效果](#%E4%BB%BB%E5%8A%A1a%EF%BC%9A%E6%8A%8A%E6%AF%8F%E4%B8%80%E5%8F%A5%E5%88%86%E4%B8%BA%E4%B8%80%E8%A1%8C%EF%BC%8C%E5%8D%B3%E8%BE%BE%E5%88%B0%E5%A6%82%E4%B8%8B%E6%95%88%E6%9E%9C)
+        - [任务b：把行末的标点去掉，即“荣”后的顿号和“耻”后的逗号。](#%E4%BB%BB%E5%8A%A1b%EF%BC%9A%E6%8A%8A%E8%A1%8C%E6%9C%AB%E7%9A%84%E6%A0%87%E7%82%B9%E5%8E%BB%E6%8E%89%EF%BC%8C%E5%8D%B3%E2%80%9C%E8%8D%A3%E2%80%9D%E5%90%8E%E7%9A%84%E9%A1%BF%E5%8F%B7%E5%92%8C%E2%80%9C%E8%80%BB%E2%80%9D%E5%90%8E%E7%9A%84%E9%80%97%E5%8F%B7%E3%80%82)
+        - [任务c：错落有致](#%E4%BB%BB%E5%8A%A1c%EF%BC%9A%E9%94%99%E8%90%BD%E6%9C%89%E8%87%B4)
+    - [3.10 自由体验](#310-%E8%87%AA%E7%94%B1%E4%BD%93%E9%AA%8C)
+    - [3.11 体验语法高亮和折叠](#311-%E4%BD%93%E9%AA%8C%E8%AF%AD%E6%B3%95%E9%AB%98%E4%BA%AE%E5%92%8C%E6%8A%98%E5%8F%A0)
+    - [3.12 加密文件](#312-%E5%8A%A0%E5%AF%86%E6%96%87%E4%BB%B6)
+- [4 我的应用](#4-%E6%88%91%E7%9A%84%E5%BA%94%E7%94%A8)
+- [5 后记](#5-%E5%90%8E%E8%AE%B0)
+- [附1：`_vimrc`文件](#%E9%99%841%EF%BC%9A_vimrc%E6%96%87%E4%BB%B6)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+---------------------------
+
 2005年5月，我开始用`Vim`。此后渐入佳境，原来因版权自律而放弃盗版`UltraEdit`的遗憾一扫而空。并且，从`Vim`我才体会到，什么才是真正的编辑利器。在[善用佳软](http://blog.sina.com.cn/m/xbeta)或其他论坛发文，我都是先在`Vim`中输入，并方便高效地编辑好格式，再贴到网上。而我的通讯录、记事、读书笔记、工作记录也是在`Vim`中完成的。包括一些文档、数据的处理，让`Vim`过一下，也会提高不少效率。一句话，自用`Vim`以来，对它迷恋日深，几乎要超过`Total Commander`。但是，正如善用佳软及论坛发文所提，我大力推荐“用`IrfanView`/`XnView`代替`ACDSee`、用`7-zip`代替`WinRar`/`WinZip`、用`GIMP`代替`PhotoShop`”，但并未推荐`Vim`代替`UltraEdit`。这并不意味着`Vim`不能胜任，恰恰相反，如果说`IrfanView`等替代品比原共享软件还有些差距的话，`Vim`则远胜`UltraEdit`。不推荐的唯一原因是，`Vim`对初学者有点难。
 
 但今天仍写了此文推荐给大家。原因有二：其一，编辑大人选定了题目，要向大众宣讲`Vim`和`Emacs`，这种勇气鼓舞了我。其二，已发两位高手的文章（[_王垠_ 之《`Emacs`是一种信仰！世界最强编辑器介绍》](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/865628.html)，[_Dieken_ 之《程序员的编辑器 —— `Vim`》](editor-for-programmer.md)）可能会吓住一些对它们产生了兴趣的人，对此我要做些修正。
