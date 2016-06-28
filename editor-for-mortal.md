@@ -72,14 +72,14 @@
 
 可参见
 
-![普通人的编辑利器——Vim](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060928_v1.png "普通人的编辑利器——Vim")  
-![普通人的编辑利器——Vim](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060928_v2.png "普通人的编辑利器——Vim")  
-![普通人的编辑利器——Vim](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060928_v3.png "普通人的编辑利器——Vim")  
-![普通人的编辑利器——Vim](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060928_v4.png "普通人的编辑利器——Vim")  
-![普通人的编辑利器——Vim](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060928_v5.png "普通人的编辑利器——Vim")  
-![普通人的编辑利器——Vim](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060928_v6.png "普通人的编辑利器——Vim")  
-![普通人的编辑利器——Vim](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060928_v7.png "普通人的编辑利器——Vim")  
-![普通人的编辑利器——Vim](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060928_v8.png "普通人的编辑利器——Vim")
+![普通人的编辑利器——Vim](editor-for-mortal-images/060928_v1.png "普通人的编辑利器——Vim")  
+![普通人的编辑利器——Vim](editor-for-mortal-images/060928_v2.png "普通人的编辑利器——Vim")  
+![普通人的编辑利器——Vim](editor-for-mortal-images/060928_v3.png "普通人的编辑利器——Vim")  
+![普通人的编辑利器——Vim](editor-for-mortal-images/060928_v4.png "普通人的编辑利器——Vim")  
+![普通人的编辑利器——Vim](editor-for-mortal-images/060928_v5.png "普通人的编辑利器——Vim")  
+![普通人的编辑利器——Vim](editor-for-mortal-images/060928_v6.png "普通人的编辑利器——Vim")  
+![普通人的编辑利器——Vim](editor-for-mortal-images/060928_v7.png "普通人的编辑利器——Vim")  
+![普通人的编辑利器——Vim](editor-for-mortal-images/060928_v8.png "普通人的编辑利器——Vim")
 
 ## 3 体验之旅
 
@@ -97,11 +97,11 @@
 
 请把此网页保存为`htm`，比如`test.htm`，然后用`Vim`打开它。暂时用菜单吧！结果可能是这样：
 
-![普通人的编辑利器——Vim](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060928_v11.png "普通人的编辑利器——Vim")
+![普通人的编辑利器——Vim](editor-for-mortal-images/060928_v11.png "普通人的编辑利器——Vim")
 
 平平无奇，是吧？因为它是一个标准的`Vim`，并且是性能优先，视效忽略的`Vim`。无妨，请进入命令行模式（就是按一下冒号，注意是英文冒号`:`），注意到最下面一行的变化了吧。再输入`sy on`再回车。是不是有颜色了？它应该看起来象这个样子
 
-![普通人的编辑利器——Vim](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060928_v12.png "普通人的编辑利器——Vim")
+![普通人的编辑利器——Vim](editor-for-mortal-images/060928_v12.png "普通人的编辑利器——Vim")
 
 重要提醒：为简化起见，下文将用`:sy on`表示（先确认在`Normal`模式，如不确认，请按几次`Esc`）你先按`:`进入命令行模式，再输入`sy on`，再回车。
 
@@ -115,7 +115,7 @@
 
 执行如下命令`:set go=`，这时的`Vim`应该是
 
-![普通人的编辑利器——Vim](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060928_v13.png "普通人的编辑利器——Vim")  
+![普通人的编辑利器——Vim](editor-for-mortal-images/060928_v13.png "普通人的编辑利器——Vim")  
 
 不要大惊小怪，不就是菜单和工具栏不见了嘛？`Vim`中是不应该用到它们的。
 
@@ -125,7 +125,7 @@
 
 然后你回车，看到了什么？
 
-![普通人的编辑利器——Vim](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060928_v14.png "普通人的编辑利器——Vim")
+![普通人的编辑利器——Vim](editor-for-mortal-images/060928_v14.png "普通人的编辑利器——Vim")
 
 天色全黑了？没错，现在是`evening`嘛。
 
@@ -133,15 +133,15 @@
 
 ### 3.4 准备并打开范例文件
 
-简化起见，请[下载`test.txt`](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/test.txt)并保存为`d:\test.txt`。然后，在`Vim`中输入半条命令`:tabnew d:\t`，输到这里后不要回车，按一下`tab`，`Vim`会自动补全为`test.txt`的。如果不对，再按几次`tab`，直到正确为止。然后回车。
+简化起见，请[下载`test.txt`](editor-for-mortal-images/test.txt)并保存为`d:\test.txt`。然后，在`Vim`中输入半条命令`:tabnew d:\t`，输到这里后不要回车，按一下`tab`，`Vim`会自动补全为`test.txt`的。如果不对，再按几次`tab`，直到正确为止。然后回车。
 
-![普通人的编辑利器——Vim](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060928_v15.png "普通人的编辑利器——Vim")
+![普通人的编辑利器——Vim](editor-for-mortal-images/060928_v15.png "普通人的编辑利器——Vim")
 
 你会看到`Vim`打开了`test.txt`，并且是以多页签（`tab page`）的方式。你可以点击各页签在打开的文件中间切换（高手有更方便的键盘命令做法）。在`Vim6.3`中，还没有此功能。当然了，这并不意味着`Vim`的用户没办法享受多页签的便利，下载一个插件后——`Vim`有上千个插件——就可以了。面对多页签风格的流行（`IE6` => `Maxthon` => `IE7`），`Vim7.0`也新增了此功能。
 
 我喜欢这种简单的页签。如果你认为此页签太难看，可试一下`:set go=e`，这时应如下效果
 
-![普通人的编辑利器——Vim](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060928_v16.png "普通人的编辑利器——Vim")
+![普通人的编辑利器——Vim](editor-for-mortal-images/060928_v16.png "普通人的编辑利器——Vim")
 
 ### 3.5 统一格式，修改`vimrc`
 
@@ -172,9 +172,9 @@
 
 输入后，界面如下
 
-![普通人的编辑利器——Vim](http://www.pconline.com.cn/pcedu/soft/gj/photo/0610/pic/061008_v1.gif "普通人的编辑利器——Vim")  
+![普通人的编辑利器——Vim](editor-for-mortal-images/061008_v1.gif "普通人的编辑利器——Vim")  
 
-并提示![](http://www.pconline.com.cn/pcedu/soft/gj/photo/0610/pic/061008_v2.gif "普通人的编辑利器——Vim")，请回答`y`或`a`。如果回答`y`，则替换当前一个；到了下一个，`Vim`还会再问你。所以，你回答几个`y`后不妨一`a`了之，全部替换。
+并提示![](editor-for-mortal-images/061008_v2.gif "普通人的编辑利器——Vim")，请回答`y`或`a`。如果回答`y`，则替换当前一个；到了下一个，`Vim`还会再问你。所以，你回答几个`y`后不妨一`a`了之，全部替换。
 
 补充说明：`s`表示替换；`s/a/b` 表示把`a`换为`b`；上一命令是把『以下是』换为`\r&`，`\r`表示回车，`&`表示被替换的部分，即『以下是』；`%`则表示全文；`/gc`表示一直替换（不是仅替换第一个），并且要用户确认。
 
@@ -216,7 +216,7 @@
 
 看一下高亮，没问题，直接`a`
 
-![](http://www.pconline.com.cn/pcedu/soft/gj/photo/0610/pic/061008_v3.gif "普通人的编辑利器——Vim")
+![](editor-for-mortal-images/061008_v3.gif "普通人的编辑利器——Vim")
 
 哇，是不是很壮观啊？没觉得？如果是一千行一万行呢？
 
@@ -244,7 +244,7 @@
 1. 这样宏录完了，可以用了。
 1. 再`@a`，看到了效果了吧？宏执行了一次，即3、4行成功了。还剩下6段，但是你不用按6次`@a`，而是只要按下`6@a`就行了！！！
 
-![](http://www.pconline.com.cn/pcedu/soft/gj/photo/0610/pic/061008_v4.gif "普通人的编辑利器——Vim")
+![](editor-for-mortal-images/061008_v4.gif "普通人的编辑利器——Vim")
 
 太神奇了！回放一下？先`u`，再来一次`6@a`。既然可以6，当然可以千千万万！
 
@@ -269,7 +269,7 @@
 仍然是我们编辑的原文件，为简化计，请[下载`test2.txt`](http://www.pconline.com.cn/pcedu/soft/gj/photo/0610/acc/test2.txt)；[下载`tx1.vim`](http://www.pconline.com.cn/pcedu/soft/gj/photo/0610/acc/tx1.vim)并保存在`d:\program files\Vim\Vimfiles\syntax\tx1.vim`
 用`Vim`打开（比如要打开`d:\test2.txt`，请在`Vim`中`:tabnew d:\test2.txt`）它。平平无奇是吗？这是因为`Vim`并不知道这个文件要加亮。键入一个命令`:setf tx1`，这就相当于告诉`Vim`此文件的类型是`tx1`，所以就按照刚下载的`tx1.vim`进行高亮和折叠。
 
-![](http://www.pconline.com.cn/pcedu/soft/gj/photo/0610/pic/061008_v5.png "普通人的编辑利器——Vim")
+![](editor-for-mortal-images/061008_v5.png "普通人的编辑利器——Vim")
 
 此时你会发现`test2.txt`完全折起来了。如何打开？你可用鼠标点最左边的`+`，当然，也可以用命令`zr`或`zR`打开（`zR`打开全部；`zr`打开当前；`zM`折叠全部；`zm`折叠当前）。打开后，看到高亮效果了吧。可以对文字设定前景色、背景色、粗、斜、下划线风格。
 
@@ -287,9 +287,9 @@
 
 如下两图分别是我的个性化`txt`示例，和用`Vim`写此篇文章时的情况：
 
-![](http://www.pconline.com.cn/pcedu/soft/gj/photo/0610/pic/061008_v6.png "普通人的编辑利器——Vim")
+![](editor-for-mortal-images/061008_v6.png "普通人的编辑利器——Vim")
 
-![](http://www.pconline.com.cn/pcedu/soft/gj/photo/0610/pic/061008_v7.png "普通人的编辑利器——Vim")
+![](editor-for-mortal-images/061008_v7.png "普通人的编辑利器——Vim")
 
 ## 5 后记
 
