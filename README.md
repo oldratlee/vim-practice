@@ -1,6 +1,8 @@
 Vim Practice
 =================================
 
+<img src="images/vim-icon.png" width="256" align="right" >
+
 > `Vim`和`Emacs`：编辑器之神和神的编辑器。
 
 上面的这句调侃不重要，重要的是效率！
@@ -27,8 +29,6 @@ Vim Practice
 上面『打字指法』和『编辑器』的顺序重要的，如果你还不能盲打，那么不要想着要找一个的编辑器就能高效了！ :dancers:
 
 ---------------------
-
-<img src="images/vim-icon.png" width="256" align="right" >
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
