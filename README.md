@@ -65,20 +65,21 @@ Vim Practice
 
 ### 文章/讨论
 
-- [Why Vim is awesome](http://federicoramirez.name/why-vim-is-awesome/)
-- [VIM is awesome — But don’t overdo it](https://medium.com/@PhilPlckthun/vim-is-awesome-but-dont-overdo-it-c03594e6bb5b#.hyy2nhhe9)  
+- [Why `Vim` is awesome](http://federicoramirez.name/why-vim-is-awesome/)
+- [`VIM` is awesome — But don’t overdo it](https://medium.com/@PhilPlckthun/vim-is-awesome-but-dont-overdo-it-c03594e6bb5b#.hyy2nhhe9)  
 	过犹不及，再好的东西，也要明白什么时候不合适，这是反而说明是深的理解。
-- [Coming Home to Vim](http://stevelosh.com/blog/2010/09/coming-home-to-vim/)  
+- [Coming Home to `Vim`](http://stevelosh.com/blog/2010/09/coming-home-to-vim/)  
 	快速上手使用。为什么使用`Vim`/`Vim`使用感觉/上手的高效配置/好用的插件。
-- [程序员的编辑器 —— `Vim`](editor-for-programmer.md)  
-	以程序员的视角，短短一篇文章让你感受`Vim`的风格、能力和一致性设计。
+- [普通人的编辑利器 —— `Vim`](editor-for-mortal.md) / [程序员的编辑器 —— `Vim`](editor-for-programmer.md)  
+	这2篇文章以普通用户/程序员的视角，短短一篇文章让你感受`Vim`的风格、能力和一致性设计。  
+	以非系统学习方式，获得偏整体了解的好文章！
 - [从`Vim`到`Emacs`到`Evil`](http://ceyes.github.io/2015-01/from-Vim-to-Emacs/)  
-	`Emacs`只是个强大的平台，提供各种定制来满足每个人的不同需求。所以Thanks `Evil`，我已把`Emacs` 打造成了理想的『`Vim`化的`Emacs Editor`』，我可以纵情使用更方便的方式来工作。
-- [Awesome Vim Plugins](https://reinteractive.net/posts/166-awesome-vim-plugins)
+	`Emacs`只是个强大的平台，提供各种定制来满足每个人的不同需求。所以Thanks `Evil`，我已把`Emacs` 打造成了理想的『`Vim`化的`Emacs Editor`』，我可以纵情使用更方便的方式来工作。 
+- [Awesome `Vim` Plugins](https://reinteractive.net/posts/166-awesome-vim-plugins)
 - 知乎上的一些话题（看一下讨论扩展一下了解）
-	- [有哪些编程必备的 Vim 配置？ - 知乎](https://www.zhihu.com/question/19989337)
-	- [到底 VIM 能配置到多强大的程度？ - 知乎](https://www.zhihu.com/question/20151659)
-	- [为什么不少程序员极度推崇 Vim 和 Emacs，却对 IDE 嗤之以鼻？ - 知乎](https://www.zhihu.com/question/21504638)
+	- [有哪些编程必备的 `Vim` 配置？ - 知乎](https://www.zhihu.com/question/19989337)
+	- [到底 `VIM` 能配置到多强大的程度？ - 知乎](https://www.zhihu.com/question/20151659)
+	- [为什么不少程序员极度推崇 `Vim` 和 `Emacs`，却对 `IDE` 嗤之以鼻？ - 知乎](https://www.zhihu.com/question/21504638)
 
 ### 上手
 
