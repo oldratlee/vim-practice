@@ -48,7 +48,8 @@ Vim Practice
         - [3. 如何做到低效地编辑](#3-%E5%A6%82%E4%BD%95%E5%81%9A%E5%88%B0%E4%BD%8E%E6%95%88%E5%9C%B0%E7%BC%96%E8%BE%91)
 - [个人关心的问题](#%E4%B8%AA%E4%BA%BA%E5%85%B3%E5%BF%83%E7%9A%84%E9%97%AE%E9%A2%98)
     - [中文输入法在`Vim`便利切换的问题](#%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E6%B3%95%E5%9C%A8vim%E4%BE%BF%E5%88%A9%E5%88%87%E6%8D%A2%E7%9A%84%E9%97%AE%E9%A2%98)
-    - [`Vim`中文分词的支持](#vim%E4%B8%AD%E6%96%87%E5%88%86%E8%AF%8D%E7%9A%84%E6%94%AF%E6%8C%81)
+    - [`Vim`打开文件乱码问题](#vim%E6%89%93%E5%BC%80%E6%96%87%E4%BB%B6%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98)
+    - [`Vim`中文分词支持的问题](#vim%E4%B8%AD%E6%96%87%E5%88%86%E8%AF%8D%E6%94%AF%E6%8C%81%E7%9A%84%E9%97%AE%E9%A2%98)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -240,14 +241,39 @@ and use the most efficient command all the time.
 
 - 当切换到如`Normal/Command`模式时，自动切换到英文输入法。
 
-解法参见[`@CodeFalling`](https://github.com/CodeFalling)的[完美解决 Mac 下 Vim/Emacs 的输入法切换问题](https://codefalling.com/2015/11/02/fcitx-vim-for-OS-X/)：
+解法参见[`@CodeFalling`](https://github.com/CodeFalling)的[完美解决 `Mac` 下 `Vim/Emacs` 的输入法切换问题](https://codefalling.com/2015/11/02/fcitx-vim-for-OS-X/)：
 
-1. 安装配合工具[fcitx-remote-for-osx](https://github.com/CodeFalling/fcitx-remote-for-osx)
-2. 安装`Vim`插件[fcitx-vim-osx](https://github.com/CodeFalling/fcitx-vim-osx)
+1. 安装配合工具[`fcitx-remote-for-osx`](https://github.com/CodeFalling/fcitx-remote-for-osx)
+2. 安装`Vim`插件[`fcitx-vim-osx`](https://github.com/CodeFalling/fcitx-vim-osx)
 
-PS: Thanks for your perfect works! [@CodeFalling](https://github.com/CodeFalling)
+PS: Thanks for your **_PERFECT_** works! [`@CodeFalling`](https://github.com/CodeFalling)
 
-### `Vim`中文分词的支持
+### `Vim`打开文件乱码问题
+
+`Vim`打开文件是筹码，一般的原因是编码识别错误。
+
+可以在`.vimrc`配置文件中设置好`Vim`的编码识别序列，这样可以识别成正确的编码打开：
+
+```vim
+" 需要配置到 .vimrc 中
+set fileencodings=ucs-bom,utf-8,utf-16le,gb18030,big5,euc-jp,euc-kr,latin1
+```
+
+如果仍然识别成乱码，可以在命令模式显式指定编码重新打开文件，命令如下：
+
+```vim
+" 用UTF8编码重新打开
+:e ++enc=utf-8
+" 用GB18030编码重新打开
+:e ++enc=gb18030
+```
+
+更多原因解析和处理方法参见[@滇狐](http://edyfox.codecarver.org/html/index.html)的文章[`VIM`文件编码识别与乱码处理](http://edyfox.codecarver.org/html/vim_fileencodings_detection.html)，讲得深入浅出、鞭辟入里！
+
+PS:  
+字符编码也是一个很有计算味道的话题，这里不解释，如果不清楚可以自己搜索研究一下。
+
+### `Vim`中文分词支持的问题
 
 不像英文，中文的词的分离没有像空格这样明显分隔，词相关的移动变得很麻烦。
 
