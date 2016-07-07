@@ -58,11 +58,11 @@ Vim Practice
 
 关于『学习』本身的规律：
 
-- 学习一样新事物的先进，不在于刚开始看到的点，而在于理解背后的一套方法（一套方法对应的即是理念）。
-- 上手新事物必然先经历一个能力下降阶段，因为你要放弃你所熟悉的，是重新接纳一套方法。
+- 学习一样新事物的先进，不在于刚开始看到的点，而在于理解一套方法（整套的方法体现蕴含在背后的理念）。
+- 上手新事物必然先经历一个能力下降阶段，因为你要放弃你所熟悉的，重新接纳新的一套方法。
 - 有下面想法同学必然禁锢于原地踏步：
-	- 不愿去理解整体理念，用当前熟悉自己的技能点去比新事件的点。
-	- 不能接受上手新事物的学习成本和先要经历一个能力下降阶段。
+	- 不愿去理解理念（整套方法），而是用当前熟悉自己的技能点去比新事件的点。
+	- 不愿接受上手新事物的学习成本和先要经历一个能力下降阶段。
 
 ### 文章/讨论
 
@@ -92,15 +92,15 @@ Vim Practice
 
 内容比较少，且有中文版的：
 
-- [Vim Cheat Sheet中文版 - vim.rtorr.com](http://vim.rtorr.com/lang/zh_cn/)
-- Graphical vi/Vim Cheat Sheet and Tutorial中文版（右图，点击看大图）  
+- [`Vim` Cheat Sheet中文版 - vim.rtorr.com](http://vim.rtorr.com/lang/zh_cn/)
+- Graphical `vi`/`Vim` Cheat Sheet and Tutorial中文版（右图，点击看大图）  
 	该图的[来源链接](http://blog.ngedit.com/vi-vim-cheat-sheet-sch.gif)，[官网](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html)中文版。 # 这张图你肯定在别人桌子上见过 :smile:
 
 内容比较多的：
 
 [<img src="images/beautiful-vim-cheat-sheet-preview.png" width="256" align="right">](https://raw.githubusercontent.com/oldratlee/vim-practice/master/images/beautiful-vim-cheat-sheet.png)
 
-- Beautiful Vim Cheat-Sheet（右图，点击看大图）  
+- Beautiful `Vim` Cheat-Sheet（右图，点击看大图）  
 	\# 该图的[来源链接](http://i.imgur.com/YLInLlY.png)，这个Sheet Cheat的[评论](https://www.reddit.com/r/vim/comments/32r85c/this_is_my_favorite_vim_cheat_sheet_does_anyone/)和[官网](http://vimcheatsheet.com/)。
 - [Cheat Sheet - michael.peopleofhonoronly.com](http://michael.peopleofhonoronly.com/vim/)
 
@@ -108,25 +108,25 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 
 ### 系统学习
 
-- `Vim` user manual/reference，即是`Vim`的内置帮助系统的内容，内容丰富！  
+- `Vim` user manual/reference，即是`Vim`的内置帮助系统，内容丰富！！  
 	中文版 <http://sourceforge.net/projects/vimcdoc/files/pdf-manual/>
-	- 学会用`Vim`的内置帮助 `:h` `:h 'option'` `:h command` `:h :ex_command` `:h ctrl-w`
-	- `Vim`帮助系统的帮助，即如何使用`Vim`的帮助系统： `:h helphelp`
+	1. 学会用`Vim`的内置帮助 `:h` `:h 'option'` `:h command` `:h :ex_command` `:h ctrl-w`
+	1. `Vim`帮助系统的帮助，即如何使用`Vim`的帮助系统： `:h helphelp`
 - 个人整理的[`Vim`书籍豆列](http://www.douban.com/doulist/41500790/)
-	- 个人先看的是[Vim实用技巧 - 以思维的速度编辑文本](http://book.douban.com/subject/25869486/)  
+	1. 个人先看的是[《`Vim`实用技巧 - 以思维的速度编辑文本》](http://book.douban.com/subject/25869486/)  
 		以编辑理念和实践模式为纲介绍，推荐之。  
 		**_词句共灵感一射，编辑与思考齐飞！_**
-	- [Learning the vi and Vim Editors](http://book.douban.com/subject/3767413/)，行文稳健（很合我的风格）：
+	1. [《Learning the `vi` and `Vim` Editors》](http://book.douban.com/subject/3767413/)，行文稳健（很合我的风格）：
 		1. 先介绍基本功能再说明如何组合技术，从熟悉到领会。
 		1. 再介绍基本编辑器（`Vi`/`Ex`）再说明`Vim`，从历史发展的过程更能深入理解功能适用场景。
 		1. 还介绍`Vi`/`Vim`的周边信息，如`Vi`/`Vim`的名家名言，各个变种，`Vi`/`Emacs`的文化等等
-- [vim-galore - Everything you need to know about Vim](https://github.com/mhinz/vim-galore)  
+- [vim-galore - Everything you need to know about `Vim`](https://github.com/mhinz/vim-galore)  
 	`Vim`方方面面资料汇总。这个仓库有4K+的star！
 
 `Vim`配置/插件的资源
 -------------------------
 
-- [`spf13-vim` - a distribution of Vim plugins and resources](https://github.com/spf13/spf13-vim) - `Vim`的配置框架和配置集合。
+- [`spf13-vim` - a distribution of `Vim` plugins and resources](https://github.com/spf13/spf13-vim) - `Vim`的配置框架和配置集合。
 	- 包含很多插件/主题，无论是小白还是高手，省时好用是王道，用起来。 这个项目有 8K+ star！
 	- 直接使用，配置的效果和包含的插件 已经很不错了。
 	- `spf13-vim`首先是个`Vim`**配置框架**，水准尽显！
@@ -175,9 +175,9 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 
 #### 1. 编辑器的选择
 
-- 如果你已经熟悉精通了一个编辑器，挺好的。这里不会讨论『`Vim`比`Emacs`更好』这个问题，但你可能会觉得`Emacs`并不爽～ :joy:
-- 但不要使用像`Notepad`这样简陋的编辑器，你浪费了大量的生命！ :astonished:
-- 要么用一个觉得的爽的编辑器，要么转用`Vim`吧～ :stuck_out_tongue_winking_eye: 除此再没有其它的出路！（_There is NO other RULE!_）
+1. 如果你已经熟悉精通了一个编辑器，挺好的。这里不会讨论『`Vim`比`Emacs`更好』这个问题，但你可能会觉得`Emacs`并不爽～ :joy:
+1. 但不要使用像`Notepad`这样简陋的编辑器，你浪费了大量的生命！ :astonished:
+1. 要么用一个觉得的爽的编辑器，要么转用`Vim`吧～ :stuck_out_tongue_winking_eye: 除此再没有其它的出路！（_There is NO other RULE!_）
 
 #### 2. 达到高效的3个基本步骤
 
@@ -250,7 +250,7 @@ PS: Thanks for your **_PERFECT_** works! [`@CodeFalling`](https://github.com/Cod
 
 ### `Vim`打开文件乱码问题
 
-`Vim`打开文件是筹码，一般的原因是编码识别错误。
+`Vim`打开文件是乱码，一般的原因是编码识别错误。
 
 可以在`.vimrc`配置文件中设置好`Vim`的编码识别序列，这样可以识别成正确的编码打开：
 
@@ -271,7 +271,7 @@ set fileencodings=ucs-bom,utf-8,utf-16le,gb18030,big5,euc-jp,euc-kr,latin1
 更多原因解析和处理方法参见[@滇狐](http://edyfox.codecarver.org/html/index.html)的文章[`VIM`文件编码识别与乱码处理](http://edyfox.codecarver.org/html/vim_fileencodings_detection.html)，讲得深入浅出、鞭辟入里！
 
 PS:  
-字符编码也是一个很有计算味道的话题，这里不解释，如果不清楚可以自己搜索研究一下。
+像`Vim`一样，字符编码也是一个很具计算机风味的话题，这里不解释，如果不清楚可以自己搜索研究一下。
 
 ### `Vim`中文分词支持的问题
 
@@ -279,9 +279,9 @@ PS:
 
 目前还**_没有_**找到解法。总得来说，这个问题不大，用词以外的方式也可以比较快地完成导航。
 
-- [Vim与中文分词 - google group](https://groups.google.com/forum/#!msg/pongba/RXVqM4sKseU/TrCrySBH1HwJ)
-- [Vim模式下能增加中文分词的支持么？](https://github.com/ghosert/cmd-editor/issues/103)
-- [关于Vim&Emacs的中文分词相关讨论](https://biergaizi.info/archives/2012/04/1322.html)
+- [`Vim`与中文分词 - google group](https://groups.google.com/forum/#!msg/pongba/RXVqM4sKseU/TrCrySBH1HwJ)
+- [`Vim`模式下能增加中文分词的支持么？](https://github.com/ghosert/cmd-editor/issues/103)
+- [关于`Vim&Emacs`的中文分词相关讨论](https://biergaizi.info/archives/2012/04/1322.html)
 
 　
 
