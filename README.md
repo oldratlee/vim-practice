@@ -118,8 +118,8 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 		**_词句共灵感一射，编辑与思考齐飞！_**
 	1. [《Learning the `vi` and `Vim` Editors》](http://book.douban.com/subject/3767413/)，行文稳健（很合我的风格）：
 		1. 先介绍基本功能再说明如何组合技术，从熟悉到领会。
-		1. 再介绍基本编辑器（`Vi`/`Ex`）再说明`Vim`，从历史发展的过程更能深入理解功能适用场景。
-		1. 还介绍`Vi`/`Vim`的周边信息，如`Vi`/`Vim`的名家名言，各个变种，`Vi`/`Emacs`的文化等等
+		1. 再介绍基本编辑器（`vi`/`ex`）再说明`Vim`，从历史发展的过程更能深入理解功能适用场景。
+		1. 还介绍`vi`/`Vim`的周边信息，如`vi`/`Vim`的名家名言，各个变种，`vi`/`Emacs`的文化等等
 - [vim-galore - Everything you need to know about `Vim`](https://github.com/mhinz/vim-galore)  
 	`Vim`方方面面资料汇总。这个仓库有4K+的star！
 
