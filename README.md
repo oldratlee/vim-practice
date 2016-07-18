@@ -3,9 +3,9 @@ Vim Practice
 
 <img src="images/vim-icon.png" width="256" align="right" >
 
-> `Vim`和`Emacs`：编辑器之神和神的编辑器。
+> `Vim`和`Emacs`：编辑器之神和神的编辑器。 :performing_arts:
 
-上面的这句调侃不重要，重要的是效率！
+上面的这句调侃不重要，重要的是效率:heavy_exclamation_mark:
 
 人类智慧输出包含了『录入』和『编辑』操作。
 
@@ -120,24 +120,24 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 		1. 先介绍基本功能再说明如何组合技术，从熟悉到领会。
 		1. 再介绍基本编辑器（`vi`/`ex`）再说明`Vim`，从历史发展的过程更能深入理解功能适用场景。
 		1. 还介绍`vi`/`Vim`的周边信息，如`vi`/`Vim`的名家名言，各个变种，`vi`/`Emacs`的文化等等
-- [vim-galore - Everything you need to know about `Vim`](https://github.com/mhinz/vim-galore)  
-	`Vim`方方面面资料汇总。这个仓库有4K+的star！
+- [vim-galore - Everything you need to know about `Vim` ![](https://img.shields.io/github/stars/mhinz/vim-galore.svg?style=social&label=Star&maxAge=3600)](https://github.com/mhinz/vim-galore)  
+	`Vim`方方面面资料汇总。
 
 `Vim`配置/插件的资源
 -------------------------
 
-- [`spf13-vim` - a distribution of `Vim` plugins and resources](https://github.com/spf13/spf13-vim) - `Vim`的配置框架和配置集合。
-	- 包含很多插件/主题，无论是小白还是高手，省时好用是王道，用起来。 这个项目有 8K+ star！
+- [`spf13-vim` - a distribution of `Vim` plugins and resources ![](https://img.shields.io/github/stars/spf13/spf13-vim.svg?style=social&label=Star&maxAge=3600)](https://github.com/spf13/spf13-vim) - `Vim`的配置框架和配置集合。
+	- 包含很多插件/主题，无论是小白还是高手，省时好用是王道，用起来。
 	- 直接使用，配置的效果和包含的插件 已经很不错了。
 	- `spf13-vim`首先是个`Vim`**配置框架**，水准尽显！
-- [Janus: Vim Distribution](https://github.com/carlhuda/janus)
-	- 又一个`Vim`配置版本。这个项目有 将近7K star！
-- [The Ultimate vimrc](https://github.com/amix/vimrc) - Over the last 8 years I have used and tweaked Vim.
-	- 作者**_8年_**在`Vim`配置上的积累。这个项目有 6K star！
+- [Janus: Vim Distribution ![](https://img.shields.io/github/stars/carlhuda/janus.svg?style=social&label=Star&maxAge=3600)](https://github.com/carlhuda/janus)
+	- 又一个`Vim`配置版本！
+- [The Ultimate vimrc ![](https://img.shields.io/github/stars/amix/vimrc.svg?style=social&label=Star&maxAge=3600)](https://github.com/amix/vimrc) - Over the last 8 years I have used and tweaked Vim.
+	- 作者**_8年_**在`Vim`配置上的积累。
 	- 绝对值得参考学习！
 	- 因为不是框架，所以我会选`spf13-vim`作为我的配置主方式。
-- [Maximum Awesome](https://github.com/square/maximum-awesome) - 三架马车`Vim`、`tmux`和`iTerm 2`的配置。
-	- 值得参考，这个项目有 4K+ star！
+- [Maximum Awesome ![](https://img.shields.io/github/stars/square/maximum-awesome.svg?style=social&label=Star&maxAge=3600)](https://github.com/square/maximum-awesome) - 三架马车`Vim`、`tmux`和`iTerm 2`的配置。
+	- 值得参考！
 - [Vim Awesome - a comprehensive, accurate, and up-to-date directory of Vim plugins](http://vimawesome.com/)
 	- `Vim`插件浏览站点
 
