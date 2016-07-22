@@ -90,13 +90,13 @@ Vim Practice
 
 ### 速查
 
-内容比较少，且有中文版的：
+内容比较精简且有中文版的：
 
 - [`Vim` Cheat Sheet中文版 - vim.rtorr.com](http://vim.rtorr.com/lang/zh_cn/)
 - Graphical `vi`/`Vim` Cheat Sheet and Tutorial中文版（右图，点击看大图）  
 	该图的[来源链接](http://blog.ngedit.com/vi-vim-cheat-sheet-sch.gif)，[官网](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html)中文版。 # 这张图你肯定在别人桌子上见过 :smile:
 
-内容比较多的：
+内容比较丰富的：
 
 [<img src="images/beautiful-vim-cheat-sheet-preview.png" width="256" align="right">](https://raw.githubusercontent.com/oldratlee/vim-practice/master/images/beautiful-vim-cheat-sheet.png)
 
@@ -112,7 +112,7 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 	中文版 <http://sourceforge.net/projects/vimcdoc/files/pdf-manual/>
 	1. 学会用`Vim`的内置帮助 `:h` `:h 'option'` `:h command` `:h :ex_command` `:h ctrl-w`
 	1. `Vim`帮助系统的帮助，即如何使用`Vim`的帮助系统： `:h helphelp`
-- 个人整理的[`Vim`书籍豆列](http://www.douban.com/doulist/41500790/)
+- 个人整理的 [`Vim`书籍豆列](http://www.douban.com/doulist/41500790/)
 	1. 个人先看的是[《`Vim`实用技巧 - 以思维的速度编辑文本》](http://book.douban.com/subject/25869486/)  
 		以编辑理念和实践模式为纲介绍，推荐之。  
 		**_词句共灵感一射，编辑与思考齐飞！_**
