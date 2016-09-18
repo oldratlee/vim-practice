@@ -69,6 +69,7 @@
 - [个人关心的问题](#%E4%B8%AA%E4%BA%BA%E5%85%B3%E5%BF%83%E7%9A%84%E9%97%AE%E9%A2%98)
     - [中文输入法在`Vim`便利切换的问题](#%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E6%B3%95%E5%9C%A8vim%E4%BE%BF%E5%88%A9%E5%88%87%E6%8D%A2%E7%9A%84%E9%97%AE%E9%A2%98)
     - [`Vim`打开文件乱码问题](#vim%E6%89%93%E5%BC%80%E6%96%87%E4%BB%B6%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98)
+    - [查看所有的`Vim map`](#%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%89%E7%9A%84vim-map)
     - [`Vim`中文分词支持的问题](#vim%E4%B8%AD%E6%96%87%E5%88%86%E8%AF%8D%E6%94%AF%E6%8C%81%E7%9A%84%E9%97%AE%E9%A2%98)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -305,6 +306,19 @@ set fileencodings=ucs-bom,utf-8,utf-16le,gb18030,big5,euc-jp,euc-kr,latin1
 
 PS:  
 像`Vim`一样，字符编码也是一个很具计算机风味的话题，这里不解释，如果不清楚可以自己搜索研究一下。
+
+### 查看所有的`Vim map`
+
+下面的场景下，会想查看所有的`Vim map`：
+
+1. `Vim`可以定制自己命令，为了不重写已有的快捷键（`Map`）
+1. 也看看想要功能是不是已经有`Map`了
+
+```vim
+redir > map.txt | silent map | redir END
+" 如果文件已经存在加上!来覆盖输出的文件
+redir! > map.txt | silent map | redir END
+```
 
 ### `Vim`中文分词支持的问题
 
