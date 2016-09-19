@@ -1,4 +1,4 @@
-# Vim Practice
+# Vim Practice [![知识共享协议（CC协议）](https://img.shields.io/badge/License-Creative%20Commons-DC3D24.svg) ![Attribution-NonCommercial-ShareAlike CC BY-NC-SA](LICENSE.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 
 <img src="images/vim-icon.png" width="256" align="right" >
 
