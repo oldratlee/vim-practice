@@ -2,56 +2,13 @@
 
 <img src="images/vim-icon.png" width="256" align="right" >
 
-> `Vim`和`Emacs`：编辑器之神和神的编辑器。 :performing_arts:
-
-上面的这句调侃不重要，重要的是效率:heavy_exclamation_mark:
-
-个人没入`Emacs`圈，牛掰编辑器先入的是`Vim`。自己作为一个`Emacs`圈外人，感觉是：
-
-- `Emacs`，平台理念很深，带动了编辑理念。
-	- 契合了『神』的编辑器这个说法。只要你喜欢可以把`Emacs`打造成`Vim`，当然`Emacs`也提供一套自己编辑风格，基于组合快捷键，现在各种软件都提供快捷键来加速操作，尤其是程序员的`IDE`更是重度要依赖和熟练快捷键。
-	- 关于`Emacs`的平台特质可以看看文章：
-		- [从`Vim`到`Emacs`到`Evil`](http://ceyes.github.io/2015-01/from-Vim-to-Emacs/)  
-			`Emacs`只是个强大的平台，提供各种定制来满足每个人的不同需求。所以Thanks `Evil`，我已把`Emacs` 打造成了理想的『`Vim`化的`Emacs Editor`』，我可以纵情使用更方便的方式来工作。
-		- [程序员的编辑器 —— `Vim`](editor-for-programmer.md)，也提到了一点：  
-			`vi`追求的是快捷——启动程序迅速，编辑文本高效，功能专注，而`Emacs`追求的是功能的丰富强大以及集成带来的方便，在`Emacs`里头可以发邮件，上新闻组，听`MP3`，浏览网页，玩游戏，几乎可以`login` -> `emacs` -> `logout`了 :-)，`vi`和`Emacs`都是程序员的编辑器，相比而言，`Emacs`更是提供了一种程序员的生活氛围。
-- `Vim`则是先直接在编辑理念上思考很深。
-	- 契合了编辑器之『神』的说法。
-	- `Vim`提供了一套面向编辑语言，像
-		- `diw`：`delete in word`，删除光标所在单词。`dd`：2个重复命令是对行操作，删除行。
-		- `x`：删除一个字符，`2x`：删除2个字符。
-		- 一旦你熟悉习惯这门语言，编辑的过程就是思考的过程。
-		- 另外，这门语言本身就是可编程的（即编程语言），像上面用数字重复，以及可以用`norm`命令或是宏把指令脚本化。这里不展开了。
-
----------------------
-
-人类智慧输出包含了『录入』和『编辑』操作。
-
-目前，『键盘录入』/『键盘编辑』是主流方式。  
-键盘操作效率的关键是『打字指法』/『盲打』。
-
-对于录入，当然还有语音录入等等（期待脑电波的录入方式成为现实 :smile:）。  
-对于中文，还多一样，即『输入法』，如五笔、拼音。
-
-『编辑器』 对于 编辑 的重要性 不言而喻。
-
-综上，智慧输出包含了：
-
-1. 键盘操作：
-	- 打字指法
-1. 录入 => 键盘录入：
-	- 输入法
-1. 编辑 => 键盘编辑：
-	- 编辑器
-
-上面『打字指法』和『编辑器』的顺序重要的，如果你还不能盲打，那么不要想着要找一个的编辑器就能高效了！ :dancers:
-
----------------------
-
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
+- [序](#%E5%BA%8F)
+    - [`Vim` vs. `Emacs`](#vim-vs-emacs)
+    - [关于编辑本身](#%E5%85%B3%E4%BA%8E%E7%BC%96%E8%BE%91%E6%9C%AC%E8%BA%AB)
 - [学习资料](#%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99)
     - [关于『学习』本身的规律](#%E5%85%B3%E4%BA%8E%E3%80%8E%E5%AD%A6%E4%B9%A0%E3%80%8F%E6%9C%AC%E8%BA%AB%E7%9A%84%E8%A7%84%E5%BE%8B)
     - [个人的`Vim`入坑路径](#%E4%B8%AA%E4%BA%BA%E7%9A%84vim%E5%85%A5%E5%9D%91%E8%B7%AF%E5%BE%84)
@@ -73,6 +30,56 @@
     - [`Vim`中文分词支持的问题](#vim%E4%B8%AD%E6%96%87%E5%88%86%E8%AF%8D%E6%94%AF%E6%8C%81%E7%9A%84%E9%97%AE%E9%A2%98)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## 序
+
+### `Vim` vs. `Emacs`
+
+一上来就要说一个『宗教性』问题，很危险啊！ :smile: 这节不会说2个编辑器有什么不好，只说自己一点感觉。
+
+> `Vim`和`Emacs`：编辑器之神和神的编辑器。 :performing_arts:
+
+上面的这句调侃不重要，重要的是效率:heavy_exclamation_mark:
+
+个人没入`Emacs`圈，牛掰编辑器先入的是`Vim`。自己作为一个`Emacs`圈外人，对于两者对比的感觉是：
+
+- `Vim`则是先直接在编辑理念上思考很深。
+	- 契合了编辑器之『神』的说法。
+	- `Vim`提供了一套面向编辑的语言，像
+		- `diw`：`delete in word`，删除光标所在单词。`dd`：2个重复命令是对行操作，删除行。
+		- `x`：删除一个字符，`2x`：删除2个字符。
+		- 一旦你熟悉习惯这门语言，编辑的过程就是思考的过程。
+		- 另外，这门语言本身就是可编程的（即编程语言），像上面用数字重复，以及可以用`norm`命令或是宏把指令脚本化。这里不展开了。
+- `Emacs`，平台理念很深，带动了编辑理念。
+	- 契合了『神』的编辑器这个说法。只要你喜欢可以把`Emacs`打造成`Vim`，当然`Emacs`也提供一套自己编辑风格，基于组合快捷键，现在各种软件都提供快捷键来加速操作，尤其是程序员的`IDE`更是重度要依赖和熟练快捷键。
+	- 关于`Emacs`的平台特质可以看看文章：
+		- [从`Vim`到`Emacs`到`Evil`](http://ceyes.github.io/2015-01/from-Vim-to-Emacs/)  
+			`Emacs`只是个强大的平台，提供各种定制来满足每个人的不同需求。所以Thanks `Evil`，我已把`Emacs` 打造成了理想的『`Vim`化的`Emacs Editor`』，我可以纵情使用更方便的方式来工作。
+		- [程序员的编辑器 —— `Vim`](editor-for-programmer.md)，也提到了一点：  
+			`vi`追求的是快捷——启动程序迅速，编辑文本高效，功能专注，而`Emacs`追求的是功能的丰富强大以及集成带来的方便，在`Emacs`里头可以发邮件，上新闻组，听`MP3`，浏览网页，玩游戏，几乎可以`login` -> `emacs` -> `logout`了 :-)，`vi`和`Emacs`都是程序员的编辑器，相比而言，`Emacs`更是提供了一种程序员的生活氛围。
+
+### 关于编辑本身
+
+人类智慧输出包含了『录入』和『编辑』操作。
+
+目前，『键盘录入』/『键盘编辑』是主流方式。  
+键盘操作效率的关键是『打字指法』/『盲打』。
+
+对于录入，当然还有语音录入等等（期待脑电波的录入方式成为现实 :smile:）。  
+对于中文，还多一样，即『输入法』，如五笔、拼音。
+
+『编辑器』 对于 编辑 的重要性 不言而喻。
+
+综上，智慧输出包含了：
+
+1. 键盘操作：
+	- 打字指法
+1. 录入 => 键盘录入：
+	- 输入法
+1. 编辑 => 键盘编辑：
+	- 编辑器
+
+上面『打字指法』和『编辑器』的顺序重要的，如果你还不能盲打，那么不要想着要找一个的编辑器就能高效了！ :dancers:
 
 ## 学习资料
 
@@ -102,6 +109,8 @@
 - [Why `Vim` is awesome](http://federicoramirez.name/why-vim-is-awesome/)
 - [`VIM` is awesome — But don’t overdo it](https://medium.com/@PhilPlckthun/vim-is-awesome-but-dont-overdo-it-c03594e6bb5b#.hyy2nhhe9)  
 	过犹不及，再好的东西，也要明白什么时候不合适，这是反而说明是深的理解。
+- [简明`Vim` 练级攻略 - coolshell.cn](http://coolshell.cn/articles/5426.html)  
+	快速逐步上手介绍。
 - [Coming Home to `Vim`](http://stevelosh.com/blog/2010/09/coming-home-to-vim/)  
 	快速上手使用。为什么使用`Vim`/`Vim`使用感觉/上手的高效配置/好用的插件。
 - [普通人的编辑利器 —— `Vim`](editor-for-mortal.md) / [程序员的编辑器 —— `Vim`](editor-for-programmer.md)  
@@ -109,7 +118,7 @@
 	以非系统学习方式，获得偏整体了解的好文章！
 - [从`Vim`到`Emacs`到`Evil`](http://ceyes.github.io/2015-01/from-Vim-to-Emacs/)  
 	`Emacs`只是个强大的平台，提供各种定制来满足每个人的不同需求。所以Thanks `Evil`，我已把`Emacs` 打造成了理想的『`Vim`化的`Emacs Editor`』，我可以纵情使用更方便的方式来工作。 
-- [提高 Vim 使用效率的 12 个技巧](http://blog.jobbole.com/87481/)
+- [提高`Vim`使用效率的 12 个技巧](http://blog.jobbole.com/87481/)
 - [Awesome `Vim` Plugins](https://reinteractive.net/posts/166-awesome-vim-plugins)
 - 知乎上的一些话题（看一下讨论扩展一下了解）
 	- [有哪些编程必备的 `Vim` 配置？ - 知乎](https://www.zhihu.com/question/19989337)
