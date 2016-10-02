@@ -307,8 +307,9 @@ set fileencodings=ucs-bom,utf-8,utf-16le,gb18030,big5,euc-jp,euc-kr,latin1
 ```vim
 " 用UTF8编码重新打开
 :e ++enc=utf-8
-" 用GB18030编码重新打开
-:e ++enc=gb18030
+" 用GBK编码重新打开
+:e ++enc=gbk
+" 在GB18030字符集是GBK的超集，上面是为了方便键入使用GBK名
 ```
 
 更多原因解析和处理方法参见[@滇狐](http://edyfox.codecarver.org/html/index.html)的文章[`VIM`文件编码识别与乱码处理](http://edyfox.codecarver.org/html/vim_fileencodings_detection.html)，讲得深入浅出、鞭辟入里！
@@ -333,7 +334,16 @@ redir! > map.txt | silent map | redir END
 
 不像英文，中文的词的分离没有像空格这样明显分隔，词相关的移动变得很麻烦。
 
-目前还**_没有_**找到解法。总得来说，这个问题不大，用词以外的方式也可以比较快地完成导航。
+目前还**_没有_**找到解法。总得来说，这个问题不大，可以替代的做法：
+
+- `Hack`/加速系统的按键重复后，可以简单地用`hjkl`在小/大范围内快速导航。
+- 用词以外的方式也可以比较快地完成导航，如
+	- 在大范围的按段跳、按页跳（`CTRL-D/CTRL-F`）。
+	- 按搜索跳
+		- `fz/Fz/tz/Tz`
+		- `n/N`
+
+`Vim`分词的相关资源
 
 - [`Vim`与中文分词 - google group](https://groups.google.com/forum/#!msg/pongba/RXVqM4sKseU/TrCrySBH1HwJ)
 - [`Vim`模式下能增加中文分词的支持么？](https://github.com/ghosert/cmd-editor/issues/103)
