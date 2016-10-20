@@ -1,4 +1,4 @@
-原文链接： [普通人的编辑利器——`Vim`](http://blog.sina.com.cn/s/blog_46dac66f010005kw.html) 作者:[善用佳软](http://blog.sina.com.cn/m/xbeta)　版本:v1.5-r5-20080220，2006-12-04
+原文链接： [普通人的编辑利器——`Vim`](http://blog.sina.com.cn/s/blog_46dac66f010005kw.html) 作者:[善用佳软](http://blog.sina.com.cn/m/xbeta)　版本：v1.5-r5-20080220，2006-12-04
 
 普通人的编辑利器 —— `Vim`
 ====================================================
