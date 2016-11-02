@@ -299,7 +299,7 @@ PS: Thanks for your **_PERFECT_** works! [`@CodeFalling`](https://github.com/Cod
 
 ```vim
 " 需要配置到 .vimrc 中
-set fileencodings=ucs-bom,utf-8,utf-16le,gb18030,big5,euc-jp,euc-kr,latin1
+set fileencodings=ucs-bom,utf-8,gb18030,utf-16le,big5,euc-jp,euc-kr,latin1
 ```
 
 如果仍然识别成乱码，可以在命令模式显式指定编码重新打开文件，命令如下：
