@@ -120,6 +120,10 @@
 	`Emacs`只是个强大的平台，提供各种定制来满足每个人的不同需求。所以Thanks `Evil`，我已把`Emacs` 打造成了理想的『`Vim`化的`Emacs Editor`』，我可以纵情使用更方便的方式来工作。 
 - [提高`Vim`使用效率的 12 个技巧](http://blog.jobbole.com/87481/)
 - [Awesome `Vim` Plugins](https://reinteractive.net/posts/166-awesome-vim-plugins)
+- 池建强的BLOG：『谁说Vim不是IDE？』系列：
+	- [1. 概述、编程人生、使用场景](http://www.cnblogs.com/chijianqiang/archive/2012/10/30/vim-1.html)
+	- [2. 环境配置、基本概念](http://www.cnblogs.com/chijianqiang/archive/2012/10/31/vim-2.html)
+	- [3. 常用插件](http://www.cnblogs.com/chijianqiang/archive/2012/11/06/vim-3.html)
 - 知乎上的一些话题（看一下讨论扩展一下了解）
 	- [有哪些编程必备的 `Vim` 配置？ - 知乎](https://www.zhihu.com/question/19989337)
 	- [到底 `VIM` 能配置到多强大的程度？ - 知乎](https://www.zhihu.com/question/20151659)
