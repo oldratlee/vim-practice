@@ -102,7 +102,7 @@
 	这一步我保持一个相对慢速但持续的过程，两三周时间。
 1. 配置上[`spf13-vim`](https://github.com/spf13/spf13-vim)，但舒适强大的`Vim`环境。  
 	很多人不推荐这么做，我比较实用，实用就做了。中间会去填`spf13-vim`可能一些坑。
-1. 了解一些经典插件并实战，如`surround`。
+1. 了解一些经典插件并实战，如[`surround`](https://github.com/tpope/vim-surround)。
 
 ### 文章/讨论
 
