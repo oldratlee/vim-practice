@@ -81,11 +81,39 @@ cd fonts
 
 如果你使用的是[`spf13-vim`](https://github.com/spf13/spf13-vim)配置版，参见其[`Airline`一节的说明](https://github.com/spf13/spf13-vim#airline)。
 
-官网[vim-airline, Lean & mean status/tabline for vim that's light as air.](https://github.com/vim-airline/vim-airline)，有独立的配置说明。
+官网[vim-airline, Lean & mean status/tabline for vim that's light as air](https://github.com/vim-airline/vim-airline)，有独立的配置说明。
 
 # `MacVim`的字体配置
 
-`MacVim`的多层字体配置
+`MacVim`的多层字体配置，通过`Vim`的`guifont`和`guifontwide`2个选项配置。
+
+本人的`MacVim`具体字体配置：第一重字体**_`Consolas`_** 16号；第二重字体**_`STXihei`_**(华文细黑) 16号。
+
+对应在`Vim`配置文件添加：
+
+```vim
+" 配置英文字体
+set guifont=Consolas:h16
+" 指定宽字符的字体，如中文字符
+" 使用这个字体下的字符，会占用2个英文字符的宽度
+set guifontwide=STXihei:h16
+```
+
+个人在配置过程中，碰到的问题及其解决方法：
+
+1. 本人_不会_使用`Powerline`字体作为第一字体，因为系统自带字体**_`Monaco`_**、**_`Consolas`_**的英文等宽字体的质量很高。
+1. 使用`Powerline`字体作为`guifontwide`后，中文字符的字体在`MacVim`下显示很差，即`Fallback`的字体不好。
+
+基于上面原因，在`MacVim`下，我放弃了`Airline`的`Powerline`字符，配置方式如下：
+
+```vim
+" 如果运行的不是GUI（即MacVim），才启用`Airline`的`Powerline`字符
+if ! has('gui_running')
+    let g:airline_powerline_fonts=1
+endif
+```
+
+最终效果不错，截图如下。
 
 ## 效果图
 
