@@ -1,0 +1,2 @@
+- http://apple.stackexchange.com/questions/249307/tic-doesnt-read-from-stdin-and-segfaults-when-adding-terminfo-to-support-italic
+- https://alexpearce.me/2014/05/italics-in-iterm2-vim-tmux/
