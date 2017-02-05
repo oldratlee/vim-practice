@@ -1,3 +1,5 @@
+<img src="fonts.jpg" align="right" >
+
 # `Vim`字体设置
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -83,7 +85,7 @@ set guifontwide=STXihei:h16
 基于上面原因，在`MacVim`下，我放弃了`Airline`的`Powerline`字符，配置方式如下：
 
 ```vim
-" 如果运行的不是GUI（即MacVim），才启用`Airline`的`Powerline`字符
+" 如果运行的不是GUI（即MacVim），才启用Airline的Powerline字符
 if ! has('gui_running')
     let g:airline_powerline_fonts=1
 endif
