@@ -3,11 +3,11 @@
 程序员的编辑器 —— `Vim`
 ============================================
 
-<img src="images/vim-logo.png" width="256" align="right" >
-
 > 编者按：本文详细介绍了`Vim`的历史、基本知识等，并介绍了作者作为一个程序员经常用到的一些相关资源。同时包含了大量的参考文献，适合想深入了解`Vim`的读者。
 
 :point_right: 如果您从未接触过`Vim`，推荐先看看`Vim`的中文帮助文档和_xbeta_的[《普通人的编辑利器——`Vim`》](editor-for-mortal.md)。
+
+<img src="images/vim-logo.png" width="256" align="right" >
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -124,16 +124,16 @@ q   # 退出
 
 下面是`Vim`的重要版本历史：
 
-date | version | milestone
----- | ------- | ---------
-2005 | vim 7.0aa | spell checking，multi tabpage
-2000 Jul 09 | vim 6.0a | folding (and more)
-1998 Feb 19 | vim 5.0 | syntax coloring/highlighting
-1996 May 29 | vim 4.0 | graphical user interface (robert webb).
-1994 Aug 12 | vim 3.0 | support for multiple buffers and windows.
-1992 | vim 1.22 | port to unix. vim now competes with vi. this was when vim became vi improved.
-1991 Nov 2 | vim 1.14 | first release (on fred fish disk \#591).
-1988 | vim 1.0 | vi imitation on the amiga
+date        | version   | milestone
+----        | -------   | ---------
+2005        | vim 7.0aa | spell checking，multi tabpage
+2000 Jul 09 | vim 6.0a  | folding (and more)
+1998 Feb 19 | vim 5.0   | syntax coloring/highlighting
+1996 May 29 | vim 4.0   | graphical user interface (robert webb).
+1994 Aug 12 | vim 3.0   | support for multiple buffers and windows.
+1992        | vim 1.22  | port to unix. vim now competes with vi. this was when vim became vi improved.
+1991 Nov 2  | vim 1.14  | first release (on fred fish disk \#591).
+1988        | vim 1.0   | vi imitation on the amiga
 
 参考资料：
 
@@ -222,23 +222,23 @@ int some_ugly_modifier and some_ugly_name (void)
 
 命令解释如下：
 
-命令串  | 含义
-------  | -----
-`%`     | 全文（`%` 是 `1,$` 范围的缩写）
-`s`     | 替换
-`/`     | 搜索字符串开始
-`(`     | 左括号
-`\)`    | 开始记录匹配
-`\d+`   | 一个或多个数字
-`\)`    | 结束记录匹配
-`)`     | 右括号
-`/`     | 搜索字符串结束
-`\=`    | 把后面的表达式计算出来作为替换字符串
-`"("`   | 左括号
-`.`     | 字符串连接运算符
+命令串              | 含义
+------              | -----
+`%`                 | 全文（`%` 是 `1,$` 范围的缩写）
+`s`                 | 替换
+`/`                 | 搜索字符串开始
+`(`                 | 左括号
+`\)`                | 开始记录匹配
+`\d+`               | 一个或多个数字
+`\)`                | 结束记录匹配
+`)`                 | 右括号
+`/`                 | 搜索字符串结束
+`\=`                | 把后面的表达式计算出来作为替换字符串
+`"("`               | 左括号
+`.`                 | 字符串连接运算符
 `(submatch(1) + 1)` | 把第一个匹配的结果加一作为一个整体返回
-`.")"`  | 添上右括号
-`/g`    | 替换字符串结束，`g`表示替换每一行的所有匹配结果。
+`.")"`              | 添上右括号
+`/g`                | 替换字符串结束，`g`表示替换每一行的所有匹配结果。
 
 #### 2. 重新连接`log`系统的断行
 
@@ -269,19 +269,19 @@ other
 
 中，想把每行的`&`符号定位到固定的一列，比如第78列，手动对齐也是很麻烦的，这个问题可以用`Vim`的[`Align`插件](http://www.vim.org/scripts/script.php?script_id=294)解决，另外利用宏也可以：
 
-命令串  | 含义
-------  | -----
-`:set ve=all`   | 使得光标可以定位到屏幕任何位置（缺省下`Vim`的光标只能放在行内的字符上）
-`gg`            | 到文件第一行
-`/\s\+&\s*$`    | 找以`&`结尾的行，`&`前至少一个空白字符，后0或多个空白字符
-`qa`            | 记录宏到寄存器`a`
-`D`             | 删除到行尾
-`78|`           | 定位到第78列
-`i&<ESC>`       | 插入`&`并返回到命令模式
-`n`             | 查找下一个`&`
-`q`             | 停止记录宏
-`10000@a`       | 执行一万遍寄存器`a`中保存的命令
-`:set ve=""`    | 恢复`ve`缺省值
+命令串        | 含义
+------        | -----
+`:set ve=all` | 使得光标可以定位到屏幕任何位置（缺省下`Vim`的光标只能放在行内的字符上）
+`gg`          | 到文件第一行
+`/\s\+&\s*$`  | 找以`&`结尾的行，`&`前至少一个空白字符，后0或多个空白字符
+`qa`          | 记录宏到寄存器`a`
+`D`           | 删除到行尾
+`78|`         | 定位到第78列
+`i&<ESC>`     | 插入`&`并返回到命令模式
+`n`           | 查找下一个`&`
+`q`           | 停止记录宏
+`10000@a`     | 执行一万遍寄存器`a`中保存的命令
+`:set ve=""`  | 恢复`ve`缺省值
 
 #### 4. 连续插入72个等号
 
