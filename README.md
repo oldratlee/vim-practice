@@ -52,7 +52,7 @@
 		- 一旦你熟悉习惯这门语言，编辑的过程就是思考的过程。
 		- 另外，这门语言本身就是可编程的（即编程语言），像上面用数字重复，以及可以用`norm`命令或是宏把指令脚本化。这里不展开了。
 - `Emacs`，平台理念很深，带动了编辑理念。
-	- 契合了『神』的编辑器这个说法。只要你喜欢可以把`Emacs`打造成`Vim`，当然`Emacs`也提供一套自己编辑风格，基于组合快捷键，现在各种软件都提供快捷键来加速操作，尤其是程序员的`IDE`更是重度要依赖和熟练快捷键。
+	- 契合了『神』的编辑器这个说法。只要你喜欢可以把`Emacs`打造成`Vim`，当然`Emacs`也提供一套自己编辑风格，基于组合快捷键，现在各种软件都提供快捷键来加速操作，尤其是程序员的`IDE`更是重度依赖熟练的使用快捷键。
 	- 关于`Emacs`的平台特质可以看看文章：
 		- [从`Vim`到`Emacs`到`Evil`](http://ceyes.github.io/2015-01/from-Vim-to-Emacs/)  
 			`Emacs`只是个强大的平台，提供各种定制来满足每个人的不同需求。所以Thanks `Evil`，我已把`Emacs` 打造成了理想的『`Vim`化的`Emacs Editor`』，我可以纵情使用更方便的方式来工作。
@@ -80,7 +80,7 @@
 1. 编辑 => 键盘编辑：
 	- 编辑器
 
-上面『打字指法』和『编辑器』的顺序重要的，如果你还不能盲打，那么不要想着要找一个的编辑器就能高效了！ :dancers:
+上面『打字指法』和『编辑器』的顺序重要的，如果你还不能**_盲打_**，那么不要想着要找一个的编辑器就能高效了！ :dancers:
 
 ## 学习资料
 
@@ -140,27 +140,27 @@
 
 内容比较精简且有中文版的：
 
-- [`Vim` Cheat Sheet中文版 - vim.rtorr.com](http://vim.rtorr.com/lang/zh_cn/)
-- Graphical `vi`/`Vim` Cheat Sheet and Tutorial中文版（右图，点击看大图）  
+1. [`Vim` Cheat Sheet中文版 - vim.rtorr.com](http://vim.rtorr.com/lang/zh_cn/)
+1. Graphical `vi`/`Vim` Cheat Sheet and Tutorial中文版（右图，点击看大图）  
 	该图的[来源链接](http://blog.ngedit.com/vi-vim-cheat-sheet-sch.gif)，[官网](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html)中文版。 # 这张图你肯定在别人桌子上见过 :smile:
 
 内容比较丰富的：
 
 [<img src="images/beautiful-vim-cheat-sheet-preview.png" width="256" align="right">](https://raw.githubusercontent.com/oldratlee/vim-practice/master/images/beautiful-vim-cheat-sheet.png)
 
-- Beautiful `Vim` Cheat-Sheet（右图，点击看大图）  
+1. Beautiful `Vim` Cheat-Sheet :cupid::sparkling_heart: （右图，点击看大图）  
 	\# 该图的[来源链接](http://i.imgur.com/YLInLlY.png)，这个Sheet Cheat的[评论](https://www.reddit.com/r/vim/comments/32r85c/this_is_my_favorite_vim_cheat_sheet_does_anyone/)和[官网](http://vimcheatsheet.com/)。
-- [Cheat Sheet - michael.peopleofhonoronly.com](http://michael.peopleofhonoronly.com/vim/)
+1. [Cheat Sheet - michael.peopleofhonoronly.com](http://michael.peopleofhonoronly.com/vim/)
 
 Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Cheat Sheet](more-cheat-sheet.md) :joy:
 
 ### 系统学习
 
-- `Vim` user manual/reference，即是`Vim`的内置帮助系统，内容丰富！！  
+1. `Vim` user manual/reference，即是`Vim`的内置帮助系统，内容丰富！！  
 	中文版 <http://sourceforge.net/projects/vimcdoc/files/pdf-manual/>
 	1. 学会用`Vim`的内置帮助 `:h` `:h 'option'` `:h command` `:h :ex_command` `:h ctrl-w`
 	1. `Vim`帮助系统的帮助，即如何使用`Vim`的帮助系统： `:h helphelp`
-- 个人整理的 [`Vim`书籍豆列](http://www.douban.com/doulist/41500790/)
+1. 个人整理的 [`Vim`书籍豆列](http://www.douban.com/doulist/41500790/)
 	1. 个人先看的是[《`Vim`实用技巧 - 以思维的速度编辑文本》](http://book.douban.com/subject/25869486/)  
 		以编辑理念和实践模式为纲介绍，推荐之。  
 		**_词句共灵感一射，编辑与思考齐飞！_**
@@ -168,7 +168,7 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 		1. 先介绍基本功能再说明如何组合技术，从熟悉到领会。
 		1. 再介绍基本编辑器（`vi`/`ex`）再说明`Vim`，从历史发展的过程更能深入理解功能适用场景。
 		1. 还介绍`vi`/`Vim`的周边信息，如`vi`/`Vim`的名家名言，各个变种，`vi`/`Emacs`的文化等等
-- [vim-galore - Everything you need to know about `Vim` ![](https://img.shields.io/github/stars/mhinz/vim-galore.svg?style=social&label=Star&maxAge=3600)](https://github.com/mhinz/vim-galore)  
+1. [vim-galore - Everything you need to know about `Vim` ![](https://img.shields.io/github/stars/mhinz/vim-galore.svg?style=social&label=Star&maxAge=3600)](https://github.com/mhinz/vim-galore)  
 	`Vim`方方面面资料汇总。
 
 `Vim`配置/插件的资源
