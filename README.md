@@ -36,7 +36,7 @@
 
 ### `Vim` vs. `Emacs`
 
-一上来就要说一个『宗教性』问题，很危险啊！ :smile: 这节不会说2个编辑器有什么不好，只说自己一点感觉。
+一上来就要说一个『宗教性』问题，很危险啊！ :smile: 这节不会说2个编辑器有什么不好，再者自己并不熟悉`Emacs`，只说自己了解到的一点感觉。
 
 > `Vim`和`Emacs`：编辑器之神和神的编辑器。 :performing_arts:
 
@@ -148,8 +148,8 @@
 
 [<img src="images/beautiful-vim-cheat-sheet-preview.png" width="256" align="right">](https://raw.githubusercontent.com/oldratlee/vim-practice/master/images/beautiful-vim-cheat-sheet.png)
 
-1. Beautiful `Vim` Cheat-Sheet :cupid::sparkling_heart: （右图，点击看大图）  
-	\# 该图的[来源链接](http://i.imgur.com/YLInLlY.png)，这个Sheet Cheat的[评论](https://www.reddit.com/r/vim/comments/32r85c/this_is_my_favorite_vim_cheat_sheet_does_anyone/)和[官网](http://vimcheatsheet.com/)。
+1. Beautiful `Vim` Cheat-Sheet （右图，点击看大图）  
+	\# 个人觉得这个是信息表达最好的一个！ :cupid::sparkling_heart: 该图的[来源链接](http://i.imgur.com/YLInLlY.png)，这个Sheet Cheat的[评论](https://www.reddit.com/r/vim/comments/32r85c/this_is_my_favorite_vim_cheat_sheet_does_anyone/)和[官网](http://vimcheatsheet.com/)。
 1. [Cheat Sheet - michael.peopleofhonoronly.com](http://michael.peopleofhonoronly.com/vim/)
 
 Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Cheat Sheet](more-cheat-sheet.md) :joy:
