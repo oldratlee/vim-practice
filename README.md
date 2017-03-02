@@ -284,11 +284,16 @@ and use the most efficient command all the time.
 
 ### 中文输入法在`Vim`便利切换的问题
 
+**_问题说明：_**
+
 本来`Vim`是有模式的（`Normal/Command/Insert/Replace/Visual/...`），再加上中文需要输入法切换（你处在中文输入还是英文输入状态），中文编辑需要在脑子记住当前是哪个状态的，个人觉得这很蛋疼。
 
 理想的状态期望：
 
 - 当切换到如`Normal/Command`模式时，自动切换到英文输入法。
+- 切回到`Insert`模式时，还原文字输入时所用的输入法状态（中文输入/英文输入）。
+
+**_解决方法：_**
 
 解法参见[`@CodeFalling`](https://github.com/CodeFalling)的[完美解决 `Mac` 下 `Vim/Emacs` 的输入法切换问题](https://codefalling.com/2015/11/02/fcitx-vim-for-OS-X/)：
 
@@ -299,16 +304,20 @@ PS: Thanks for your **_PERFECT_** works! [`@CodeFalling`](https://github.com/Cod
 
 ### `Vim`打开文件乱码问题
 
-`Vim`打开文件是乱码，一般的原因是编码识别错误。
+**_问题说明：_**
 
-可以在`.vimrc`配置文件中设置好`Vim`的编码识别序列，这样可以识别成正确的编码打开：
+`Vim`打开文件是乱码，常见的原因是编码识别错误。
+
+**_解决方法：_**
+
+可以在`.vimrc`配置文件中设置好`Vim`的用于尝试识别的编码序列，依次使用序列中的编码直到这个编码可以正确显示文件中的字符：
 
 ```vim
 " 需要配置到 .vimrc 中
 set fileencodings=ucs-bom,utf-8,gb18030,utf-16le,big5,euc-jp,euc-kr,latin1
 ```
 
-如果仍然识别成乱码，可以在命令模式显式指定编码重新打开文件，命令如下：
+如果仍然识别成乱码（比如文件包含多种编码的字符，一定会有乱码），可以在命令模式显式指定编码重新打开文件，命令如下：
 
 ```vim
 " 用UTF8编码重新打开
@@ -325,6 +334,8 @@ PS:
 
 ### `Vim`字体设置
 
+**_问题说明：_**
+
 合适字体可以方便识别，提高效率和心情，不能说不重要！ :kiss:
 
 - 对在控制台中运行的`Vim`命令，字体由终端配置。
@@ -332,14 +343,20 @@ PS:
 
 `Mac`下，终端常用的是`iTerm`/`terminal`应用，`GUI Vim`用的是`MacVim`应用。
 
+**_解决方法：_**
+
 说明详见单独一页[设置`Vim`字体](font-config/README.md)。
 
 ### 查看所有的`Vim Map`
+
+**_问题说明：_**
 
 下面的场景下，会想查看所有的`Vim Map`：
 
 1. `Vim`可以定制自己命令，为了不重写已有的快捷键（`Map`）
 1. 也看看想要功能是不是已经有`Map`了
+
+**_解决方法：_**
 
 ```vim
 redir > map.txt | silent map | redir END
@@ -348,6 +365,8 @@ redir! > map.txt | silent map | redir END
 ```
 
 ### `crontab -e`修改失败
+
+**_问题说明：_**
 
 `crontab`修改后，报`crontab: temp file must be edited in place`出错信息，`crontab`没有修改。
 
@@ -358,6 +377,8 @@ $ crontab -e
 crontab: temp file must be edited in place
 ```
 
+**_解决方法：_**
+
 在`.vimrc`配置文件中设置，对于`crontab`文件不使用备份文件：
 
 ```vim
@@ -365,9 +386,18 @@ crontab: temp file must be edited in place
 autocmd BufNewFile,BufRead crontab.* set nobackup | set nowritebackup
 ```
 
+更多说明参见：
+
+- http://vi.stackexchange.com/questions/137
+- https://jamiecook.wordpress.com/2013/02/10/using-vim-to-edit-crontab-on-mac-osx/
+
 ### `Vim`中文分词支持的问题
 
+**_问题说明：_**
+
 不像英文，中文的词的分离没有像空格这样明显分隔，词相关的移动变得很麻烦。
+
+**_解决方法：_**
 
 目前还**_没有_**找到解法。总得来说，这个问题不大，可以替代的做法：
 
