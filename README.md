@@ -28,6 +28,7 @@
     - [`Vim`打开文件乱码问题](#vim%E6%89%93%E5%BC%80%E6%96%87%E4%BB%B6%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98)
     - [`Vim`字体设置](#vim%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE)
     - [查看所有的`Vim Map`](#%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%89%E7%9A%84vim-map)
+    - [`crontab -e`修改失败](#crontab--e%E4%BF%AE%E6%94%B9%E5%A4%B1%E8%B4%A5)
     - [`Vim`中文分词支持的问题](#vim%E4%B8%AD%E6%96%87%E5%88%86%E8%AF%8D%E6%94%AF%E6%8C%81%E7%9A%84%E9%97%AE%E9%A2%98)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -344,6 +345,24 @@ PS:
 redir > map.txt | silent map | redir END
 " 如果文件已经存在加上!来覆盖输出的文件
 redir! > map.txt | silent map | redir END
+```
+
+### `crontab -e`修改失败
+
+`crontab`修改后，报`crontab: temp file must be edited in place`出错信息，`crontab`没有修改。
+
+```sh
+$ crontab -e
+# ... I do my thing in vim & :wq
+"crontab.9ZcXiFaawt" 6L, 203C written
+crontab: temp file must be edited in place
+```
+
+在`.vimrc`配置文件中设置，对于`crontab`文件不使用备份文件：
+
+```vim
+" 需要配置到 .vimrc 中
+autocmd BufNewFile,BufRead crontab.* set nobackup | set nowritebackup
 ```
 
 ### `Vim`中文分词支持的问题
