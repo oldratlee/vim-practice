@@ -81,7 +81,7 @@
 1. 编辑 => 键盘编辑：
 	- 编辑器
 
-上面『打字指法』和『编辑器』的顺序重要的，如果你还不能**_盲打_**，那么不要想着要找一个的编辑器就能高效了！ :dancers:
+上面『打字指法』和『编辑器』的顺序重要的，如果你还不能 **_盲打_**，那么不要想着要找一个的编辑器就能高效了！ :dancers:
 
 ## 学习资料
 
@@ -182,7 +182,7 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 - [Janus: Vim Distribution ![](https://img.shields.io/github/stars/carlhuda/janus.svg?style=social&label=Star&maxAge=3600)](https://github.com/carlhuda/janus)
 	- 又一个`Vim`配置版本！
 - [The Ultimate vimrc ![](https://img.shields.io/github/stars/amix/vimrc.svg?style=social&label=Star&maxAge=3600)](https://github.com/amix/vimrc) - Over the last 8 years I have used and tweaked Vim.
-	- 作者**_8年_**在`Vim`配置上的积累。
+	- 作者 **_8年_** 在`Vim`配置上的积累。
 	- 绝对值得参考学习！
 	- 因为不是框架，所以我会选`spf13-vim`作为我的配置主方式。
 - [Maximum Awesome ![](https://img.shields.io/github/stars/square/maximum-awesome.svg?style=social&label=Star&maxAge=3600)](https://github.com/square/maximum-awesome) - 三架马车`Vim`、`tmux`和`iTerm 2`的配置。
@@ -211,7 +211,7 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 1. [Graphical vi/Vim Cheat Sheet and Tutorial](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html)  
 	中文版 <http://blog.ngedit.com/vi-vim-cheat-sheet-sch.gif>
 1. `.vimrc` - 你的新朋友！
-	- 一定要**_版本控制_**起来！
+	- 一定要 **_版本控制_** 起来！
 	- 可以偷借你朋友的配置文件（`dotfiles`），或是借鉴 <https://github.com/thoughtbot/dotfiles>
 1. 通过官方的`vimtutor`定期适量的学习 / 通过游戏<http://vim-adventures.com/>来学习～
 1. 通过看高手的操作视频方法来学习
@@ -220,7 +220,7 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 
 ### 7 Habits For Effective Text Editing 2.0
 
-[Youtube视频地址](https://www.youtube.com/watch?v=p6K4iIMlouI)，2007-02-13，`Vim`作者**_Brian Moolenaar_** 在`Google`做的演讲，讲解了编辑器的选择、达到高效编辑的方法和理念。
+[Youtube视频地址](https://www.youtube.com/watch?v=p6K4iIMlouI)，2007-02-13，`Vim`作者 **_Brian Moolenaar_** 在`Google`做的演讲，讲解了编辑器的选择、达到高效编辑的方法和理念。
 
 #### 1. 编辑器的选择
 
@@ -399,7 +399,7 @@ autocmd BufNewFile,BufRead crontab.* set nobackup | set nowritebackup
 
 **_解决方法：_**
 
-目前还**_没有_**找到解法。总得来说，这个问题不大，可以替代的做法：
+目前还 **_没有_** 找到解法。总得来说，这个问题不大，可以替代的做法：
 
 - `Hack`/加速系统的按键重复后，可以简单地用`hjkl`在小/大范围内快速导航。
 - 用词以外的方式也可以比较快地完成导航，如

@@ -36,24 +36,24 @@
 在字体配置方面，`iTerm`可以配置多重字体，并且对字体中字符的`Fallback`处理的很不错。  
 \# `Fallback`是指，如果一个字符在一种字体中没有包含时，如果找到且使用包含这个字符的字体。
 
-推荐使用字体**_`Monaco`_**，加上`Powerline`字体**_`Droid Sans Mono Dotted for Powerline`_**作为第二字体。
+推荐使用字体 **_`Monaco`_**，加上`Powerline`字体 **_`Droid Sans Mono Dotted for Powerline`_** 作为第二字体。
 
 `iTerm`的字体配置方法如下：
 
 ![](iterm-font-settings.png)
 
-本人的`iTerm`具体字体配置：第一重字体**_`Monaco`_** 16号；第二重字体**_`Droid Sans Mono Dotted for Powerline`_** 16号。
+本人的`iTerm`具体字体配置：第一重字体 **_`Monaco`_** 16号；第二重字体 **_`Droid Sans Mono Dotted for Powerline`_** 16号。
 
 **_注意_**： 这里也给出了字体大小的具体说明，是因为自己在字体配置的过程中发现：  
 不同的字体大小、不同具体`Powerline`字体，`Powerline`字体中的特殊字体如『左右三角、箭头』效果会有优劣…… :tired_face:
 
 这样配置后：
 
-1. 对于英文字符，会首先可以用苹果`Mac`系统下高质量字体**_`Monaco`_**（当然也可以用其它你喜欢合口味的英文等宽字体）。
-1. 对于`Powerline`字体中的加强字符，英文字体中没有包含，通过配置的第二重`Powerline`字体**_`Droid Sans Mono Dotted for Powerline`_**，可以正常显示。  
+1. 对于英文字符，会首先可以用苹果`Mac`系统下高质量字体  **_`Monaco`_**（当然也可以用其它你喜欢合口味的英文等宽字体）。
+1. 对于`Powerline`字体中的加强字符，英文字体中没有包含，通过配置的第二重`Powerline`字体 **_`Droid Sans Mono Dotted for Powerline`_**，可以正常显示。  
     \# `Vim`的`Powerline`安装和配置，见后面一节的说明。
-1. 对于其它的字体（如中文字符），`iTerm`会`Fallback`到系统的缺省字体，对于`MacOS Sierra 10.12`，选择的是**_苹方_**字体。  
-    \# `MacVim`这一级`Fallback`就不是**_苹方_**字体 :weary: ，效果差！详见`MacVim`的字体配置的说明。
+1. 对于其它的字体（如中文字符），`iTerm`会`Fallback`到系统的缺省字体，对于`MacOS Sierra 10.12`，选择的是 **_苹方_** 字体。  
+    \# `MacVim`这一级`Fallback`就不是 **_苹方_** 字体 :weary: ，效果差！详见`MacVim`的字体配置的说明。
 
 最终效果不错，截图如下。
 
@@ -65,7 +65,7 @@
 
 `MacVim`的多层字体配置，通过`Vim`的`guifont`和`guifontwide`2个选项配置。
 
-本人的`MacVim`具体字体配置：第一重字体**_`Consolas`_** 16号；第二重字体**_`STXihei`_**(华文细黑) 16号。
+本人的`MacVim`具体字体配置：第一重字体 **_`Consolas`_** 16号；第二重字体 **_`STXihei`_**(华文细黑) 16号。
 
 对应在`Vim`配置文件添加：
 
@@ -79,7 +79,7 @@ set guifontwide=STXihei:h16
 
 个人在配置过程中，碰到的问题及其解决方法：
 
-1. 本人**_不会_**使用`Powerline`字体作为第一字体，因为系统自带字体**_`Monaco`_**、**_`Consolas`_**的英文等宽字体的质量很高。
+1. 本人 **_不会_** 使用`Powerline`字体作为第一字体，因为系统自带字体 **_`Monaco`_**、**_`Consolas`_** 的英文等宽字体的质量很高。
 1. 使用`Powerline`字体作为`guifontwide`后，中文字符的字体在`MacVim`下显示很差，即`Fallback`的字体不好。
 
 基于上面原因，在`MacVim`下，我放弃了`Airline`的`Powerline`字符，配置方式如下：
