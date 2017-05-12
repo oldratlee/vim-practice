@@ -6,36 +6,36 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
-- [序](#%E5%BA%8F)
-    - [`Vim` vs. `Emacs`](#vim-vs-emacs)
-    - [关于编辑本身](#%E5%85%B3%E4%BA%8E%E7%BC%96%E8%BE%91%E6%9C%AC%E8%BA%AB)
-- [学习资料](#%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99)
-    - [关于『学习』本身的规律](#%E5%85%B3%E4%BA%8E%E3%80%8E%E5%AD%A6%E4%B9%A0%E3%80%8F%E6%9C%AC%E8%BA%AB%E7%9A%84%E8%A7%84%E5%BE%8B)
-    - [个人的`Vim`入坑路径](#%E4%B8%AA%E4%BA%BA%E7%9A%84vim%E5%85%A5%E5%9D%91%E8%B7%AF%E5%BE%84)
-    - [文章/讨论](#%E6%96%87%E7%AB%A0%E8%AE%A8%E8%AE%BA)
-    - [上手](#%E4%B8%8A%E6%89%8B)
-    - [速查](#%E9%80%9F%E6%9F%A5)
-    - [系统学习](#%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0)
-- [`Vim`配置/插件的资源](#vim%E9%85%8D%E7%BD%AE%E6%8F%92%E4%BB%B6%E7%9A%84%E8%B5%84%E6%BA%90)
-- [分享视频及其笔记](#%E5%88%86%E4%BA%AB%E8%A7%86%E9%A2%91%E5%8F%8A%E5%85%B6%E7%AC%94%E8%AE%B0)
-    - [Learning Vim in a Week](#learning-vim-in-a-week)
-    - [7 Habits For Effective Text Editing 2.0](#7-habits-for-effective-text-editing-20)
-        - [1. 编辑器的选择](#1-%E7%BC%96%E8%BE%91%E5%99%A8%E7%9A%84%E9%80%89%E6%8B%A9)
-        - [2. 达到高效的3个基本步骤](#2-%E8%BE%BE%E5%88%B0%E9%AB%98%E6%95%88%E7%9A%843%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%AD%A5%E9%AA%A4)
-        - [3. 如何做到低效地编辑](#3-%E5%A6%82%E4%BD%95%E5%81%9A%E5%88%B0%E4%BD%8E%E6%95%88%E5%9C%B0%E7%BC%96%E8%BE%91)
-- [个人关心的问题](#%E4%B8%AA%E4%BA%BA%E5%85%B3%E5%BF%83%E7%9A%84%E9%97%AE%E9%A2%98)
-    - [中文输入法在`Vim`便利切换的问题](#%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E6%B3%95%E5%9C%A8vim%E4%BE%BF%E5%88%A9%E5%88%87%E6%8D%A2%E7%9A%84%E9%97%AE%E9%A2%98)
-    - [`Vim`打开文件乱码问题](#vim%E6%89%93%E5%BC%80%E6%96%87%E4%BB%B6%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98)
-    - [`Vim`字体设置](#vim%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE)
-    - [查看所有的`Vim Map`](#%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%89%E7%9A%84vim-map)
-    - [`crontab -e`修改失败](#crontab--e%E4%BF%AE%E6%94%B9%E5%A4%B1%E8%B4%A5)
-    - [`Vim`中文分词支持的问题](#vim%E4%B8%AD%E6%96%87%E5%88%86%E8%AF%8D%E6%94%AF%E6%8C%81%E7%9A%84%E9%97%AE%E9%A2%98)
+- [0. 序](#0-%E5%BA%8F)
+    - [0.1 `Vim` vs. `Emacs`](#01-vim-vs-emacs)
+    - [0.2 关于编辑本身](#02-%E5%85%B3%E4%BA%8E%E7%BC%96%E8%BE%91%E6%9C%AC%E8%BA%AB)
+- [1. 学习资料](#1-%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99)
+    - [1.1 关于『学习』本身的规律](#11-%E5%85%B3%E4%BA%8E%E3%80%8E%E5%AD%A6%E4%B9%A0%E3%80%8F%E6%9C%AC%E8%BA%AB%E7%9A%84%E8%A7%84%E5%BE%8B)
+    - [1.2 个人的`Vim`入坑路径](#12-%E4%B8%AA%E4%BA%BA%E7%9A%84vim%E5%85%A5%E5%9D%91%E8%B7%AF%E5%BE%84)
+    - [1.3 文章/讨论](#13-%E6%96%87%E7%AB%A0%E8%AE%A8%E8%AE%BA)
+    - [1.4 上手](#14-%E4%B8%8A%E6%89%8B)
+    - [1.5 速查](#15-%E9%80%9F%E6%9F%A5)
+    - [1.6 系统学习](#16-%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0)
+- [2. `Vim`配置/插件的资源](#2-vim%E9%85%8D%E7%BD%AE%E6%8F%92%E4%BB%B6%E7%9A%84%E8%B5%84%E6%BA%90)
+- [3. 分享视频及其笔记](#3-%E5%88%86%E4%BA%AB%E8%A7%86%E9%A2%91%E5%8F%8A%E5%85%B6%E7%AC%94%E8%AE%B0)
+    - [3.1 Learning Vim in a Week](#31-learning-vim-in-a-week)
+    - [3.2 7 Habits For Effective Text Editing 2.0](#32-7-habits-for-effective-text-editing-20)
+        - [编辑器的选择](#%E7%BC%96%E8%BE%91%E5%99%A8%E7%9A%84%E9%80%89%E6%8B%A9)
+        - [达到高效的3个基本步骤](#%E8%BE%BE%E5%88%B0%E9%AB%98%E6%95%88%E7%9A%843%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%AD%A5%E9%AA%A4)
+        - [如何做到低效地编辑](#%E5%A6%82%E4%BD%95%E5%81%9A%E5%88%B0%E4%BD%8E%E6%95%88%E5%9C%B0%E7%BC%96%E8%BE%91)
+- [4. 个人关心的问题](#4-%E4%B8%AA%E4%BA%BA%E5%85%B3%E5%BF%83%E7%9A%84%E9%97%AE%E9%A2%98)
+    - [4.1 中文输入法在`Vim`便利切换的问题](#41-%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E6%B3%95%E5%9C%A8vim%E4%BE%BF%E5%88%A9%E5%88%87%E6%8D%A2%E7%9A%84%E9%97%AE%E9%A2%98)
+    - [4.2 `Vim`打开文件乱码问题](#42-vim%E6%89%93%E5%BC%80%E6%96%87%E4%BB%B6%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98)
+    - [4.3 `Vim`字体设置](#43-vim%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE)
+    - [4.4 查看所有的`Vim Map`](#44-%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%89%E7%9A%84vim-map)
+    - [4.5 `crontab -e`修改失败](#45-crontab--e%E4%BF%AE%E6%94%B9%E5%A4%B1%E8%B4%A5)
+    - [4.6 `Vim`中文分词支持的问题](#46-vim%E4%B8%AD%E6%96%87%E5%88%86%E8%AF%8D%E6%94%AF%E6%8C%81%E7%9A%84%E9%97%AE%E9%A2%98)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## 序
+## 0. 序
 
-### `Vim` vs. `Emacs`
+### 0.1 `Vim` vs. `Emacs`
 
 一上来就要说一个『宗教性』问题，很危险啊！ :smile: 这节不会说2个编辑器有什么不好，再者自己并不熟悉`Emacs`，只说自己了解到的一点感觉。
 
@@ -60,7 +60,7 @@
 		- [程序员的编辑器 —— `Vim`](forwarded-articles/editor-for-programmer.md)，也提到了一点：  
 			`vi`追求的是快捷——启动程序迅速，编辑文本高效，功能专注，而`Emacs`追求的是功能的丰富强大以及集成带来的方便，在`Emacs`里头可以发邮件，上新闻组，听`MP3`，浏览网页，玩游戏，几乎可以`login` -> `emacs` -> `logout`了 :-)，`vi`和`Emacs`都是程序员的编辑器，相比而言，`Emacs`更是提供了一种程序员的生活氛围。
 
-### 关于编辑本身
+### 0.2 关于编辑本身
 
 人类智慧输出包含了『录入』和『编辑』操作。
 
@@ -83,11 +83,11 @@
 
 上面『打字指法』和『编辑器』的顺序重要的，如果你还不能 **_盲打_**，那么不要想着要找一个的编辑器就能高效了！ :dancers:
 
-## 学习资料
+## 1. 学习资料
 
 ![](images/learn-vim.jpg)
 
-### 关于『学习』本身的规律
+### 1.1 关于『学习』本身的规律
 
 - 学习一样新事物的先进，不在于刚开始看到的点，而在于理解一套方法（整套的方法体现蕴含在背后的理念）。
 - 上手新事物必然先经历一个能力下降阶段，因为你要放弃你所熟悉的，重新接纳新的一套方法。
@@ -95,7 +95,7 @@
 	- 不愿去理解理念（整套方法），而是用当前熟悉自己的技能点去比新事物的点。
 	- 不愿接受上手新事物的学习成本和先要经历一个能力下降阶段。
 
-### 个人的`Vim`入坑路径
+### 1.2 个人的`Vim`入坑路径
 
 1. 看一下`Vim`整体评论性文章，觉得值得入门上手。  
 	这点基本不是问题，`Vim`名声在外，问题其实是入门门槛。
@@ -108,7 +108,7 @@
 	很多人不推荐这么做，我比较实用，实用就做了。中间会去填`spf13-vim`可能一些坑。
 1. 了解一些经典插件并实战，如[`surround`](https://github.com/tpope/vim-surround)。
 
-### 文章/讨论
+### 1.3 文章/讨论
 
 - [Why `Vim` is awesome](http://federicoramirez.name/why-vim-is-awesome/)
 - [`VIM` is awesome — But don’t overdo it](https://medium.com/@PhilPlckthun/vim-is-awesome-but-dont-overdo-it-c03594e6bb5b#.hyy2nhhe9)  
@@ -133,13 +133,13 @@
 	- [到底 `VIM` 能配置到多强大的程度？ - 知乎](https://www.zhihu.com/question/20151659)
 	- [为什么不少程序员极度推崇 `Vim` 和 `Emacs`，却对 `IDE` 嗤之以鼻？ - 知乎](https://www.zhihu.com/question/21504638)
 
-### 上手
+### 1.4 上手
 
 - `vimtutor`
 
 [<img src="images/vi-vim-cheat-sheet-sch-preview.gif" width="256" align="right">](https://raw.githubusercontent.com/oldratlee/vim-practice/master/images/vi-vim-cheat-sheet-sch.gif)
 
-### 速查
+### 1.5 速查
 
 内容比较精简且有中文版的：
 
@@ -157,7 +157,7 @@
 
 Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Cheat Sheet](more-cheat-sheet.md) :joy:
 
-### 系统学习
+### 1.6 系统学习
 
 1. `Vim` user manual/reference，即是`Vim`的内置帮助系统，内容丰富！！  
 	中文版 <http://sourceforge.net/projects/vimcdoc/files/pdf-manual/>
@@ -174,8 +174,7 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 1. [vim-galore - Everything you need to know about `Vim` ![](https://img.shields.io/github/stars/mhinz/vim-galore.svg?style=social&label=Star&maxAge=3600)](https://github.com/mhinz/vim-galore)  
 	`Vim`方方面面资料汇总。
 
-`Vim`配置/插件的资源
--------------------------
+## 2. `Vim`配置/插件的资源
 
 - [`spf13-vim` - a distribution of `Vim` plugins and resources ![](https://img.shields.io/github/stars/spf13/spf13-vim.svg?style=social&label=Star&maxAge=3600)](https://github.com/spf13/spf13-vim) - `Vim`的配置框架和配置集合。
 	- 包含很多插件/主题，无论是小白还是高手，省时好用是王道，用起来。
@@ -192,10 +191,9 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 - [Vim Awesome - a comprehensive, accurate, and up-to-date directory of Vim plugins](http://vimawesome.com/)
 	- `Vim`插件浏览站点
 
-分享视频及其笔记
---------------------------
+## 3. 分享视频及其笔记
 
-### Learning Vim in a Week
+### 3.1 Learning Vim in a Week
 
 [Youtube视频地址](https://www.youtube.com/watch?v=_NUO4JEtkDw)，讲解了入门`Vim`时
 
@@ -220,17 +218,17 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 	- [vimcasts.org](http://vimcasts.org/)
 	- [upcase.com/vim](https://upcase.com/vim)
 
-### 7 Habits For Effective Text Editing 2.0
+### 3.2 7 Habits For Effective Text Editing 2.0
 
 [Youtube视频地址](https://www.youtube.com/watch?v=p6K4iIMlouI)，2007-02-13，`Vim`作者 **_Brian Moolenaar_** 在`Google`做的演讲，讲解了编辑器的选择、达到高效编辑的方法和理念。
 
-#### 1. 编辑器的选择
+#### 编辑器的选择
 
 1. 如果你已经熟悉精通了一个编辑器，挺好的。这里不会讨论『`Vim`比`Emacs`更好』这个问题，但你可能会觉得`Emacs`并不爽～ :joy:
 1. 但不要使用像`Notepad`这样简陋的编辑器，你浪费了大量的生命！ :astonished:
 1. 要么用一个觉得的爽的编辑器，要么转用`Vim`吧～ :stuck_out_tongue_winking_eye: 除此再没有其它的出路！（_There is NO other RULE!_）
 
-#### 2. 达到高效的3个基本步骤
+#### 达到高效的3个基本步骤
 
 这部分的总结页：
 
@@ -260,7 +258,7 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 	- do it
 	- keep on improving
 
-#### 3. 如何做到低效地编辑
+#### 如何做到低效地编辑
 
 > @oldratlee 这是我最喜欢的一节 :joy:
 
@@ -279,12 +277,11 @@ to read documentation or leam a new command.
 and use the most efficient command all the time.  
 **_You will waste a lot of time learning things you will never use._**
 
-个人关心的问题
---------------------------
+## 4. 个人关心的问题
 
 欢迎高手指点！请提交[Issue](https://github.com/oldratlee/vim-pratice/issues)。
 
-### 中文输入法在`Vim`便利切换的问题
+### 4.1 中文输入法在`Vim`便利切换的问题
 
 **_问题说明：_**
 
@@ -304,7 +301,7 @@ and use the most efficient command all the time.
 
 PS: Thanks for your **_PERFECT_** works! [`@CodeFalling`](https://github.com/CodeFalling)
 
-### `Vim`打开文件乱码问题
+### 4.2 `Vim`打开文件乱码问题
 
 **_问题说明：_**
 
@@ -334,7 +331,7 @@ set fileencodings=ucs-bom,utf-8,gb18030,utf-16le,big5,euc-jp,euc-kr,latin1
 PS:  
 像`Vim`一样，字符编码也是一个很具计算机风味的话题，这里不解释，如果不清楚可以自己搜索研究一下。
 
-### `Vim`字体设置
+### 4.3 `Vim`字体设置
 
 **_问题说明：_**
 
@@ -349,7 +346,7 @@ PS:
 
 详见单独一页的说明：[设置`Vim`字体](font-config/README.md)。
 
-### 查看所有的`Vim Map`
+### 4.4 查看所有的`Vim Map`
 
 **_问题说明：_**
 
@@ -366,7 +363,7 @@ redir > map.txt | silent map | redir END
 redir! > map.txt | silent map | redir END
 ```
 
-### `crontab -e`修改失败
+### 4.5 `crontab -e`修改失败
 
 **_问题说明：_**
 
@@ -393,7 +390,7 @@ autocmd BufNewFile,BufRead crontab.* set nobackup | set nowritebackup
 - http://vi.stackexchange.com/questions/137
 - https://jamiecook.wordpress.com/2013/02/10/using-vim-to-edit-crontab-on-mac-osx/
 
-### `Vim`中文分词支持的问题
+### 4.6 `Vim`中文分词支持的问题
 
 **_问题说明：_**
 
