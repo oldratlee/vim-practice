@@ -1,31 +1,30 @@
 原文链接： [程序员的编辑器——VIM](http://arch.pconline.com.cn//pcedu/soft/gj/photo/0609/877033.html) by @_dieken_， 2006-09-28
 
-程序员的编辑器 —— `Vim`
-============================================
+# 程序员的编辑器 —— `Vim`
 
 > 编者按：本文详细介绍了`Vim`的历史、基本知识等，并介绍了作者作为一个程序员经常用到的一些相关资源。同时包含了大量的参考文献，适合想深入了解`Vim`的读者。
 
 :point_right: 如果您从未接触过`Vim`，推荐先看看`Vim`的中文帮助文档和 _xbeta_ 的[《普通人的编辑利器——`Vim`》](editor-for-mortal.md)。
 
-<img src="images/vim-logo.png" width="256" align="right" >
+<img src="../images/vim-logo.png" width="256" align="right" >
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
-- [一 `Vim`的历史](#%E4%B8%80-vim%E7%9A%84%E5%8E%86%E5%8F%B2)
+- [一、 `Vim`的历史](#%E4%B8%80-vim%E7%9A%84%E5%8E%86%E5%8F%B2)
     - [1. `ed`](#1-ed)
     - [2. `ex`](#2-ex)
     - [3. `vi`](#3-vi)
     - [4. `Vim`](#4-vim)
-- [二 `vi`/`Vim`基础知识](#%E4%BA%8C-vivim%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
+- [二、 `vi`/`Vim`基础知识](#%E4%BA%8C-vivim%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
     - [`Vim`的命令快捷完成复杂的编辑操作示例](#vim%E7%9A%84%E5%91%BD%E4%BB%A4%E5%BF%AB%E6%8D%B7%E5%AE%8C%E6%88%90%E5%A4%8D%E6%9D%82%E7%9A%84%E7%BC%96%E8%BE%91%E6%93%8D%E4%BD%9C%E7%A4%BA%E4%BE%8B)
         - [1. 将 `(1), ...., (2), ....,(100)` 替换成 `(2), ...., (3), ...., (101)`](#1-%E5%B0%86-1--2-100-%E6%9B%BF%E6%8D%A2%E6%88%90-2--3--101)
         - [2. 重新连接`log`系统的断行](#2-%E9%87%8D%E6%96%B0%E8%BF%9E%E6%8E%A5log%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%96%AD%E8%A1%8C)
         - [3. `Fortran`代码对齐](#3-fortran%E4%BB%A3%E7%A0%81%E5%AF%B9%E9%BD%90)
         - [4. 连续插入72个等号](#4-%E8%BF%9E%E7%BB%AD%E6%8F%92%E5%85%A572%E4%B8%AA%E7%AD%89%E5%8F%B7)
         - [5. 在多行开始插入`//`](#5-%E5%9C%A8%E5%A4%9A%E8%A1%8C%E5%BC%80%E5%A7%8B%E6%8F%92%E5%85%A5)
-- [三 编程辅助](#%E4%B8%89-%E7%BC%96%E7%A8%8B%E8%BE%85%E5%8A%A9)
+- [三、 编程辅助](#%E4%B8%89-%E7%BC%96%E7%A8%8B%E8%BE%85%E5%8A%A9)
     - [1. `ctags`，`cscope`](#1-ctagscscope)
     - [2. `multi window`，`multi buffer`，`multi tab page`](#2-multi-windowmulti-buffermulti-tab-page)
     - [3. 语法高亮](#3-%E8%AF%AD%E6%B3%95%E9%AB%98%E4%BA%AE)
@@ -36,8 +35,8 @@
     - [8. `quickfix`](#8-quickfix)
     - [9. `auto command`](#9-auto-command)
     - [10. `mode line`](#10-mode-line)
-- [四 强大方便的帮助系统](#%E5%9B%9B-%E5%BC%BA%E5%A4%A7%E6%96%B9%E4%BE%BF%E7%9A%84%E5%B8%AE%E5%8A%A9%E7%B3%BB%E7%BB%9F)
-- [五 其它高级功能](#%E4%BA%94-%E5%85%B6%E5%AE%83%E9%AB%98%E7%BA%A7%E5%8A%9F%E8%83%BD)
+- [四、 强大方便的帮助系统](#%E5%9B%9B-%E5%BC%BA%E5%A4%A7%E6%96%B9%E4%BE%BF%E7%9A%84%E5%B8%AE%E5%8A%A9%E7%B3%BB%E7%BB%9F)
+- [五、 其它高级功能](#%E4%BA%94-%E5%85%B6%E5%AE%83%E9%AB%98%E7%BA%A7%E5%8A%9F%E8%83%BD)
     - [1. 寄存器](#1-%E5%AF%84%E5%AD%98%E5%99%A8)
     - [2. 宏](#2-%E5%AE%8F)
     - [3. 书签](#3-%E4%B9%A6%E7%AD%BE)
@@ -48,21 +47,21 @@
     - [8. `color scheme`](#8-color-scheme)
     - [9. 二进制编辑](#9-%E4%BA%8C%E8%BF%9B%E5%88%B6%E7%BC%96%E8%BE%91)
     - [10. `sign`](#10-sign)
-- [六 `Vim Scripts`](#%E5%85%AD-vim-scripts)
-- [七 `Vim`资源](#%E4%B8%83-vim%E8%B5%84%E6%BA%90)
-- [八 编译安装最新`CVS`版的`Vim`](#%E5%85%AB-%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85%E6%9C%80%E6%96%B0cvs%E7%89%88%E7%9A%84vim)
+- [六、 `Vim Scripts`](#%E5%85%AD-vim-scripts)
+- [七、 `Vim`资源](#%E4%B8%83-vim%E8%B5%84%E6%BA%90)
+- [八、 编译安装最新`CVS`版的`Vim`](#%E5%85%AB-%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85%E6%9C%80%E6%96%B0cvs%E7%89%88%E7%9A%84vim)
     - [1. 获取源代码](#1-%E8%8E%B7%E5%8F%96%E6%BA%90%E4%BB%A3%E7%A0%81)
     - [2. 编译](#2-%E7%BC%96%E8%AF%91)
     - [3. 安装](#3-%E5%AE%89%E8%A3%85)
     - [4. 善后](#4-%E5%96%84%E5%90%8E)
-- [九 一份`vimrc`配置文件](#%E4%B9%9D-%E4%B8%80%E4%BB%BDvimrc%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
-- [十 `Vim`的不足](#%E5%8D%81-vim%E7%9A%84%E4%B8%8D%E8%B6%B3)
+- [九、 一份`vimrc`配置文件](#%E4%B9%9D-%E4%B8%80%E4%BB%BDvimrc%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
+- [十、 `Vim`的不足](#%E5%8D%81-vim%E7%9A%84%E4%B8%8D%E8%B6%B3)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## 一 `Vim`的历史
+# 一、 `Vim`的历史
 
-### 1. `ed`
+## 1. `ed`
 
 `ed`是`UNIX`上最古老最基本的编辑器，它最初是`UNIX`之父 _Ken Thompson_ 编写的，他第一次在`ed`中应用了正则表达式（`regular expression`），这个创举将`RE`理论带入了实践，对`UNIX`界造成了深远的影响。 实际上`ed`是受来自加州伯克利大学的`QED`编辑器的影响，_Ken_ 便是从这所院校这里毕业的。
 
@@ -99,11 +98,11 @@ q   # 退出
 - http://cm.bell-labs.com/cm/cs/who/dmr/qed.html
 - http://www.answers.com/topic/ken-thompson
 
-### 2. `ex`
+## 2. `ex`
 
 `ex`是`ed`的扩展，实际上`vi`构建在`ex`之上，`vi`引入了大家所熟悉的全屏编辑模式。
 
-### 3. `vi`
+## 3. `vi`
 
 随着硬件的发展，`UNIX`上许多全屏模式编辑器被开发出来，`pico`，`nano`，`joe`，`jed`，`jove`，但是最为广泛使用的无疑就是`vi`（`nvi`，`elvis`，`Vim`等）和`Emacs`（`GNU Emacs`，`XEmacs`等）。
 
@@ -118,7 +117,7 @@ q   # 退出
 - http://www.bellevuelinux.org/vi/history.html
 - http://www.theregister.co.uk/2003/09/11/bill_joys_greatest_gift/
 
-### 4. `Vim`
+## 4. `Vim`
 
 技术不断进步，需求也在不断提高，`vi`的各种变种也不断涌现，知名的有`nvi`，`elvis`，`Vim`，`vile`，`yzis`，其中移植性最好、特性最多、使用最广的当属`Vim`，`Vim`主要是 _Bram Moolenaar_ 开发的。最初 _Bram_ 在`Amiga`计算机上改进一个叫`Stevie`的`vi`版本，他称之为`Vi IMitation`。随着功能的逐渐丰富，`Vim`的含义也就改成了`Vi IMproved`。相比原始的`vi`，`Vim`增加的一项最重要的功能便是多级撤销，`vi`只支持一级撤销。
 
@@ -147,7 +146,7 @@ date        | version   | milestone
     - `:help version5.txt`
     - `:help version6.txt`
 
-## 二 `vi`/`Vim`基础知识
+# 二、 `vi`/`Vim`基础知识
 
 很多人应该都知道`vi`是个有模式的编辑器：编辑模式和命令模式，按`ESC`回到命令模式，用`i`或者`a`进入编辑模式，由于区分了模式，导致`vi`的命令非常简洁，而无模式编辑器比如`Emacs`，所有的命令都需要加上控制键`Ctrl`或`Alt`，所以有个笑话说`Emacser`们最希望计算机备一个脚踏板，这样就可以用脚踩`Ctrl`和`Alt`键了（编辑器圣战——在`vi`和`Emacs`之间有很多口水战，自然也引出非常多的幽默），这里罗嗦一句`Vi vs. Emacs`： `vi`继承了`ed`的理念，另外也有历史原因，`vi`追求的是快捷——启动程序迅速，编辑文本高效，功能专注，而`Emacs`追求的是功能的丰富强大以及集成带来的方便，在`Emacs`里头可以发邮件，上新闻组，听`MP3`，浏览网页，玩游戏，几乎可以`login` -> `emacs` -> `logout`了 :-)，`vi`和`Emacs`都是程序员的编辑器，相比而言，`Emacs`更是提供了一种程序员的生活氛围。
 
@@ -208,11 +207,11 @@ int some_ugly_modifier and some_ugly_name (void)
 
 `dG`可以从当前位置一直删除到文件末尾，因为`G`的作用是跳到文件最后一行。
 
-### `Vim`的命令快捷完成复杂的编辑操作示例
+## `Vim`的命令快捷完成复杂的编辑操作示例
 
 `Vim`的命令可以非常快捷的做到一些复杂的编辑操作，下面是几个示例：
 
-#### 1. 将 `(1), ...., (2), ....,(100)` 替换成 `(2), ...., (3), ...., (101)`
+### 1. 将 `(1), ...., (2), ....,(100)` 替换成 `(2), ...., (3), ...., (101)`
 
 在文本中一处处找到并修改是很累的，在`Vim`下一条命令就可以搞定：
 
@@ -240,7 +239,7 @@ int some_ugly_modifier and some_ugly_name (void)
 `.")"`              | 添上右括号
 `/g`                | 替换字符串结束，`g`表示替换每一行的所有匹配结果。
 
-#### 2. 重新连接`log`系统的断行
+### 2. 重新连接`log`系统的断行
 
 这个问题是笔者曾经碰到的，有一个`log`系统对于输出行长度有限制，因此在输出很长的`log`时需要断行，在断行时以单行的`-$-`标记，现在的需求是把这些行连起来，在`Vim`中也可以很方便的做到（ _edyfox at newsmth_ 指点）：
 
@@ -256,7 +255,7 @@ int some_ugly_modifier and some_ugly_name (void)
 
 命令`g/-\$-/`的含义就是找到所有的断行标记，然后`norm`表示在找到的每一个行上执行后面的命令，`dd`删除这个断行标记，`k`移动到上一行，`J`合并当前行和下一行，由于`J`合并后会留一个空格（只对于英文情况下），所以`x`来删除这个空格。
 
-#### 3. `Fortran`代码对齐
+### 3. `Fortran`代码对齐
 
 在`Fortran`代码
 
@@ -283,11 +282,11 @@ other
 `10000@a`     | 执行一万遍寄存器`a`中保存的命令
 `:set ve=""`  | 恢复`ve`缺省值
 
-#### 4. 连续插入72个等号
+### 4. 连续插入72个等号
 
 按`ESC`进入`Normal Mode`，输入`72i=`再按`ESC`即可。
 
-#### 5. 在多行开始插入`//`
+### 5. 在多行开始插入`//`
 
 移动光标到需要注释掉的第一行开头，然后按`Ctrl-v`（如果使用了`Vim`的`mswin.vim`，则`Ctrl-v`表示粘贴，这时需要用`Ctrl-q`代替）进入`Visual blockwise`模式，这个模式是`Visual Mode`的一种，相当于`UltraEdit`中的块选择。 然后按`j`选择上所有需要注释行的行首（看起来效果是选择了第一列），输入`I//`再按`ESC`就可以在每一行开头插入`//`了。
 
@@ -298,11 +297,11 @@ other
 
 这些例子也许初看起来有点吓人，可是在很多时候`Vim`这些强大的命令能省不少力，`Vim`不愧是为『编辑』这个功能费尽心思。
 
-## 三 编程辅助
+# 三、 编程辅助
 
 既然是程序员的编辑器，自然要 Show 一下它的编程辅助功能。
 
-### 1. `ctags`，`cscope`
+## 1. `ctags`，`cscope`
 
 现在的`IDE`都提供了类、函数的索引功能，可以方便的找到某个类或者函数的在哪里定义的，`Vim`这方面可以利用`ctags`、`cscope`做到，`Exuberant ctags`支持的语言种类非常多，`UltraEdit`的`tags`功能也是利用的`ctags`。`cscope`只支持`C`，它能实现`Source Insight`的一些功能，比如查找某个函数调用了哪些函数，某个函数被哪些函数调用。`Vim`对这两个工具集成的非常好，利用它们就可以在源文件中方便的跳转搜索类和函数了。
 
@@ -313,7 +312,7 @@ other
 - `:help ctags`
 - `:help cscope`
 
-### 2. `multi window`，`multi buffer`，`multi tab page`
+## 2. `multi window`，`multi buffer`，`multi tab page`
 
 一个`buffer`对应一个文件，它可以对应多个`window`，这样可以方便的对照编辑一个文件的不同部分，`tab page`跟现在许多编辑器上常见的标签页意义并不一样，可以将`tab page`理解为一个`windows`的容器，这样如果想新建一个窗口编辑文件但又不想打乱现在的多窗口布局，那么就可以新开一个`tab page`，把新窗口放到这个新的`tab page`里头。`tab page`是`Vim 7.0`不久前新增的特性，目前`Vim 7.0`还未正式发布。（此文发表至`PConline`时，已经正式发布。）
 
@@ -323,7 +322,7 @@ other
 - `:help buffers`
 - `:help tabpage`
 
-### 3. 语法高亮
+## 3. 语法高亮
 
 `Vim`发行版里带了450多种语言的语法高亮，在其主页`vim.org`上还可以找到更多。
 
@@ -331,7 +330,7 @@ other
 
 - `:help syntax`
 
-### 4. 自动缩进
+## 4. 自动缩进
 
 在打开自动缩进选项后，`Vim`会自动的控制缩进，比如输入`{`自动向右缩进一个`tab`字符（具体用什么缩进可以配置），输入`}`自动回退缩进。 使用`=`命令可以对选择的程序块排版缩进，这对于整理代码非常有帮助。 另外对选择的块用`>>`和`<<`命令可以很方便的控制一个程序块的缩进。
 
@@ -341,11 +340,11 @@ other
 - `:help autoindent`
 - `:help smartindent`
 
-### 5. 类和函数列表
+## 5. 类和函数列表
 
 `taglist`等插件可以提供很方便的类和函数列表功能。
 
-### 6. 自动完成
+## 6. 自动完成
 
 `Vim`在`Insert Mode`下输入一个单词的前几个字符，然后用`Ctrl-p`或者`Ctrl-n`就可以列出以这些字符开头的单词，特别在配置了`ctags`后也能列出头文件中的符号，特别方便，除此外`Vim`还有行自动完成、文件名自动完成等，这点即使是现在强大的`IDE`也未免不足。
 
@@ -365,7 +364,7 @@ other
 - `:help 'complete'`
 - `:help omni-completion`
 
-### 7. `folding`
+## 7. `folding`
 
 `Vim`支持折叠代码，还可以根据文件中特殊的标记对文件中的行折叠，可以实现`Outline`视图，这可以极大的方便编辑很大的文件。
 
@@ -373,7 +372,7 @@ other
 
 - `:help fold`
 
-### 8. `quickfix`
+## 8. `quickfix`
 
 许多人对于`UNIX`开发的印象都是『编辑代码，退出编辑器，编译，发现错误，记录出错信息，遍辑代码，退出编辑器，编译，用`gdb`调试，再编辑代码……』，这是古老的`vi`时代的事情了，有了`Vim`的`quickfix`特性，可以在`Vim`里编译然后直接跳到编译出错的行，这个反复的过程无需退出编辑器，而且`Vim`的`quickfix`特性可以经配置后支持不同的编译器以及不同的语言：只要编译器在出错信息里包含文件名和行号。
 
@@ -383,7 +382,7 @@ other
 
 - `:help quickfix`
 
-### 9. `auto command`
+## 9. `auto command`
 
 `Vim`可以在某些事件发生时比如打开文件、保存文件、切换窗口时自动执行一些`Vim`命令，`Vim`的许多插件都利用了这个功能。常用的一种情况是把某种文件后缀指定到一种文件格式上，比如`*.jv`指定到`Java`文件格式，这样在每次打开`.jv`类型的文件时自动使用`Java`的语法高亮：
 
@@ -393,7 +392,7 @@ other
 
 参考资料： `:help autocmd.txt`
 
-### 10. `mode line`
+## 10. `mode line`
 
 在编辑文件时常常指定一些选项，比如缩进量、是否将制表符转换成空格等，每次手动指定这些选项很麻烦，写到`vimrc`中却又成了全局选项，而且换了一份`Vim`，原有的设置就丢失了。`Vim`可以识别文件中的特殊行，自动设置一些选项，下面是写在`C`源文件开头的一个`mode line`示例:
 
@@ -405,7 +404,7 @@ other
 */
 ```
 
-## 四 强大方便的帮助系统
+# 四、 强大方便的帮助系统
 
 使用了那么多软件，只有`Vim`和`Emacs`的帮助系统给笔者方便快捷的感觉，大部分软件的帮助往往是摆设而已，而`Vim`的帮助的确是考虑到了自己『help』的身份，利用它能很方便容易的找到想要的东西。
 
@@ -429,9 +428,9 @@ other
 :echo &tabstop
 ```
 
-## 五 其它高级功能
+# 五、 其它高级功能
 
-### 1. 寄存器
+## 1. 寄存器
 
 `Vim`里面的寄存器可以用来保存拷贝的文本、记录的宏、设置的书签等等，一般的编辑器都只有一个剪切板（`MS Office`加入了多个剪切板），而`Vim`和`Emacs`编辑器中的多寄存器可以实现多个剪切板的功能。`Vim`中有九类寄存器：
 
@@ -451,19 +450,19 @@ other
 
 参考资料： `:help registers`
 
-### 2. 宏
+## 2. 宏
 
 `Normal Mode`下按`q<reg>`，`<reg>`指`{a-zA-Z0-9"}`37个寄存器中的一个，然后可以进行任何操作，包括在模式间切换，最后在`Normal`模式下按`q`可以结束宏录制，用`@<reg>`命令可以应用这个宏，命令前可以带数字前缀表示执行多少次这个宏。
 
 参考资料： `:help q`
 
-### 3. 书签
+## 3. 书签
 
 `Normal Mode`下按`m<reg>`作书签，`<reg>`指26个命名寄存器中的一个，然后可以用`'<reg>`或者 \`\<reg> 跳到书签处。
 
 参考资料： `:help m`
 
-### 4. 映射
+## 4. 映射
 
 `vi/Vim`可以将某个按键序列映射到一个命令序列上，比如在配置文件`.vimrc`（`Windows`下是`_vimrc`）中写入
 
@@ -475,7 +474,7 @@ map <F6> <ESC>i<C-R>=strftime（"%Y-%m-%d"）<ESC><ESC>
 
 参考资料： `:help :map`
 
-### 5. 缩写
+## 5. 缩写
 
 `vi/Vim`支持用一个缩写字符串代替一个长的字符串，比如
 
@@ -490,7 +489,7 @@ map <F6> <ESC>i<C-R>=strftime（"%Y-%m-%d"）<ESC><ESC>
 
 参考资料： `:help :ab`
 
-### 6. `:s//` 和 `:g//` `:!g//`
+## 6. `:s//` 和 `:g//` `:!g//`
 
 这两个命名加上正则表达式，常常能完成非常复杂的编辑任务，可以毫不夸张地说是Vim的两柄瑞士军刀。`:s`是替换操作，`:g`是查找匹配模式的行，`:!g`是查找不匹配模式的行。
 
@@ -501,25 +500,25 @@ http://www.vim.org/tips/tip.php?tip_id=1063 这个Tip可以把`:g`找到的行�
 - `:help :s`
 - `:help :g`
 
-### 7. 插件
+## 7. 插件
 
 `Vim`自己有脚本语言，另外也支持用`Perl/Python/TCL/Ruby/Scheme`编写插件，这些插件极大的丰富了`Vim`的功能。
 
-### 8. `color scheme`
+## 8. `color scheme`
 
 `Vim`有许多配色方案，下面这个链接有许多配色方案效果的图样： http://www.cs.cmu.edu/~maverick/VimColorSchemeTest/
 
-### 9. 二进制编辑
+## 9. 二进制编辑
 
 `Vim`可以利用`xxd`实现二进制编辑，不过这项功能还是不够好用。
 
-### 10. `sign`
+## 10. `sign`
 
 `sign`指在编辑窗口的最左列显示一个标记，利用这个功能能实现很多`IDE`中的书签标记或者断点标记。
 
 参考资料： `:help sign`
 
-## 六 `Vim Scripts`
+# 六、 `Vim Scripts`
 
 `Vim script`包含几大类:
 
@@ -606,7 +605,7 @@ http://cream.sourceforge.net/
 http://icomplete.sf.net  
 搭配`Vim 7.0`的`Omni Complete`，可以做到`C/C++`的智能完成功能。
 
-## 七 `Vim`资源
+# 七、 `Vim`资源
 
 - http://www.vim.org `Vim`主页，有许多`scripts`和`tips`，查找插件的第一去处
 - http://newsmth.net  新水木`BBS`的`Vim`版，有很多`Vim`爱好者可以讨论
@@ -625,9 +624,9 @@ http://icomplete.sf.net
 - http://jregexptester.sourceforge.net/ `JRegexp Tester`
 - http://www.regexbuddy.com/  `Regex Buddy`
 
-## 八 编译安装最新`CVS`版的`Vim`
+# 八、 编译安装最新`CVS`版的`Vim`
 
-### 1. 获取源代码
+## 1. 获取源代码
 
 ```bash
 cvs -z3 -d:pserver:anonymous@cvs.sf.net:/cvsroot/vim co vim7
@@ -635,7 +634,7 @@ cvs -z3 -d:pserver:anonymous@cvs.sf.net:/cvsroot/vim co vim7
 
 源代码位于当前目录的`vim7`目录下面，假设安装目标在`d:\work\program\Vim\vim70b`
 
-### 2. 编译
+## 2. 编译
 
 注意重新编译前最好`clean`一下，确保`*obj*`目录被删除了，否则可能出现莫名其妙的问题，比如链接时找不到一些函数。下面是一个批处理脚本：
 
@@ -681,7 +680,7 @@ pause
 
 如果发现`MinGW`编译出来的`gvimd.exe`非常大（约`4~5MB`），可以用`MinGW`自带的`strip`处理一下。
 
-### 3. 安装
+## 3. 安装
 
 如果你的系统先前有一份不同版本的`Vim`，那么需要先卸载掉（运行`vim\vimXX\uninstal.exe`，或者在拷贝完文件后运行新版`Vim`的`install.exe`，它也会提示卸载旧版本），最近的`Vim 7` `CVS`代码安装目录也从`vim70aa`转变到`vim70b`，也需要卸载原先的`vim70aa`，这一步主要是删除一些注册表项。
 
@@ -703,17 +702,17 @@ copy vim7\src\VisVim\Visvim.dll d:\work\program\Vim\vim70b
 
 然后进入`vim70b`目录运行`install.exe`，如果发现一个`DOS`窗口一闪而逝，那么很可能是建立的`vim70b`目录名不对，比如笔者前几天升级后使用的仍然是`vim70aa`目录名，在`DOS`窗口中运行`install.exe`它就提示需要在`vim70b`目录下运行，将`vim70aa`改名即可。`install.exe`的源代码是`vim7\src\dosinst.c`，这里面修改了注册表，并拷贝一些文件到`WINDOWS`目录下等等。
 
-### 4. 善后
+## 4. 善后
 
 视情况你需要更新`PATH`环境变量、文件关联、`_vimrc`中的路径名等，并将`diff.exe`，`ctags.exe`，`cscope.exe`拷贝到`vim70b`下面。
 
 最后运行`gvimd.exe`，键入`:ver`开始享受`Vim`吧。
 
-## 九 一份`vimrc`配置文件
+# 九、 一份`vimrc`配置文件
 
 【注：原文如此，不太清楚作者所要表达的信息】
 
-## 十 `Vim`的不足
+# 十、 `Vim`的不足
 
 前面已经提到，`Vim`在自动完成和集成调试方面还比不上现代的许多`IDE`，另外`Vim`对二进制编辑还没有`UltraEdit`强大，对于现在流行的重构，`Vim`也支持不力，但是作为一个文本编辑器而言，堪比的只有`Emacs`，另外`Visual SlickEdit`也很强大，不过它是商业软件。`Vim`也可以嵌入到`Visual Studio`中作为编辑器，另外`Code Forge`，`Eclipse`，`NetBeans`，`Sun Visual Workshop`等也提供了一定的`Vim`支持或者键绑定。
 

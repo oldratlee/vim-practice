@@ -345,7 +345,7 @@ PS:
 
 **_解决方法：_**
 
-说明详见单独一页[设置`Vim`字体](font-config/README.md)。
+详见单独一页的说明：[设置`Vim`字体](font-config/README.md)。
 
 ### 查看所有的`Vim Map`
 
