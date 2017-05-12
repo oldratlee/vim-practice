@@ -57,7 +57,7 @@
 	- 关于`Emacs`的平台特质可以看看文章：
 		- [从`Vim`到`Emacs`到`Evil`](http://ceyes.github.io/2015-01/from-Vim-to-Emacs/)  
 			`Emacs`只是个强大的平台，提供各种定制来满足每个人的不同需求。所以Thanks `Evil`，我已把`Emacs` 打造成了理想的『`Vim`化的`Emacs Editor`』，我可以纵情使用更方便的方式来工作。
-		- [程序员的编辑器 —— `Vim`](editor-for-programmer.md)，也提到了一点：  
+		- [程序员的编辑器 —— `Vim`](forwarded-articles/editor-for-programmer.md)，也提到了一点：  
 			`vi`追求的是快捷——启动程序迅速，编辑文本高效，功能专注，而`Emacs`追求的是功能的丰富强大以及集成带来的方便，在`Emacs`里头可以发邮件，上新闻组，听`MP3`，浏览网页，玩游戏，几乎可以`login` -> `emacs` -> `logout`了 :-)，`vi`和`Emacs`都是程序员的编辑器，相比而言，`Emacs`更是提供了一种程序员的生活氛围。
 
 ### 关于编辑本身
@@ -115,7 +115,7 @@
 	快速逐步上手介绍。
 - [Coming Home to `Vim`](http://stevelosh.com/blog/2010/09/coming-home-to-vim/)  
 	快速上手使用。为什么使用`Vim`/`Vim`使用感觉/上手的高效配置/好用的插件。
-- [普通人的编辑利器 —— `Vim`](editor-for-mortal.md) / [程序员的编辑器 —— `Vim`](editor-for-programmer.md)  
+- [普通人的编辑利器 —— `Vim`](forwarded-articles/editor-for-mortal.md) / [程序员的编辑器 —— `Vim`](forwarded-articles/editor-for-programmer.md)  
 	这2篇文章以普通用户/程序员的视角，短短一篇文章让你感受`Vim`的风格、能力和一致性设计。  
 	以非系统学习方式，获得偏整体了解的好文章！
 - [从`Vim`到`Emacs`到`Evil`](http://ceyes.github.io/2015-01/from-Vim-to-Emacs/)  
