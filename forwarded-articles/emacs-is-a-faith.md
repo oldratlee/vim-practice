@@ -68,42 +68,42 @@
 
 现在你是不是感觉自己更像魔法师了？继续！
 
-![](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060911_e15.png)  
+![](emacs-is-a-faith-images/01.png)  
 **图1** `Windows`下的`Emacs`
 
 `Emacs`有非常友好而强大的人机界面。在搜索替换字符串时，你就能明显感觉到这个优点。它在输入`regexp`（正则表达式）搜索的时候还能进行`incremental search`，而且对部分匹配的字串都有非常漂亮的加量。在替换的时候，它独有`recursive edit`，可以打断替换过程，编辑附近的需要纠正的文字，然后继续替换。这个功能对很多人都是非常重要的，因为，在替换过程中，被替换的文字附近的文字很可能会因为它被替换而需要修改。看看这个抓图，就是`isearch`输入一个正则表达式的情况。
 
-![](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060911_e1.jpg)  
+![](emacs-is-a-faith-images/02.jpg)  
 **图2** 用`isearch`输入正则表达式
 
 `Emacs`的拼写检查能力非常强大。你可以使用`flyspell`随时检查你的拼写错误，看看这幅图是`flyspell-mode`的`LaTeX`文档，`flyspell`知道段落里的某些单词是错的，而`\begin{myquotation}`里的`myquotation`被认为是一个用户自己定义的`LaTeX`环境名字而不认为是拼写错误。
 
-[](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060911_e2.jpg)  
+![](emacs-is-a-faith-images/03.jpg)  
 **图3** `flyspell`检查出的拼写错误
 
 你还可以利用`ispell`的补全功能输入你容易打错的很长的英语单词，看看这幅图。
 
-![](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060911_e3.jpg)  
+![](emacs-is-a-faith-images/04.jpg)  
 **图4** 利用`ispell`输入比较长的单词
 
 `Emacs`的`hippie-expand`能够非常智能的补全你的文本、文件名和其它很多东西，而这个功能都是用同一个按键完成！
 
 `Emacs`能输入和显示多国语言文本，是一个真正的国际化程序。
 
-![](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060911_e4.jpg)  
+![](emacs-is-a-faith-images/05.jpg)  
 **图5** `Emacs`支持多国语言
 
 `Emacs`能识别多种自然语言符号，它能知道哪些符号是括号，那些是标点。看看这个抓图里，`Emacs`显示了中文书名号的匹配情况。《正确》 和 《错误>。
 
-![](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060911_e5.jpg)  
+![](emacs-is-a-faith-images/06.jpg)  
 **图6** 书名号的匹配（一）
 
-![](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060911_e6.jpg)  
+![](emacs-is-a-faith-images/07.jpg)  
 **图7** 书名号的匹配（二）
 
 `Emacs`的键是可以任意绑定的。甚至可以使用`Windows`键盘上的`Win`和`Menu`键来控制。笔者的『`Win` + 鼠标中键』可以弹出一个`buffer`里所有引用到的文件和`URL`的列表，当点击它们就可以编辑那个文件或者在`Mozilla`中打开连接，如图8。
 
-![](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060911_e16.png)  
+![](emacs-is-a-faith-images/08.png)  
 **图8** 笔者的『`Win` + 鼠标中键』功能
 
 你能想到的和你不能想到的编辑功能，`Emacs`都能完成。说到这里你可能又会说：『这个功能，`vi`也有』，『这个功能，`UltraEdit`都有』……对，这些能力可能很多其它程序也有。对，但是让一个`Emacs`拥有这些功能比起其它程序的确要费少得多的力气。很多热心的爱好者看到其它编辑器有一个很酷的功能，他就可以想办法把它加入到`Emacs`里面。`Emacs`可以被不断的扩充。其实，你平常用到的几乎所有功能都是扩展的功能。
@@ -120,19 +120,19 @@
 
 你可以使用`Ediff`来比较两个或者三个文件，`Emacs`可以把不同的地方高亮，而且修改过的地方有特别明显的颜色不同。笔者经常用这个功能很快找到修改过的代码里新出现的错误的位置，如图9。
 
-![](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060911_e7.jpg)  
+![](emacs-is-a-faith-images/09.jpg)  
 **图9** `Emacs`上的高亮功能
 
 你用一个指头就可以让`Emacs`调用编译器编译程序，列出错误列表，启动调试器，在另一个窗口显示当前执行源代码的位置。
 
 `Emacs`的`narrow`和`folding`功能使你能够编辑几万行代码在一个文件里而不会觉得摸不着方向。看看这幅图，你能想像这是`TeX`的源代码的24000多行里的一部分吗？你操作它的时候就像只有几十行。
 
-![](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060911_e8.jpg)  
-**图10** `Emacs`的narrow功能
+![](emacs-is-a-faith-images/10.jpg)  
+**图10** `Emacs`的`narrow`功能
 
 `folding`可以使你的很长的文档折叠起来，看看这幅图就是一个很长的网页，在需要的时候可以进入其中一个主题进行编辑，当退出主题时，整个文档看起来就像只有一页那么长。可以随意的移动主题，就像只移动了一行。
 
-![](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060911_e9.jpg)  
+![](emacs-is-a-faith-images/11.jpg)  
 **图11** `Emacs`的`folding`功能
 
 加上一些`elisp`，`Emacs`就可以成为一个代码浏览器。
@@ -141,26 +141,26 @@
 
 `Emacs`可以作为很多程序的前端。比如`w3m`、`lynx`（两者都是浏览器）、`MAXIMA`计算机代数系统、`Scheme48`等`Scheme`解释器、`shell`……这些文本方式的程序一旦与`Emacs`接合就拥有了巨大的编辑的能力。如图13，`Scheme48`加上`Emacs`，就有了语法加亮和方便的热键，可以非常方便的使用`Scheme`解释器了。
 
-![](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060911_e10.jpg)  
+![](emacs-is-a-faith-images/12.jpg)  
 **图12** `Emacs`上用`w3m`浏览网页
 
-![](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060911_e17.png)  
+![](emacs-is-a-faith-images/13.png)  
 **图13** `Emacs`加`Scheme48`后的强大语法加亮功能
 
 ## 4. 作为操作系统
 
 `Emacs`就像一个具有编辑功能的操作系统，你可以用它干很多事情。比如：阅读`email`和新闻组、浏览网页、管理文件目录（`dired`）、作为网页服务器、远程编辑文件、记录日程、约会提醒、电子日历、查字典、`ICQ`聊天、放`mp3`……
 
-![](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060911_e11.jpg)  
+![](emacs-is-a-faith-images/14.jpg)  
 **图14** 用`Emacs`新闻组
 
-![](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060911_e12.jpg)  
+![](emacs-is-a-faith-images/15.jpg)  
 **图15** 用`Emacs`管理文件目录（`dired`）
 
-![](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060911_e13.jpg)  
+![](emacs-is-a-faith-images/16.jpg)  
 **图16** `Emacs`上的电子日历
 
-![](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/060911_e14.jpg)  
+![](emacs-is-a-faith-images/17.jpg)  
 **图17** 在`Emacs`上查字典
 
 ## 5. 煮咖啡
