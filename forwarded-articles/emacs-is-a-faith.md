@@ -1,3 +1,5 @@
+原文链接： [Emacs是一种信仰！世界最强编辑器介绍](http://arch.pconline.com.cn//pcedu/soft/gj/photo/0609/865628.html) 作者：[王垠](http://www.yinwang.org/)
+
 # `Emacs`是一种信仰！世界最强编辑器介绍
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
