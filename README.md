@@ -132,6 +132,8 @@
 	- [有哪些编程必备的 `Vim` 配置？ - 知乎](https://www.zhihu.com/question/19989337)
 	- [到底 `VIM` 能配置到多强大的程度？ - 知乎](https://www.zhihu.com/question/20151659)
 	- [为什么不少程序员极度推崇 `Vim` 和 `Emacs`，却对 `IDE` 嗤之以鼻？ - 知乎](https://www.zhihu.com/question/21504638)
+- `Emacs`的文章（能有瑜亮般的对手而相互竞争与学习，比起高处不胜寒的孤寂可以说是幸运！）
+	- [_王垠_ 之《`Emacs`是一种信仰！世界最强编辑器介绍》](forwarded-articles/emacs-is-a-faith.md)
 
 ### 1.4 上手
 
