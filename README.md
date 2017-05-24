@@ -120,8 +120,6 @@
 - [普通人的编辑利器 —— `Vim`](forwarded-articles/editor-for-mortal.md) / [程序员的编辑器 —— `Vim`](forwarded-articles/editor-for-programmer.md)  
 	这2篇文章以普通用户/程序员的视角，短短一篇文章让你感受`Vim`的风格、能力和一致性设计。  
 	以非系统学习方式，获得偏整体了解的好文章！
-- [从`Vim`到`Emacs`到`Evil`](http://ceyes.github.io/2015-01/from-Vim-to-Emacs/)  
-	`Emacs`只是个强大的平台，提供各种定制来满足每个人的不同需求。所以Thanks `Evil`，我已把`Emacs` 打造成了理想的『`Vim`化的`Emacs Editor`』，我可以纵情使用更方便的方式来工作。 
 - [提高`Vim`使用效率的 12 个技巧](http://blog.jobbole.com/87481/)
 - [Awesome `Vim` Plugins](https://reinteractive.net/posts/166-awesome-vim-plugins)
 - 池建强的BLOG：『谁说Vim不是IDE？』系列：
@@ -133,6 +131,8 @@
 	- [到底 `VIM` 能配置到多强大的程度？ - 知乎](https://www.zhihu.com/question/20151659)
 	- [为什么不少程序员极度推崇 `Vim` 和 `Emacs`，却对 `IDE` 嗤之以鼻？ - 知乎](https://www.zhihu.com/question/21504638)
 - `Emacs`的文章（能有瑜亮般的对手而相互竞争与学习，比起高处不胜寒的孤寂可以说是幸运！）
+	- [从`Vim`到`Emacs`到`Evil`](http://ceyes.github.io/2015-01/from-Vim-to-Emacs/)  
+		`Emacs`只是个强大的平台，提供各种定制来满足每个人的不同需求。所以Thanks `Evil`，我已把`Emacs` 打造成了理想的『`Vim`化的`Emacs Editor`』，我可以纵情使用更方便的方式来工作。
 	- [_王垠_ 之《`Emacs`是一种信仰！世界最强编辑器介绍》](forwarded-articles/emacs-is-a-faith.md)
 
 ### 1.4 上手
