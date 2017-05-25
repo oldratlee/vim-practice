@@ -187,7 +187,7 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 - [Janus: Vim Distribution ![](https://img.shields.io/github/stars/carlhuda/janus.svg?style=social&label=Star&maxAge=3600)](https://github.com/carlhuda/janus)
 	- 又一个`Vim`配置版本！
 - [The Ultimate vimrc ![](https://img.shields.io/github/stars/amix/vimrc.svg?style=social&label=Star&maxAge=3600)](https://github.com/amix/vimrc) - Over the last 8 years I have used and tweaked Vim.
-	- 作者 **_8年_** 在`Vim`配置上的积累。
+	- 作者 **_10年_** 在`Vim`配置上的积累。
 	- 绝对值得参考学习！
 	- 因为不是框架，所以我会选`spf13-vim`作为我的配置主方式。
 - [Maximum Awesome ![](https://img.shields.io/github/stars/square/maximum-awesome.svg?style=social&label=Star&maxAge=3600)](https://github.com/square/maximum-awesome) - 三架马车`Vim`、`tmux`和`iTerm 2`的配置。
