@@ -1,4 +1,4 @@
-原文链接： [普通人的编辑利器——`Vim`](http://blog.sina.com.cn/s/blog_46dac66f010005kw.html) 作者:[善用佳软](http://blog.sina.com.cn/m/xbeta) 版本：`v1.5-r5-20080220`，2006-12-04
+原文链接： [普通人的编辑利器 —— `Vim`](http://blog.sina.com.cn/s/blog_46dac66f010005kw.html) 作者:[善用佳软](http://blog.sina.com.cn/m/xbeta) 版本：`v1.5-r5-20080220`，2006-12-04
 
 普通人的编辑利器 —— `Vim`
 ====================================================
@@ -55,7 +55,7 @@
 
 要点3：复杂对抗复杂。`Vim`有的命令行很吓人，长长一串字符恍若天书。这些貌似复杂，实际上无非是一些简单命令的组合而已。借助于此，`Vim`用户可以实现非常复杂的需求。如果你没有这样的需求，就无须理会它们。
 
-要点4：一能百能。这一点是`Unix`或命令行风格软件的显著长处，经过实用可以深刻体会。本文尽管有一些例子，但它运用之妙，存乎一心的感觉，仍未能充分展示。这里先打个比方，如果`windows`下某软件号称能炒菜，那意味着你点一下菜单，菜就做好了——这就是易用哲学。到底怎么做，你是没有多少发言权的，而是由软件开发者固化。而如果`Vim`说能，那它就是有一个『炒菜』命令，你可以把这个命令与原有的『原料』『数量』『火候』『风味』『灶具』命令结合在一起用，甚至在它前面加上『买菜』『洗菜』，后面加上『装盘』『洗碗』做成一个自动脚本，在合适的情况下自动执行。
+要点4：一能百能。这一点是`Unix`或命令行风格软件的显著长处，经过实用可以深刻体会。本文尽管有一些例子，但它运用之妙，存乎一心的感觉，仍未能充分展示。这里先打个比方，如果`Windows`下某软件号称能炒菜，那意味着你点一下菜单，菜就做好了——这就是易用哲学。到底怎么做，你是没有多少发言权的，而是由软件开发者固化。而如果`Vim`说能，那它就是有一个『炒菜』命令，你可以把这个命令与原有的『原料』『数量』『火候』『风味』『灶具』命令结合在一起用，甚至在它前面加上『买菜』『洗菜』，后面加上『装盘』『洗碗』做成一个自动脚本，在合适的情况下自动执行。
 
 要点5：无限灵活，个性由我。你只要有具体需求，`Vim`几乎都能满足。因此不同人的`Vim`是不一样的，即，把下载来的`Vim`配置成自己的`Vim`。
 
@@ -63,7 +63,7 @@
 
 ## 2 下载和安装
 
-`Vim`是跨平台的。在`Windows`下，我们用的是`gVim for windows`版。最新的是`7.0`版，下载包约`8MB`，完全安装后约`20MB`。
+`Vim`是跨平台的。在`Windows`下，我们用的是`gVim for Windows`版。最新的是`7.0`版，下载包约`8MB`，完全安装后约`20MB`。
 
 注：体积太大？你如果是高手，完全可以把不用的文件删除（包括帮助文件，它是我见过的软件中最好的帮助），精简后的体积可以不到`2MB`。或反之，仅下载一个`gVim.exe`（`1.5MB`）就能运行。但对于这次体验，鉴于第一次使用，建议全部按默认项安装，这样才能达到文中预想的结果。
 
@@ -72,24 +72,25 @@
 
 安装，基本上，一直`Agree`、`Next`就行了。我通常是装在`d:\program files\Vim`下。
 
-可参见
-
-![普通人的编辑利器——Vim](editor-for-mortal-images/060928_v1.png "普通人的编辑利器——Vim")  
-![普通人的编辑利器——Vim](editor-for-mortal-images/060928_v2.png "普通人的编辑利器——Vim")  
-![普通人的编辑利器——Vim](editor-for-mortal-images/060928_v3.png "普通人的编辑利器——Vim")  
-![普通人的编辑利器——Vim](editor-for-mortal-images/060928_v4.png "普通人的编辑利器——Vim")  
-![普通人的编辑利器——Vim](editor-for-mortal-images/060928_v5.png "普通人的编辑利器——Vim")  
-![普通人的编辑利器——Vim](editor-for-mortal-images/060928_v6.png "普通人的编辑利器——Vim")  
-![普通人的编辑利器——Vim](editor-for-mortal-images/060928_v7.png "普通人的编辑利器——Vim")  
-![普通人的编辑利器——Vim](editor-for-mortal-images/060928_v8.png "普通人的编辑利器——Vim")
+可参见  
+![](editor-for-mortal-images/060928_v1.png)  
+![](editor-for-mortal-images/060928_v2.png)  
+![](editor-for-mortal-images/060928_v3.png)  
+![](editor-for-mortal-images/060928_v4.png)  
+![](editor-for-mortal-images/060928_v5.png)  
+![](editor-for-mortal-images/060928_v6.png)  
+![](editor-for-mortal-images/060928_v7.png)  
+![](editor-for-mortal-images/060928_v8.png)
 
 ## 3 体验之旅
 
 ### 3.1 初见界面
 
-安装完成后，按提示打开`readme`，你将看到[![普通人的编辑利器——Vim](http://s7.sinaimg.cn/mw690/001irQirzy6J9OPA5Dw36&690 "普通人的编辑利器——Vim")](http://photo.blog.sina.com.cn/showpic.html#blogid=46dac66f010005kw&url=http://album.sina.com.cn/pic/001irQirzy6J9OPA5Dw36)
+安装完成后，按提示打开`readme`，你将看到  
+![](editor-for-mortal-images/001irQirzy6J9OPA5Dw36.png)
 
-或自行打开桌面的快捷方式，也可直接运行`d:\program files\Vim\Vim70\gVim.exe`，你应该看到如此界面：[![普通人的编辑利器——Vim](http://s13.sinaimg.cn/mw690/001irQirzy6J9OSKiNmac&690 "普通人的编辑利器——Vim")](http://photo.blog.sina.com.cn/showpic.html#blogid=46dac66f010005kw&url=http://album.sina.com.cn/pic/001irQirzy6J9OSKiNmac)
+或自行打开桌面的快捷方式，也可直接运行`d:\program files\Vim\Vim70\gVim.exe`，你应该看到如此界面：  
+![](editor-for-mortal-images/001irQirzy6J9OSKiNmac.png)
 
 什么？难看？土？我第一次见到它也是这种感觉，现在却只觉得亲切。
 
@@ -97,13 +98,11 @@
 
 ### 3.2 试读`html`
 
-请把此网页保存为`htm`，比如`test.htm`，然后用`Vim`打开它。暂时用菜单吧！结果可能是这样：
+请把此网页保存为`htm`，比如`test.htm`，然后用`Vim`打开它。暂时用菜单吧！结果可能是这样：  
+![](editor-for-mortal-images/060928_v11.png)
 
-![普通人的编辑利器——Vim](editor-for-mortal-images/060928_v11.png "普通人的编辑利器——Vim")
-
-平平无奇，是吧？因为它是一个标准的`Vim`，并且是性能优先，视效忽略的`Vim`。无妨，请进入命令行模式（就是按一下冒号，注意是英文冒号`:`），注意到最下面一行的变化了吧。再输入`sy on`再回车。是不是有颜色了？它应该看起来象这个样子
-
-![普通人的编辑利器——Vim](editor-for-mortal-images/060928_v12.png "普通人的编辑利器——Vim")
+平平无奇，是吧？因为它是一个标准的`Vim`，并且是性能优先，视效忽略的`Vim`。无妨，请进入命令行模式（就是按一下冒号，注意是英文冒号`:`），注意到最下面一行的变化了吧。再输入`sy on`再回车。是不是有颜色了？它应该看起来象这个样子  
+![](editor-for-mortal-images/060928_v12.png)
 
 重要提醒：为简化起见，下文将用`:sy on`表示（先确认在`Normal`模式，如不确认，请按几次`Esc`）你先按`:`进入命令行模式，再输入`sy on`，再回车。
 
@@ -115,9 +114,8 @@
 
 对了，如果你认为它的界面很土，请更要多看一眼当前的样子，因为下面的操作后可能会更土！
 
-执行如下命令`:set go=`，这时的`Vim`应该是
-
-![普通人的编辑利器——Vim](editor-for-mortal-images/060928_v13.png "普通人的编辑利器——Vim")  
+执行如下命令`:set go=`，这时的`Vim`应该是  
+![](editor-for-mortal-images/060928_v13.png)
 
 不要大惊小怪，不就是菜单和工具栏不见了嘛？`Vim`中是不应该用到它们的。
 
@@ -125,9 +123,8 @@
 
 再输入半条命令（先不要回车）`:colo ev`，然后，按一下`tab`键。是不是自动补全为`evening`了？`Vim`是非常聪明的（但是不会象`MS Word`那样自做聪明）。
 
-然后你回车，看到了什么？
-
-![普通人的编辑利器——Vim](editor-for-mortal-images/060928_v14.png "普通人的编辑利器——Vim")
+然后你回车，看到了什么？  
+![](editor-for-mortal-images/060928_v14.png)
 
 天色全黑了？没错，现在是`evening`嘛。
 
@@ -135,15 +132,13 @@
 
 ### 3.4 准备并打开范例文件
 
-简化起见，请[下载`test.txt`](editor-for-mortal-images/test.txt)并保存为`d:\test.txt`。然后，在`Vim`中输入半条命令`:tabnew d:\t`，输到这里后不要回车，按一下`tab`，`Vim`会自动补全为`test.txt`的。如果不对，再按几次`tab`，直到正确为止。然后回车。
-
-![普通人的编辑利器——Vim](editor-for-mortal-images/060928_v15.png "普通人的编辑利器——Vim")
+简化起见，请[下载`test.txt`](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/test.txt)并保存为`d:\test.txt`。然后，在`Vim`中输入半条命令`:tabnew d:\t`，输到这里后不要回车，按一下`tab`，`Vim`会自动补全为`test.txt`的。如果不对，再按几次`tab`，直到正确为止。然后回车。  
+![](editor-for-mortal-images/060928_v15.png)
 
 你会看到`Vim`打开了`test.txt`，并且是以多页签（`tab page`）的方式。你可以点击各页签在打开的文件中间切换（高手有更方便的键盘命令做法）。在`Vim6.3`中，还没有此功能。当然了，这并不意味着`Vim`的用户没办法享受多页签的便利，下载一个插件后——`Vim`有上千个插件——就可以了。面对多页签风格的流行（`IE6` => `Maxthon` => `IE7`），`Vim7.0`也新增了此功能。
 
-我喜欢这种简单的页签。如果你认为此页签太难看，可试一下`:set go=e`，这时应如下效果
-
-![普通人的编辑利器——Vim](editor-for-mortal-images/060928_v16.png "普通人的编辑利器——Vim")
+我喜欢这种简单的页签。如果你认为此页签太难看，可试一下`:set go=e`，这时应如下效果  
+![](editor-for-mortal-images/060928_v16.png)
 
 ### 3.5 统一格式，修改`vimrc`
 
@@ -156,7 +151,7 @@
 1. 用任意文本编辑器（`Vim`或记事本）打开`_vimrc`，用本文附1的内容替换它，并保存。
 1. 重启`Vim`。
 
-注：这并不是标准做法，但对`windows`用户是比较方便的做法。
+注：这并不是标准做法，但对`Windows`用户是比较方便的做法。
 
 ### 3.6 打开`test.txt`
 
@@ -172,11 +167,10 @@
 :%s/以下是/\r&/gc
 ```
 
-输入后，界面如下
+输入后，界面如下  
+![](editor-for-mortal-images/061008_v1.gif)
 
-![普通人的编辑利器——Vim](editor-for-mortal-images/061008_v1.gif "普通人的编辑利器——Vim")  
-
-并提示![](editor-for-mortal-images/061008_v2.gif "普通人的编辑利器——Vim")，请回答`y`或`a`。如果回答`y`，则替换当前一个；到了下一个，`Vim`还会再问你。所以，你回答几个`y`后不妨一`a`了之，全部替换。
+并提示![](editor-for-mortal-images/061008_v2.gif)，请回答`y`或`a`。如果回答`y`，则替换当前一个；到了下一个，`Vim`还会再问你。所以，你回答几个`y`后不妨一`a`了之，全部替换。
 
 补充说明：`s`表示替换；`s/a/b` 表示把`a`换为`b`；上一命令是把『以下是』换为`\r&`，`\r`表示回车，`&`表示被替换的部分，即『以下是』；`%`则表示全文；`/gc`表示一直替换（不是仅替换第一个），并且要用户确认。
 
@@ -193,7 +187,7 @@
 
 再一次体验`Vim`的神奇，比如按`5x`，于是5个字符消失了。当然，这5个字符是要保留的，没关系，你按一次`u`，就回来了吧？
 
-再按一下`Ctrl+r`，是不是又没了？再来一次`u`，是不是又回来了？没错。`u`和`Ctrl+r`相当于（是相当于不是等同于）`windows`的`undo`和`redo`。
+再按一下`Ctrl+r`，是不是又没了？再来一次`u`，是不是又回来了？没错。`u`和`Ctrl+r`相当于（是相当于不是等同于）`Windows`的`undo`和`redo`。
 
 再试一下`dd`。是不是整行没有了？没关系，`u`回来就行了。
 
@@ -216,9 +210,8 @@
 :%s/为../&\r/gc
 ```
 
-看一下高亮，没问题，直接`a`
-
-![](editor-for-mortal-images/061008_v3.gif "普通人的编辑利器——Vim")
+看一下高亮，没问题，直接`a`  
+![](editor-for-mortal-images/061008_v3.gif)
 
 哇，是不是很壮观啊？没觉得？如果是一千行一万行呢？
 
@@ -246,7 +239,7 @@
 1. 这样宏录完了，可以用了。
 1. 再`@a`，看到了效果了吧？宏执行了一次，即3、4行成功了。还剩下6段，但是你不用按6次`@a`，而是只要按下`6@a`就行了！！！
 
-![](editor-for-mortal-images/061008_v4.gif "普通人的编辑利器——Vim")
+![](editor-for-mortal-images/061008_v4.gif)
 
 太神奇了！回放一下？先`u`，再来一次`6@a`。既然可以6，当然可以千千万万！
 
@@ -269,9 +262,8 @@
 此部分讲起来太复杂。如果你有其他编辑器如`UltraEdit`基础，会有助于你理解。但`Vim`在此方面的强大灵活，`UltraEdit`是难忘其项背的。
 
 仍然是我们编辑的原文件，为简化计，请[下载`test2.txt`](http://www.pconline.com.cn/pcedu/soft/gj/photo/0610/acc/test2.txt)；[下载`tx1.vim`](http://www.pconline.com.cn/pcedu/soft/gj/photo/0610/acc/tx1.vim)并保存在`d:\program files\Vim\Vimfiles\syntax\tx1.vim`
-用`Vim`打开（比如要打开`d:\test2.txt`，请在`Vim`中`:tabnew d:\test2.txt`）它。平平无奇是吗？这是因为`Vim`并不知道这个文件要加亮。键入一个命令`:setf tx1`，这就相当于告诉`Vim`此文件的类型是`tx1`，所以就按照刚下载的`tx1.vim`进行高亮和折叠。
-
-![](editor-for-mortal-images/061008_v5.png "普通人的编辑利器——Vim")
+用`Vim`打开（比如要打开`d:\test2.txt`，请在`Vim`中`:tabnew d:\test2.txt`）它。平平无奇是吗？这是因为`Vim`并不知道这个文件要加亮。键入一个命令`:setf tx1`，这就相当于告诉`Vim`此文件的类型是`tx1`，所以就按照刚下载的`tx1.vim`进行高亮和折叠。  
+![](editor-for-mortal-images/061008_v5.png)
 
 此时你会发现`test2.txt`完全折起来了。如何打开？你可用鼠标点最左边的`+`，当然，也可以用命令`zr`或`zR`打开（`zR`打开全部；`zr`打开当前；`zM`折叠全部；`zm`折叠当前）。打开后，看到高亮效果了吧。可以对文字设定前景色、背景色、粗、斜、下划线风格。
 
@@ -287,17 +279,15 @@
 
 再比如，笔者会用`Vim`来辅助`word`, `excel`, `bbs`发文，安全删除文件，制作精简的五笔词库等。具体可参见 《[我常用的`Vim`功能](http://blog.sina.com.cn/u/46dac66f010004gy)》，《[活学善用`gVim`，提高工作效率:实例篇(合集)](http://blog.sina.com.cn/u/46dac66f010002xz)》，《[用`gVim`打造个性化记事本](http://blog.sina.com.cn/u/46dac66f010002he)》等文章。
 
-如下两图分别是我的个性化`txt`示例，和用`Vim`写此篇文章时的情况：
-
-![](editor-for-mortal-images/061008_v6.png "普通人的编辑利器——Vim")
-
-![](editor-for-mortal-images/061008_v7.png "普通人的编辑利器——Vim")
+如下两图分别是我的个性化`txt`示例，和用`Vim`写此篇文章时的情况：  
+![](editor-for-mortal-images/061008_v6.png)  
+![](editor-for-mortal-images/061008_v7.png)
 
 ## 5 后记
 
 这篇文章比最初计划写得长很多，但仍感觉很多非常优秀的功能没有提到。比如，眼下我写这篇文章，当然用`Vim`。但是因为有插图，所以用了`htm`格式。在插入图片时，我只要输入`img`，`Vim`会自动换为`<img src="">`，并把光标放到两个引号中间，以便于我输入图片名称。我输入`lnk`后，`Vim`会替换为`<a href=""></a>`。当我想看一下效果时，我只要`:! g:\study\it\pconline\Vim\xbeta-Vim.htm`它就自动在浏览器中打开了。而这一个长长的路径，因为有了自动补全和命令行历史，也非常容易。而当一些`url`还未确定，需要标注时，我就用一个 \`1 ，`Vim`就会以醒目的红色块标出来，一目了然。而下次再打开此文件，它会记得我最后编辑的位置。
 
-在用`Vim`之前，我曾试过几十种`pad`和`editor`，包括长期用`Editpad`，也曾经比较精通过`UltraEdit`，也曾经测过`EmEditor`, `EditPlus`等。但用了`Vim`之后，我不再关心`windows`世界的成千上万的编辑器。因为使用它们的逻辑是『如果有新需求，只能等软件升级或换一个软件』，而使用`Vim`的逻辑则是『如果有新需求，请做个性化配置或下载插件』。
+在用`Vim`之前，我曾试过几十种`pad`和`editor`，包括长期用`Editpad`，也曾经比较精通过`UltraEdit`，也曾经测过`EmEditor`, `EditPlus`等。但用了`Vim`之后，我不再关心`Windows`世界的成千上万的编辑器。因为使用它们的逻辑是『如果有新需求，只能等软件升级或换一个软件』，而使用`Vim`的逻辑则是『如果有新需求，请做个性化配置或下载插件』。
 
 `Vim`在手，夫复何求！
 
