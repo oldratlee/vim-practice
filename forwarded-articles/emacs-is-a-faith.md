@@ -2,7 +2,7 @@
 
 # `Emacs`是一种信仰！世界最强编辑器介绍
 
-<img src="../images/Apps-Emacs-icon.png" width="25%" align="right" >
+<img src="../images/emacs-icon.png" width="25%" align="right" >
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->

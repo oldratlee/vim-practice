@@ -33,6 +33,8 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+<img src="images/emacs-vs-vim-shape.png" width="30%" align="right" />
+
 ## 0. 序
 
 ### 0.1 `Vim` vs. `Emacs`
@@ -48,7 +50,7 @@
 - `Vim`，从 **_编辑理念_** 出发并思考很深，通过面向编辑的语言进而脚本化/编程化的能力实现平台化。
 	- 契合了 **_编辑器之『神』_** 的说法。
 	- `Vim`提供了一套面向编辑的语言：
-		- `diw`：`delete in word`，删除光标所在单词。`dd`：重复命令是对行操作，删除行。
+		- `diw`：`delete in word`，删除光标所在单词；`dd`：删除行（重复命令是对行操作）。
 		- `x`：删除一个字符，`5x`：重复5次删除字符（即删除5个字符）。
 		- 一旦你熟悉习惯这门语言，编辑的过程 就是 思考的过程。
 		- 另外，这门语言本身就是可编程的（即编程语言），像上面用数字表示命令的重复执行次数，以及可以用`norm`命令或是宏把指令脚本化。这里不展开了。
