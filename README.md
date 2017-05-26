@@ -184,16 +184,20 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 	- 包含很多插件/主题，无论是小白还是高手，省时好用是王道，用起来。
 	- 直接使用，配置的效果和包含的插件 已经很不错了。
 	- `spf13-vim`首先是个`Vim`**配置框架**，水准尽显！
-- [Janus: Vim Distribution ![](https://img.shields.io/github/stars/carlhuda/janus.svg?style=social&label=Star&maxAge=3600)](https://github.com/carlhuda/janus)
+- [`Janus`: `Vim` Distribution ![](https://img.shields.io/github/stars/carlhuda/janus.svg?style=social&label=Star&maxAge=3600)](https://github.com/carlhuda/janus)
 	- 又一个`Vim`配置版本！
-- [The Ultimate vimrc ![](https://img.shields.io/github/stars/amix/vimrc.svg?style=social&label=Star&maxAge=3600)](https://github.com/amix/vimrc) - Over the last 8 years I have used and tweaked Vim.
+- [The Ultimate `vimrc` ![](https://img.shields.io/github/stars/amix/vimrc.svg?style=social&label=Star&maxAge=3600)](https://github.com/amix/vimrc) - Over the last 8 years I have used and tweaked Vim.
 	- 作者 **_10年_** 在`Vim`配置上的积累。
 	- 绝对值得参考学习！
 	- 因为不是框架，所以我会选`spf13-vim`作为我的配置主方式。
 - [Maximum Awesome ![](https://img.shields.io/github/stars/square/maximum-awesome.svg?style=social&label=Star&maxAge=3600)](https://github.com/square/maximum-awesome) - 三架马车`Vim`、`tmux`和`iTerm 2`的配置。
 	- 值得参考！
-- [Vim Awesome - a comprehensive, accurate, and up-to-date directory of Vim plugins](http://vimawesome.com/)
-	- `Vim`插件浏览站点
+- [`Vim` Awesome - a comprehensive, accurate, and up-to-date directory of `Vim` plugins](http://vimawesome.com/)，`Vim`插件浏览站点
+- `Vim` + `Emacs` distribution（本人没有入`Emacs`圈子，作为广度了解一下）
+	- [`spacemacs` - A community-driven `Emacs` distribution - The best editor is neither `Emacs` nor `Vim`, it's `Emacs` *and* `Vim`! ![](https://img.shields.io/github/stars/syl20bnr/spacemacs.svg?style=social&label=Star&maxAge=3600)](https://github.com/syl20bnr/spacemacs) 
+		- 能结合发挥出2大编辑器的优势，这个思路确实很屌！
+		- 从这个项目`star`数也可见一斑！另外还要注意，[`spf13-vim`](https://github.com/spf13/spf13-vim)出来7年了（2010-04-20新建的仓库），而[`spacemacs`](https://github.com/syl20bnr/spacemacs)出来5年更短（2012-12-17新建的仓库）
+	- [`SpaceVim` - A community-driven `vim` distribution inspired by `spacemacs`! ![](https://img.shields.io/github/stars/SpaceVim/SpaceVim.svg?style=social&label=Star&maxAge=3600)](https://github.com/SpaceVim/SpaceVim)
 
 ## 3. 分享视频及其笔记
 
