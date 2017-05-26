@@ -25,8 +25,8 @@
         - [4. 连续插入72个等号](#4-%E8%BF%9E%E7%BB%AD%E6%8F%92%E5%85%A572%E4%B8%AA%E7%AD%89%E5%8F%B7)
         - [5. 在多行开始插入`//`](#5-%E5%9C%A8%E5%A4%9A%E8%A1%8C%E5%BC%80%E5%A7%8B%E6%8F%92%E5%85%A5)
 - [三、 编程辅助](#%E4%B8%89-%E7%BC%96%E7%A8%8B%E8%BE%85%E5%8A%A9)
-    - [1. `ctags`，`cscope`](#1-ctagscscope)
-    - [2. `multi window`，`multi buffer`，`multi tab page`](#2-multi-windowmulti-buffermulti-tab-page)
+    - [1. `ctags`、`cscope`](#1-ctagscscope)
+    - [2. `multi window`、`multi buffer`、`multi tab page`](#2-multi-windowmulti-buffermulti-tab-page)
     - [3. 语法高亮](#3-%E8%AF%AD%E6%B3%95%E9%AB%98%E4%BA%AE)
     - [4. 自动缩进](#4-%E8%87%AA%E5%8A%A8%E7%BC%A9%E8%BF%9B)
     - [5. 类和函数列表](#5-%E7%B1%BB%E5%92%8C%E5%87%BD%E6%95%B0%E5%88%97%E8%A1%A8)
@@ -104,7 +104,7 @@ q   # 退出
 
 ## 3. `vi`
 
-随着硬件的发展，`UNIX`上许多全屏模式编辑器被开发出来，`pico`，`nano`，`joe`，`jed`，`jove`，但是最为广泛使用的无疑就是`vi`（`nvi`，`elvis`，`Vim`等）和`Emacs`（`GNU Emacs`，`XEmacs`等）。
+随着硬件的发展，`UNIX`上许多全屏模式编辑器被开发出来，`pico`、`nano`、`joe`、`jed`、`jove`，但是最为广泛使用的无疑就是`vi`（`nvi`、`elvis`、`Vim`等）和`Emacs`（`GNU Emacs`、`XEmacs`等）。
 
 1976年左右 _Bill Joy_ 开发了`vi`，他也是伯克利大学的毕业生，后来他跟其他人一起成立了`Sun Microsystems`公司并成为了`Sun`的首席科学家。一开始 _Bill_ 开发了`ex`，尔后开发了`vi`作为`ex`的`visual interface`，也就是说`vi`允许一次能看到一屏的文本而非一行，`vi`也因此得名。在当今的`UNIX`系统上，可能没有缺省安装`Emacs`，但是肯定会有`vi`，当然，`ed`编辑器也必定存在 :-)
 
@@ -119,7 +119,7 @@ q   # 退出
 
 ## 4. `Vim`
 
-技术不断进步，需求也在不断提高，`vi`的各种变种也不断涌现，知名的有`nvi`，`elvis`，`Vim`，`vile`，`yzis`，其中移植性最好、特性最多、使用最广的当属`Vim`，`Vim`主要是 _Bram Moolenaar_ 开发的。最初 _Bram_ 在`Amiga`计算机上改进一个叫`Stevie`的`vi`版本，他称之为`Vi IMitation`。随着功能的逐渐丰富，`Vim`的含义也就改成了`Vi IMproved`。相比原始的`vi`，`Vim`增加的一项最重要的功能便是多级撤销，`vi`只支持一级撤销。
+技术不断进步，需求也在不断提高，`vi`的各种变种也不断涌现，知名的有`nvi`、`elvis`、`Vim`、`vile`、`yzis`，其中移植性最好、特性最多、使用最广的当属`Vim`，`Vim`主要是 _Bram Moolenaar_ 开发的。最初 _Bram_ 在`Amiga`计算机上改进一个叫`Stevie`的`vi`版本，他称之为`Vi IMitation`。随着功能的逐渐丰富，`Vim`的含义也就改成了`Vi IMproved`。相比原始的`vi`，`Vim`增加的一项最重要的功能便是多级撤销，`vi`只支持一级撤销。
 
 下面是`Vim`的重要版本历史：
 
@@ -155,7 +155,7 @@ date        | version   | milestone
 - `Normal Mode`  即通常所谓的命令模式，在此模式使用`a`、`i`、`A`、`I`、`o`、`O`等进入`Insert Mode`
 - `Insert Mode`  即通常所谓的编辑模式，在此模式使用`ESC`进入`Normal Mode`或者`Ctrl-o`临时进入`Normal Mode`。
 - `Command-line Mode` 命令行模式，在`Normal Mode`下按冒号进入，按`ESC`取消执行命令或者回车执行命令，然后回到`Normal Mode`。（`Visual Studio.Net`也添加了命令行脚本功能，幸甚）
-- `Visual Mode`  即选择模式（注意跟用鼠标选择不同），用`v`，`V`，`C-v`或`C-q`进入
+- `Visual Mode`  即选择模式（注意跟用鼠标选择不同），用`v`、`V`、`C-v`或`C-q`进入
 - `Select Mode`  鼠标选择
 - `Replace Mode`  在`Normal Mode`下按`R`进入，按`ESC`返回`Normal Mode`，相当于`Windows`下命令行中按`Insert`键进入的覆盖模式
 
@@ -173,11 +173,11 @@ date        | version   | milestone
 - `o` 在下一行插入 `O` 在上一行插入
 - `x` 删除当前字符 `X` 删除前一个字符
 
-类似的还有`b`，`B`，`ge`，`gE`，`w`，`W`，`e`，`E`，`f`，`F`，`t`，`T`，这些命令都可以用`:help cmdname`查到帮助。
+类似的还有`b`、`B`、`ge`、`gE`、`w`、`W`、`e`、`E`、`f`、`F`、`t`、`T`，这些命令都可以用`:help cmdname`查到帮助。
 
 - `dd` 删除一行 `yy` 拷贝一行
 - `h` `j` `k` `l` 左下上右移动光标
-- `Ctrl-w` `h`，`Ctrl-w` `j`，`Ctrl-w` `k`，`Ctrl-w` `l` 切换到左下上右窗口
+- `Ctrl-w` `h`、`Ctrl-w` `j`、`Ctrl-w` `k`、`Ctrl-w` `l` 切换到左下上右窗口
 
 类似`ed`，`vi`/`Vim`的命令大多都可以带一个数字前缀或者一个数字范围，比如：
 
@@ -186,7 +186,7 @@ date        | version   | milestone
 - `1,3d` 删除1至3行
 - `1,3y` 拷贝1至3行 （`.`代表当前行，`$`代表最后一行）
 
-`d<motion>`，`y<motion>`，`c<motion>`，`v<motion>`分别代表删除/拷贝/修改/选择`<motion>`
+`d<motion>`、`y<motion>`、`c<motion>`、`v<motion>`分别代表删除/拷贝/修改/选择`<motion>`
 
 命令指定的范围，比如
 
@@ -301,7 +301,7 @@ other
 
 既然是程序员的编辑器，自然要 Show 一下它的编程辅助功能。
 
-## 1. `ctags`，`cscope`
+## 1. `ctags`、`cscope`
 
 现在的`IDE`都提供了类、函数的索引功能，可以方便的找到某个类或者函数的在哪里定义的，`Vim`这方面可以利用`ctags`、`cscope`做到，`Exuberant ctags`支持的语言种类非常多，`UltraEdit`的`tags`功能也是利用的`ctags`。`cscope`只支持`C`，它能实现`Source Insight`的一些功能，比如查找某个函数调用了哪些函数，某个函数被哪些函数调用。`Vim`对这两个工具集成的非常好，利用它们就可以在源文件中方便的跳转搜索类和函数了。
 
@@ -312,7 +312,7 @@ other
 - `:help ctags`
 - `:help cscope`
 
-## 2. `multi window`，`multi buffer`，`multi tab page`
+## 2. `multi window`、`multi buffer`、`multi tab page`
 
 一个`buffer`对应一个文件，它可以对应多个`window`，这样可以方便的对照编辑一个文件的不同部分，`tab page`跟现在许多编辑器上常见的标签页意义并不一样，可以将`tab page`理解为一个`windows`的容器，这样如果想新建一个窗口编辑文件但又不想打乱现在的多窗口布局，那么就可以新开一个`tab page`，把新窗口放到这个新的`tab page`里头。`tab page`是`Vim 7.0`不久前新增的特性，目前`Vim 7.0`还未正式发布。（此文发表至`PConline`时，已经正式发布。）
 
@@ -446,7 +446,7 @@ other
 
 使用`:reg`命令可以看到所有寄存器中的内容，使用`"+y`或者`"*y`可以将`Visual Mode`下选择
 的内容拷贝到系统剪切板，使用`"+p`或者`"*p`可以将剪切板中的内容粘贴到`Vim`中，如果打开了
-`mswin`特性的话则在`Insert Mode`下使用`Ctrl-x`，`Ctrl-v`，`Ctrl-c`了。
+`mswin`特性的话则在`Insert Mode`下使用`Ctrl-x`、`Ctrl-v`、`Ctrl-c`了。
 
 参考资料： `:help registers`
 
@@ -536,7 +536,7 @@ http://www.vim.org/scripts/script.php?script_id=42
 这个插件可以使编辑多文件更加方便，装完插件后`Normal Mode`下输入`\be`即可打开缓冲区列表，光标放置在某一个文件上按回车即可打开这个文件，而缓冲区列表自动关闭。
 - `Taglist.vim`  ★★★★★  
 http://www.vim.org/scripts/script.php?script_id=273  
-这个插件可以实现类或者函数列表功能，支持`C/C++`，`Java`，`Perl`，`Python`，`TCL`，`SQL`，`PHP`等语言，它可以在`Vim`中创建一个窗口，列出编辑的源文件中的类、函数、变量定义列表，而且更方便的是这个列表也插入在了右键菜单中，分类存放，访问非常方便。
+这个插件可以实现类或者函数列表功能，支持`C/C++`、`Java`、`Perl`、`Python`、`TCL`、`SQL`、`PHP`等语言，它可以在`Vim`中创建一个窗口，列出编辑的源文件中的类、函数、变量定义列表，而且更方便的是这个列表也插入在了右键菜单中，分类存放，访问非常方便。
 - `TabBar.vim`  ★★★  
 http://www.vim.org/scripts/script.php?script_id=1338  
 这个插件实现了类似`UltraEdit`中的标签页的功能，而且能通过`Alt-<n>`来切换，`<n>`代表`1-9`。
@@ -588,7 +588,7 @@ http://www.vim.org/scripts/script.php?script_id=474
 可以用/搜索时按`Tab`补全要搜索的单词。
 - `Vim Intellisense`  
 http://insenvim.sourceforge.net  
-顾名思义，此插件用于给Vim提供智能完成功能，支持`C++`，`C#`，`Java`，`JSP`，`HTML`，`SQL`，`XML`，笔者安装后一直懒得配置，也就没用上。
+顾名思义，此插件用于给Vim提供智能完成功能，支持`C++`、`C#`、`Java`、`JSP`、`HTML`、`SQL`、`XML`，笔者安装后一直懒得配置，也就没用上。
 - `project`  
 http://www.vim.org/scripts/script.php?script_id=69  
 提供一些`IDE`功能，看介绍似乎很不错。
@@ -600,7 +600,7 @@ http://www.vim.org/scripts/script.php?script_id=465
 ispell or aspell based spell checker with fly-spelling。
 - `cream`  
 http://cream.sourceforge.net/  
-一套配置文件，可以把`Vim`的界面改成`CUA`（`Common User Access`）模型，降低`Vim`的学习难度，个人不推荐这种做法，不过其中有些高级配置值得学习（有意思的是`Emacs`也有类似的项目: `Easymacs`，`EmacsW32`）。
+一套配置文件，可以把`Vim`的界面改成`CUA`（`Common User Access`）模型，降低`Vim`的学习难度，个人不推荐这种做法，不过其中有些高级配置值得学习（有意思的是`Emacs`也有类似的项目: `Easymacs`、`EmacsW32`）。
 - `IComplete`  
 http://icomplete.sf.net  
 搭配`Vim 7.0`的`Omni Complete`，可以做到`C/C++`的智能完成功能。
@@ -704,7 +704,7 @@ copy vim7\src\VisVim\Visvim.dll d:\work\program\Vim\vim70b
 
 ## 4. 善后
 
-视情况你需要更新`PATH`环境变量、文件关联、`_vimrc`中的路径名等，并将`diff.exe`，`ctags.exe`，`cscope.exe`拷贝到`vim70b`下面。
+视情况你需要更新`PATH`环境变量、文件关联、`_vimrc`中的路径名等，并将`diff.exe`、`ctags.exe`、`cscope.exe`拷贝到`vim70b`下面。
 
 最后运行`gvimd.exe`，键入`:ver`开始享受`Vim`吧。
 
@@ -714,7 +714,7 @@ copy vim7\src\VisVim\Visvim.dll d:\work\program\Vim\vim70b
 
 # 十、 `Vim`的不足
 
-前面已经提到，`Vim`在自动完成和集成调试方面还比不上现代的许多`IDE`，另外`Vim`对二进制编辑还没有`UltraEdit`强大，对于现在流行的重构，`Vim`也支持不力，但是作为一个文本编辑器而言，堪比的只有`Emacs`，另外`Visual SlickEdit`也很强大，不过它是商业软件。`Vim`也可以嵌入到`Visual Studio`中作为编辑器，另外`Code Forge`，`Eclipse`，`NetBeans`，`Sun Visual Workshop`等也提供了一定的`Vim`支持或者键绑定。
+前面已经提到，`Vim`在自动完成和集成调试方面还比不上现代的许多`IDE`，另外`Vim`对二进制编辑还没有`UltraEdit`强大，对于现在流行的重构，`Vim`也支持不力，但是作为一个文本编辑器而言，堪比的只有`Emacs`，另外`Visual SlickEdit`也很强大，不过它是商业软件。`Vim`也可以嵌入到`Visual Studio`中作为编辑器，另外`Code Forge`、`Eclipse`、`NetBeans`、`Sun Visual Workshop`等也提供了一定的`Vim`支持或者键绑定。
 
 参考资料：
 
