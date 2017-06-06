@@ -115,7 +115,7 @@
 - [Why `Vim` is awesome](http://federicoramirez.name/why-vim-is-awesome/)
 - [`VIM` is awesome — But don’t overdo it](https://medium.com/@PhilPlckthun/vim-is-awesome-but-dont-overdo-it-c03594e6bb5b#.hyy2nhhe9)  
 	过犹不及，再好的东西，也要明白什么时候不合适，这是反而说明是深的理解。
-- [简明`Vim` 练级攻略 - coolshell.cn](http://coolshell.cn/articles/5426.html)  
+- [简明`Vim`练级攻略 - coolshell.cn](http://coolshell.cn/articles/5426.html) | 英文原文 [Learn `Vim` Progressively](http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)  
 	快速逐步上手介绍。
 - [Coming Home to `Vim`](http://stevelosh.com/blog/2010/09/coming-home-to-vim/)  
 	快速上手使用。为什么使用`Vim`/`Vim`使用感觉/上手的高效配置/好用的插件。
