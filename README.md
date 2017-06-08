@@ -328,11 +328,11 @@ set fileencodings=ucs-bom,utf-8,gb18030,utf-16le,big5,euc-jp,euc-kr,latin1
 如果仍然识别成乱码（比如文件包含多种编码的字符，一定会有乱码），可以在命令模式显式指定编码重新打开文件，命令如下：
 
 ```vim
-" 用UTF8编码重新打开
+" 用UTF8编码重新打开加载当前文件
 :e ++enc=utf-8
-" 用GBK编码重新打开
+" 用GBK编码重新加载
 :e ++enc=gbk
-" 在GB18030字符集是GBK的超集，上面是为了方便键入使用GBK名
+" 在GB18030字符集是GBK的超集，为了方便键入使用GBK名
 ```
 
 更多原因解析和处理方法参见[@滇狐](http://edyfox.codecarver.org/html/index.html)的文章[`VIM`文件编码识别与乱码处理](http://edyfox.codecarver.org/html/vim_fileencodings_detection.html)，讲得深入浅出、鞭辟入里！
@@ -349,10 +349,9 @@ PS:
 **_解决方法：_**
 
 ```vim
-" 文件转换成UTF8编码
-" 设置写文件时使用的编码
+" 设置写文件时使用UTF8编码
 :set fileencoding=utf-8
-" 写文件
+" 写文件（完成文件编码转换）
 :w
 
 " 为了方便键入，使用短选项名fenc并写成一行
@@ -360,7 +359,7 @@ PS:
 
 " 文件转换成GBK编码
 :se fenc=gbk | w
-" 在GB18030字符集是GBK的超集，上面是为了方便键入使用GBK名
+" 在GB18030字符集是GBK的超集，为了方便键入使用GBK名
 ```
 
 参考资料： [How can I change a file's encoding with vim? - vi.stackexchange.com](https://stackoverflow.com/questions/778069)
