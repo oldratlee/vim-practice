@@ -26,10 +26,11 @@
 - [4. 个人关心的问题](#4-%E4%B8%AA%E4%BA%BA%E5%85%B3%E5%BF%83%E7%9A%84%E9%97%AE%E9%A2%98)
     - [4.1 中文输入法在`Vim`便利切换的问题](#41-%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E6%B3%95%E5%9C%A8vim%E4%BE%BF%E5%88%A9%E5%88%87%E6%8D%A2%E7%9A%84%E9%97%AE%E9%A2%98)
     - [4.2 `Vim`打开文件乱码问题](#42-vim%E6%89%93%E5%BC%80%E6%96%87%E4%BB%B6%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98)
-    - [4.3 `Vim`字体设置](#43-vim%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE)
-    - [4.4 查看所有的`Vim Map`](#44-%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%89%E7%9A%84vim-map)
-    - [4.5 `crontab -e`修改失败](#45-crontab--e%E4%BF%AE%E6%94%B9%E5%A4%B1%E8%B4%A5)
-    - [4.6 `Vim`中文分词支持的问题](#46-vim%E4%B8%AD%E6%96%87%E5%88%86%E8%AF%8D%E6%94%AF%E6%8C%81%E7%9A%84%E9%97%AE%E9%A2%98)
+    - [4.3 转换文件编码](#43-%E8%BD%AC%E6%8D%A2%E6%96%87%E4%BB%B6%E7%BC%96%E7%A0%81)
+    - [4.4 `Vim`字体设置](#44-vim%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE)
+    - [4.5 查看所有的`Vim Map`](#45-%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%89%E7%9A%84vim-map)
+    - [4.6 `crontab -e`修改失败](#46-crontab--e%E4%BF%AE%E6%94%B9%E5%A4%B1%E8%B4%A5)
+    - [4.7 `Vim`中文分词支持的问题](#47-vim%E4%B8%AD%E6%96%87%E5%88%86%E8%AF%8D%E6%94%AF%E6%8C%81%E7%9A%84%E9%97%AE%E9%A2%98)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -339,7 +340,32 @@ set fileencodings=ucs-bom,utf-8,gb18030,utf-16le,big5,euc-jp,euc-kr,latin1
 PS:  
 像`Vim`一样，字符编码也是一个很具计算机风味的话题，这里不解释，如果不清楚可以自己搜索研究一下。
 
-### 4.3 `Vim`字体设置
+### 4.3 转换文件编码
+
+**_问题说明：_**
+
+如题。
+
+**_解决方法：_**
+
+```vim
+" 文件转换成UTF8编码
+" 设置写文件时使用的编码
+:set fileencoding=utf-8
+" 写文件
+:w
+
+" 为了方便键入，使用短选项名fenc并写成一行
+:se fenc=utf8 | w
+
+" 文件转换成GBK编码
+:se fenc=gbk | w
+" 在GB18030字符集是GBK的超集，上面是为了方便键入使用GBK名
+```
+
+参考资料： [How can I change a file's encoding with vim? - vi.stackexchange.com](https://stackoverflow.com/questions/778069)
+
+### 4.4 `Vim`字体设置
 
 **_问题说明：_**
 
@@ -354,7 +380,7 @@ PS:
 
 详见单独一页的说明：[设置`Vim`字体](font-config/README.md)。
 
-### 4.4 查看所有的`Vim Map`
+### 4.5 查看所有的`Vim Map`
 
 **_问题说明：_**
 
@@ -371,7 +397,7 @@ redir > map.txt | silent map | redir END
 redir! > map.txt | silent map | redir END
 ```
 
-### 4.5 `crontab -e`修改失败
+### 4.6 `crontab -e`修改失败
 
 **_问题说明：_**
 
@@ -395,10 +421,10 @@ autocmd BufNewFile,BufRead crontab.* set nobackup | set nowritebackup
 
 更多说明参见：
 
-- http://vi.stackexchange.com/questions/137
-- https://jamiecook.wordpress.com/2013/02/10/using-vim-to-edit-crontab-on-mac-osx/
+- [How do I edit crontab files with Vim (I get the error: 'temp file must be edited in place') - vi.stackexchange.com](http://vi.stackexchange.com/questions/137)
+- [Using vim to edit crontab on Mac OS/X](https://jamiecook.wordpress.com/2013/02/10/using-vim-to-edit-crontab-on-mac-osx/)
 
-### 4.6 `Vim`中文分词支持的问题
+### 4.7 `Vim`中文分词支持的问题
 
 **_问题说明：_**
 
