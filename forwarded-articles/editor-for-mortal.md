@@ -132,7 +132,7 @@
 
 ### 3.4 准备并打开范例文件
 
-简化起见，请[下载`test.txt`](http://www.pconline.com.cn/pcedu/soft/gj/photo/0609/pic/test.txt)并保存为`d:\test.txt`。然后，在`Vim`中输入半条命令`:tabnew d:\t`，输到这里后不要回车，按一下`tab`，`Vim`会自动补全为`test.txt`的。如果不对，再按几次`tab`，直到正确为止。然后回车。  
+简化起见，请[下载`test.txt`](editor-for-mortal-images/test.txt)并保存为`d:\test.txt`。然后，在`Vim`中输入半条命令`:tabnew d:\t`，输到这里后不要回车，按一下`tab`，`Vim`会自动补全为`test.txt`的。如果不对，再按几次`tab`，直到正确为止。然后回车。  
 ![](editor-for-mortal-images/060928_v15.png)
 
 你会看到`Vim`打开了`test.txt`，并且是以多页签（`tab page`）的方式。你可以点击各页签在打开的文件中间切换（高手有更方便的键盘命令做法）。在`Vim6.3`中，还没有此功能。当然了，这并不意味着`Vim`的用户没办法享受多页签的便利，下载一个插件后——`Vim`有上千个插件——就可以了。面对多页签风格的流行（`IE6` => `Maxthon` => `IE7`），`Vim7.0`也新增了此功能。
@@ -261,7 +261,7 @@
 
 此部分讲起来太复杂。如果你有其他编辑器如`UltraEdit`基础，会有助于你理解。但`Vim`在此方面的强大灵活，`UltraEdit`是难忘其项背的。
 
-仍然是我们编辑的原文件，为简化计，请[下载`test2.txt`](http://www.pconline.com.cn/pcedu/soft/gj/photo/0610/acc/test2.txt)；[下载`tx1.vim`](http://www.pconline.com.cn/pcedu/soft/gj/photo/0610/acc/tx1.vim)并保存在`d:\program files\Vim\Vimfiles\syntax\tx1.vim`
+仍然是我们编辑的原文件，为简化计，请[下载`test2.txt`](editor-for-mortal-images/test2.txt)；[下载`tx1.vim`](editor-for-mortal-images/tx1.vim)并保存在`d:\program files\Vim\Vimfiles\syntax\tx1.vim`
 用`Vim`打开（比如要打开`d:\test2.txt`，请在`Vim`中`:tabnew d:\test2.txt`）它。平平无奇是吗？这是因为`Vim`并不知道这个文件要加亮。键入一个命令`:setf tx1`，这就相当于告诉`Vim`此文件的类型是`tx1`，所以就按照刚下载的`tx1.vim`进行高亮和折叠。  
 ![](editor-for-mortal-images/061008_v5.png)
 
