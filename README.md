@@ -92,9 +92,9 @@
 
 ### 1.1 关于『学习』本身的规律
 
-- 学习一样新事物的先进，不在于刚开始看到的点，而在于理解一套方法（整套的方法所体现蕴含的背后的理念）。
-- 上手新事物必然先经历一个能力下降阶段，因为你要放弃你所熟悉的，重新接纳新的一套方法。
-- 有下面想法同学必然禁锢于原地踏步：
+1. 学习一样新事物的先进，不在于刚开始看到的点，而在于理解一套方法（整套的方法所体现蕴含的背后的理念）。
+1. 上手新事物必然先经历一个能力下降阶段，因为你要放弃你所熟悉的，重新接纳新的一套方法。
+1. 有下面想法同学必然禁锢于原地踏步：
 	- 不愿去理解理念（整套方法），而是用当前自己熟悉的技能点去比新事物的点。
 	- 不愿接受上手新事物的学习成本和先要经历能力下降的一个阶段。
 
@@ -108,7 +108,7 @@
 1. 系统学习，边看[《`Vim`实用技巧 - 以思维的速度编辑文本》](http://book.douban.com/subject/25869486/)边操作，完成实践和理念储备。  
 	这一步我保持一个相对慢速但持续的过程，两三周时间。
 1. 配置上[`spf13-vim`](https://github.com/spf13/spf13-vim)发行版，舒适强大专业的`Vim`环境配置。  
-	很多人不推荐这么做去使用别人的一大套配置，我比较实用以避免大量配置打磨的时间投入。中间会去填`spf13-vim`可能一些坑。
+	很多人不推荐这么做，去使用别人的一大套配置。我比较实用，避免大量配置打磨的时间投入。中间会去填`spf13-vim`可能的一些坑。
 1. 了解一些经典插件并实战，如[`surround`](https://github.com/tpope/vim-surround)。
 
 ### 1.3 文章/讨论
@@ -125,7 +125,7 @@
 	以非系统学习方式，获得偏整体了解的好文章！
 - [提高`Vim`使用效率的 12 个技巧](http://blog.jobbole.com/87481/)
 - [Awesome `Vim` Plugins](https://reinteractive.net/posts/166-awesome-vim-plugins)
-- 池建强的BLOG：『谁说Vim不是IDE？』系列：
+- 池建强的Blog：『谁说`Vim`不是`IDE`？』系列：
 	- [1. 概述、编程人生、使用场景](http://www.cnblogs.com/chijianqiang/archive/2012/10/30/vim-1.html)
 	- [2. 环境配置、基本概念](http://www.cnblogs.com/chijianqiang/archive/2012/10/31/vim-2.html)
 	- [3. 常用插件](http://www.cnblogs.com/chijianqiang/archive/2012/11/06/vim-3.html)
@@ -176,7 +176,7 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 		1. 先介绍基本功能再说明如何组合技术，从熟悉到领会。
 		1. 再介绍基本编辑器（`vi`/`ex`）再说明`Vim`，从历史发展的过程更能深入理解功能适用场景。
 		1. 还介绍`vi`/`Vim`的周边信息，如`vi`/`Vim`的名家名言，各个变种，`vi`/`Emacs`的文化等等
-1. [vim-galore - Everything you need to know about `Vim` ![](https://img.shields.io/github/stars/mhinz/vim-galore.svg?style=social&label=Star&maxAge=3600)](https://github.com/mhinz/vim-galore)  
+1. [vim-galore - Everything you need to know about `Vim` ![](https://img.shields.io/github/stars/mhinz/vim-galore.svg?style=social&label=Star&maxAge=3600)](https://github.com/mhinz/vim-galore) | [中文译文](https://github.com/wsdjeg/vim-galore-zh_cn)  
 	`Vim`方方面面资料汇总。
 
 ## 2. `Vim`配置/插件的资源
