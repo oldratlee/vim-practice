@@ -17,6 +17,8 @@
     - [1.5 速查](#15-%E9%80%9F%E6%9F%A5)
     - [1.6 系统学习](#16-%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0)
 - [2. `Vim`配置/插件的资源](#2-vim%E9%85%8D%E7%BD%AE%E6%8F%92%E4%BB%B6%E7%9A%84%E8%B5%84%E6%BA%90)
+    - [2.1 经典的配置必选版/插件站点](#21-%E7%BB%8F%E5%85%B8%E7%9A%84%E9%85%8D%E7%BD%AE%E5%BF%85%E9%80%89%E7%89%88%E6%8F%92%E4%BB%B6%E7%AB%99%E7%82%B9)
+    - [2.2 经典插件介绍](#22-%E7%BB%8F%E5%85%B8%E6%8F%92%E4%BB%B6%E4%BB%8B%E7%BB%8D)
 - [3. 分享视频及其笔记](#3-%E5%88%86%E4%BA%AB%E8%A7%86%E9%A2%91%E5%8F%8A%E5%85%B6%E7%AC%94%E8%AE%B0)
     - [3.1 Learning Vim in a Week](#31-learning-vim-in-a-week)
     - [3.2 7 Habits For Effective Text Editing 2.0](#32-7-habits-for-effective-text-editing-20)
@@ -181,6 +183,8 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 
 ## 2. `Vim`配置/插件的资源
 
+### 2.1 经典的配置必选版/插件站点
+
 - [`spf13-vim` - a distribution of `Vim` plugins and resources ![](https://img.shields.io/github/stars/spf13/spf13-vim.svg?style=social&label=Star&maxAge=3600)](https://github.com/spf13/spf13-vim) - `Vim`的配置框架和配置集合。
 	- 包含很多插件/主题，无论是小白还是高手，省时好用是王道，用起来。
 	- 直接使用，配置的效果和包含的插件 已经很不错了。
@@ -193,12 +197,18 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 	- 因为不是框架，所以我会选`spf13-vim`作为我的配置主方式。
 - [Maximum Awesome ![](https://img.shields.io/github/stars/square/maximum-awesome.svg?style=social&label=Star&maxAge=3600)](https://github.com/square/maximum-awesome) - 三架马车`Vim`、`tmux`和`iTerm 2`的配置。
 	- 值得参考！
-- [`Vim` Awesome - a comprehensive, accurate, and up-to-date directory of `Vim` plugins](http://vimawesome.com/)，`Vim`插件浏览站点
 - `Vim` + `Emacs` distribution（本人没有入`Emacs`圈子，作为广度了解一下）
 	- [`spacemacs` - A community-driven `Emacs` distribution - The best editor is neither `Emacs` nor `Vim`, it's `Emacs` *and* `Vim`! ![](https://img.shields.io/github/stars/syl20bnr/spacemacs.svg?style=social&label=Star&maxAge=3600)](https://github.com/syl20bnr/spacemacs) 
 		- 能结合发挥出2大编辑器的优势，这个思路确实很屌！
 		- 从这个项目`star`数也可见一斑！另外还要注意，[`spf13-vim`](https://github.com/spf13/spf13-vim)出来7年了（2010-04-20新建的仓库），而[`spacemacs`](https://github.com/syl20bnr/spacemacs)出来5年更短（2012-12-17新建的仓库）
 	- [`SpaceVim` - A community-driven `vim` distribution inspired by `spacemacs`! ![](https://img.shields.io/github/stars/SpaceVim/SpaceVim.svg?style=social&label=Star&maxAge=3600)](https://github.com/SpaceVim/SpaceVim)
+- [`Vim` Awesome - a comprehensive, accurate, and up-to-date directory of `Vim` plugins](http://vimawesome.com/)，`Vim`插件浏览站点
+
+### 2.2 经典插件介绍
+
+- `YCM`
+	- [Welcome to world of `YCM`](plugin-intro/ycm-vim-plugin-intro.md)  
+		由[@阳台](https://github.com/cp542524698)有爱贡献编写！
 
 ## 3. 分享视频及其笔记
 
