@@ -345,6 +345,10 @@ set fileencodings=ucs-bom,utf-8,gb18030,utf-16le,big5,euc-jp,euc-kr,latin1
 " 用GBK编码重新加载
 :e ++enc=gbk
 " GB18030字符集是GBK的超集，为了方便键入使用GBK名
+
+" 可以进一步在 .vimrc 中配置Mapping，省得繁琐的键入
+nnoremap <Leader>eu :e ++enc=utf-8<CR>
+nnoremap <Leader>eg :e ++enc=gb18030<CR>
 ```
 
 更多原因解析和处理方法参见[@滇狐](http://edyfox.codecarver.org/html/index.html)的文章[`VIM`文件编码识别与乱码处理](http://edyfox.codecarver.org/html/vim_fileencodings_detection.html)，讲得深入浅出、鞭辟入里！
@@ -374,8 +378,8 @@ PS:
 " GB18030字符集是GBK的超集，为了方便键入使用GBK名
 
 " 可以进一步在 .vimrc 中配置Mapping，省得繁琐的键入
-nnoremap <Leader>eu :set fileencoding=utf-8 \| w<CR>
-nnoremap <Leader>eg :set fileencoding=gb18030 \| w<CR>
+nnoremap <Leader>eU :set fileencoding=utf-8 \| w<CR>
+nnoremap <Leader>eG :set fileencoding=gb18030 \| w<CR>
 ```
 
 参考资料： [How can I change a file's encoding with vim? - vi.stackexchange.com](https://stackoverflow.com/questions/778069)
