@@ -109,10 +109,12 @@
 	- 这只是了解基本，不要认为这一步可以在日常中方便的使用了。
 	- 让自己可以在`Vim`环境生存下来。首先要避免为了退出`Vim`要去重启机器吧～   
 		（:joy: 可以看看[Stack Overflow：帮助一百万开发者退出 Vim](https://zhuanlan.zhihu.com/p/27077076)）
-1. 系统学习，边看[《`Vim`实用技巧 - 以思维的速度编辑文本》](http://book.douban.com/subject/25869486/)边操作，完成实践和理念储备。  
+1. 系统学习，边看[《`Vim`实用技巧 - 以思维的速度编辑文本》](https://book.douban.com/subject/26967597/)边操作，完成实践和理念储备。  
 	这一步我保持一个相对慢速但持续的过程，两三周时间。
 1. 配置上[`spf13-vim`](https://github.com/spf13/spf13-vim)发行版，舒适强大专业的`Vim`环境配置。  
-	很多人不推荐这么做，去使用别人的一大套配置。我比较实用，避免大量配置打磨的时间投入，先接纳有心人的专业经验。中间会去填`spf13-vim`可能的一些坑。
+	很多人不推荐这么做，去使用别人的一大套配置。  
+	我这么做比较实用，原因是：避免大量配置打磨的时间投入，先接纳有心人的专业经验。  
+	中间会去填`spf13-vim`可能的一些坑。
 1. 了解一些经典插件并逐个实战，如[`surround`](https://github.com/tpope/vim-surround)。
 
 ### 1.3 文章/讨论
@@ -173,10 +175,10 @@ Cheat Sheet有几个就够用了，别多看了你～ 当然还有[更多Vim Che
 	1. 学会用`Vim`的内置帮助 `:h` `:h 'option'` `:h command` `:h :ex_command` `:h ctrl-w`
 	1. `Vim`帮助系统的帮助，即如何使用`Vim`的帮助系统： `:h helphelp`
 1. 个人整理的 [`Vim`书籍豆列](http://www.douban.com/doulist/41500790/)
-	1. 个人先看的是[《`Vim`实用技巧 - 以思维的速度编辑文本》](http://book.douban.com/subject/25869486/)  
+	1. 个人先看的是[《`Vim`实用技巧 - 以思维的速度编辑文本》](https://book.douban.com/subject/26967597/) | [Practical Vim, Second Edition](https://book.douban.com/subject/26678595/)  
 		以编辑理念和实践模式为纲介绍，推荐之。  
 		**_词句共灵感一射，编辑与思考齐飞！_**
-	1. [《Learning the `vi` and `Vim` Editors》](http://book.douban.com/subject/3767413/)，行文稳健（很合我的风格）：
+	1. [学习`vi`和`Vim`编辑器（中文版）](https://book.douban.com/subject/6126937/) | [《Learning the `vi` and `Vim` Editors》](http://book.douban.com/subject/3767413/)，行文稳健（很合我的风格）：
 		1. 先介绍基本功能再说明如何组合技术，从熟悉到领会。
 		1. 再介绍基本编辑器（`vi`/`ex`）再说明`Vim`，从历史发展的过程更能深入理解功能适用场景。
 		1. 还介绍`vi`/`Vim`的周边信息，如`vi`/`Vim`的名家名言，各个变种，`vi`/`Emacs`的文化等等
