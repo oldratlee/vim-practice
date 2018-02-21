@@ -44,7 +44,7 @@
 
 一上来就要说一个『宗教性』问题，很危险啊！ :smile: 这节不会说2个编辑器有什么不好，再者自己并不熟悉`Emacs`，只说自己了解到的一点感觉。
 
-> `Vim`和`Emacs`：编辑器之神和神的编辑器。 :performing_arts:
+> `Vim`：编辑器之神；`Emacs`：神的编辑器。 :performing_arts:
 
 上面的这句调侃不重要，重要的是效率:heavy_exclamation_mark:
 
@@ -67,6 +67,9 @@
 			这个思路已经被解决方案化了，即是[`spacemacs`](https://github.com/syl20bnr/spacemacs)，已经是最火的`Vim`/`Emacs`配置发行版了，我还一直没有去上手 :expressionless:，真是山外有山而学无止境啊～ :astonished:
 
 ### 0.2 关于编辑本身
+
+> Editing is a rewording activity. -- Alan J. Perli  
+> 编辑是推敲改写的过程。 —— [艾伦·杰·佩利](https://zh.wikipedia.org/zh-cn/%E8%89%BE%E4%BC%A6%C2%B7%E4%BD%A9%E5%88%A9)（计算机程序设计领域的科学家，首届图灵奖的获得者）
 
 人类智慧输出包含了『录入』和『编辑』操作。
 
