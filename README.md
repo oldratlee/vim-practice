@@ -1,4 +1,10 @@
-# Vim Practice [![知识共享协议（CC协议）](https://img.shields.io/badge/License-Creative%20Commons-DC3D24.svg) ![Attribution-NonCommercial-ShareAlike CC BY-NC-SA](LICENSE.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+# 💘 Vim Practice
+
+[![知识共享协议（CC协议）](https://img.shields.io/badge/License-Creative%20Commons-FE6B3A.svg?logo=apache) ![Licence: CC BY-NC-SA 4.0](LICENSE.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)  
+[![GitHub stars](https://img.shields.io/github/stars/oldratlee/vim-practice.svg?style=social&label=Star)](https://github.com/oldratlee/vim-practice/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/oldratlee/vim-practice.svg?style=social&label=Fork)](https://github.com/oldratlee/vim-practice/fork)
+[![GitHub watchers](https://img.shields.io/github/watchers/oldratlee/vim-practice.svg?style=social&label=Watch)](https://github.com/oldratlee/vim-practice/watchers)
+[![GitHub Contributors](https://img.shields.io/github/contributors/oldratlee/vim-practice?style=social&logo=github)](https://github.com/oldratlee/vim-practice/graphs/contributors)
 
 <img src="images/vim-icon.png" width="256" align="right" >
 
